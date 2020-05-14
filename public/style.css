@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #224941 url('main.jpg') no-repeat center center/cover;
+  background: #224941 url('images/main.jpg') no-repeat center center/cover;
   color: #fff;
   min-height: 100vh;
   font-family: 'EB Garamond', serif;
@@ -15,15 +15,18 @@ body {
   align-items: center;
   margin: 0;
 }
+
 p {
   /* color: blue; */
-  font-size: 40px;
+  font-size: 25px;
 }
+
 h1 {
   font-size: 60px;
   text-transform: uppercase;
   text-decoration: underline;
   text-shadow: 2px 2px black;
+  justify-content: center;
 }
 .container {
   display: flex;
@@ -34,7 +37,75 @@ h1 {
   width: 300px;
   position: relative;
   transform: scale(1);
+}
 
+.music{
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 black;
+  display: flex;
+  padding: 20px 30px;
+  margin: 100px 0;
+  z-index: 110px;
+
+}
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 3s linear infinite;
+
+  animation-play-state: paused;
+
+}
+
+.music.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: #fff;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;;
+}
+
+.action-btn.action-btn-big {
+  color: #cdc2d0;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
 }
 
 .circle {
