@@ -1,44 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 
-*{
-  box-sizing: border-box;
-}
-
-body {
-  background: #224941 url('images/main.jpg') no-repeat center center/cover;
-  color: #fff;
-  min-height: 100vh;
-  font-family: 'EB Garamond', serif;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
-p {
-  /* color: blue; */
-  font-size: 25px;
-}
-
-h1 {
-  font-size: 60px;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-shadow: 2px 2px black;
-  justify-content: center;
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  height: 300px;
-  width: 300px;
-  position: relative;
-  transform: scale(1);
-  padding-bottom: 40px;
-}
 
 .music-container {
   background-color: #fff;
@@ -188,13 +149,13 @@ h1 {
 }
 
 .music-info {
-  background-color: rgba(255, 225, 225, 0.5);
+  background-color: blueviolet;
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
   left: 20px;
   width: calc(100% - 40px);
-  padding: 10px 10px 150px;
+  padding: 10px 10px 100px;
   opacity: 0%;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
@@ -209,101 +170,4 @@ h1 {
 
 .music-info h4 {
   margin: 0;
-}
-
-.circle {
-  background-color: #010f1c;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-
-.gradient-circle {
-  background: conic-gradient(
-    #ccebff 0%,
-    #1aa3ff 40%,
-    #fff 40%,
-    #fff 60%,
-    #0000ff 60%,
-    #cccfff 100%
-  );
-  height: 320px;
-  width: 320px;
-  z-index: -2;
-  border-radius: 50%;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-}
-
-.pointer {
-  background-color: #fff;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  display: block;
-}
-
-.pointer-container {
-  position: absolute;
-  top: -40px;
-  left: 140px;
-  width: 20px;
-  height: 190px;
-  animation: rotate 7.5s linear forwards infinite;
-  transform-origin: bottom center;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.container.grow {
-  animation: grow 3s linear forwards;
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.2);
-  }
-}
-
-.container.shrink {
-  animation: shrink 3s linear forwards;
-}
-
-@keyframes shrink {
-  from {
-    transform: scale(1.2);
-  }
-
-  to {
-    transform: scale(1);
-  }
-
-
-  footer {
-
-    bottom: 0;
-    width: 100%;
-
-  }
-  footer p {
-        float: left;
-  }
 }
