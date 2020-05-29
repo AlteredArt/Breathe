@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+@media(max-width: 900px){
+  h1 {
+    background-color: black;
+    text-align: center;
+    font-size: 35px;
+  }
+  h2 {
+    /* background-color: darkred; */
+    margin: 0 15px;
+    padding: 3px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+}

@@ -34,6 +34,7 @@ h2 {
   /* text-decoration: underline; */
   text-shadow: 2px 2px black;
   justify-content: center;
+  text-align: center;
 }
 
 
@@ -46,5 +47,6 @@ h2 {
 
   }
 .footer p {
+  padding-left: 20px;
         float: left;
   }
