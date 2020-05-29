@@ -22,6 +22,7 @@
   }
 /* circles */
 p {
+  /* color: blue; */
   font-size: 25px;
 }
 
@@ -31,14 +32,15 @@ p {
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 80px;
-  height: 200px;
-  width: 200px;
+  height: 201px;
+  width: 201px;
   position: relative;
   transform: scale(1);
   /* padding-top: 180px; */
 }
 
 .circle {
+  background-color: #010f1c;
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -49,7 +51,14 @@ p {
 }
 
 .gradient-circle {
-
+  background: conic-gradient(
+    #ccebff 0%,
+    #1aa3ff 40%,
+    #fff 40%,
+    #fff 60%,
+    #0000ff 60%,
+    #cccfff 100%
+  );
   height: 220px;
   width: 220px;
   z-index: -2;
@@ -63,17 +72,17 @@ p {
   background-color: blueviolet;
   text-shadow: 22px 22px white;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   display: block;
 }
 
 .pointer-container {
   position: absolute;
-  top: -40px;
-  left: 140px;
-  width: 20px;
-  height: 190px;
+  top: -30px;
+  left: 95px;
+  width: 10px;
+  height: 130px;
   animation: rotate 7.5s linear forwards infinite;
   transform-origin: bottom center;
 }

@@ -5,7 +5,7 @@ p {
   /* color: blue; */
   font-size: 25px;
 }
-
+@media(min-width:420px) {
 .container {
   display: flex;
   align-items: center;
@@ -103,4 +103,6 @@ p {
   to {
     transform: scale(1);
   }
+}
+
 }
