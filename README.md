@@ -39,7 +39,7 @@ Deployment: To Deploy this project to your browser windows follow these steps
     ~npm run dev
 
 Whats next?
-  Using the app to help you remain calm in times of need
+  Using the app to help you remain calm in times of need. Add more phases.
 
 Problems:
   Getting the breathing circles to scale down for the mobile view.
