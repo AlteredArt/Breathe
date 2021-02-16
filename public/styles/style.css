@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 
-*{
-  box-sizing: border-box;
-}
+*{box-sizing: border-box;}
 
 body {
   background: lightblue url('/images/main.jpg') no-repeat center center/cover;
@@ -30,8 +28,6 @@ h2 {
   margin: 0;
   padding: 3px;
   font-size: 35px;
-  /* text-transform: uppercase; */
-  /* text-decoration: underline; */
   text-shadow: 2px 2px black;
   justify-content: center;
   text-align: center;
@@ -48,5 +44,5 @@ h2 {
   }
 .footer p {
   padding-left: 20px;
-        float: left;
-  }
+  float: left;
+}
