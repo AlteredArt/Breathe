@@ -1,31 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 
 @media(max-width: 420px){
+
   h1 {
     width: 100%;
     font-size: 30px;
   }
+
   h2{
     font-size: 25px;
-      margin: 0 5px;
-      /* background-color: black; */
+    margin: 0 5px;
   }
 /* Music */
-  .music-container {
-    margin: 100px 25px;
-  }
+  .music-container {margin: 100px 25px;}
 
-  .img-container {
-  display:none;
-  }
-  .music-container.play .music-info {
-    transform: translateY(-45%);
-  }
+  .img-container {display:none;}
+
+  .music-container.play .music-info {transform: translateY(-45%);}
 /* circles */
-p {
-  /* color: blue; */
-  font-size: 25px;
-}
+p {font-size: 25px;}
 
 .container {
   display: flex;
@@ -37,7 +30,6 @@ p {
   width: 201px;
   position: relative;
   transform: scale(1);
-  /* padding-top: 180px; */
 }
 
 .circle {
@@ -89,42 +81,24 @@ p {
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
+  from {transform: rotate(0deg);}
 
-  to {
-    transform: rotate(360deg);
-  }
+  to {transform: rotate(360deg);}
 }
 
-.container.grow {
-  animation: grow 3s linear forwards;
-}
+.container.grow {animation: grow 3s linear forwards;}
 
 @keyframes grow {
-  from {
-    transform: scale(1);
-  }
+  from {transform: scale(1);}
 
-  to {
-    transform: scale(1.2);
-  }
+  to {transform: scale(1.2);}
 }
 
-.container.shrink {
-  animation: shrink 3s linear forwards;
-}
+.container.shrink {animation: shrink 3s linear forwards;}
 
 @keyframes shrink {
-  from {
-    transform: scale(1.2);
-  }
+  from {transform: scale(1.2);}
 
-  to {
-    transform: scale(1);
-  }
+  to {transform: scale(1);}
 }
-
-
 }
