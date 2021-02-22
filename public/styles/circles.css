@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 
 
-p {
-  /* color: blue; */
-  font-size: 25px;
-}
+p {font-size: 25px;}
+
 @media(min-width:420px) {
+
 .container {
   display: flex;
   align-items: center;
@@ -16,7 +15,6 @@ p {
   width: 300px;
   position: relative;
   transform: scale(1);
-  /* padding-top: 180px; */
 }
 
 .circle {
@@ -68,41 +66,25 @@ p {
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
+  from {transform: rotate(0deg);}
 
-  to {
-    transform: rotate(360deg);
-  }
+  to {transform: rotate(360deg);}
 }
 
-.container.grow {
-  animation: grow 3s linear forwards;
-}
+.container.grow {animation: grow 3s linear forwards;}
 
 @keyframes grow {
-  from {
-    transform: scale(1);
-  }
+  from {transform: scale(1);}
 
-  to {
-    transform: scale(1.2);
-  }
+  to {transform: scale(1.2);}
 }
 
-.container.shrink {
-  animation: shrink 3s linear forwards;
-}
+.container.shrink {animation: shrink 3s linear forwards;}
 
 @keyframes shrink {
-  from {
-    transform: scale(1.2);
-  }
+  from {transform: scale(1.2);}
 
-  to {
-    transform: scale(1);
-  }
+  to {transform: scale(1);}
 }
 
 }
