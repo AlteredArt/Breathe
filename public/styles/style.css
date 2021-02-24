@@ -14,7 +14,6 @@ body {
   margin: 0;
 }
 
-
 h1 {
   margin: 0;
   padding: 5px;
@@ -24,6 +23,7 @@ h1 {
   text-shadow: 2px 2px black;
   justify-content: center;
 }
+
 h2 {
   margin: 0;
   padding: 3px;
@@ -33,15 +33,12 @@ h2 {
   text-align: center;
 }
 
-
-
-
 .footer {
   padding-top: 25px;
     bottom: 0;
     width: 100%;
+}
 
-  }
 .footer p {
   padding-left: 20px;
   float: left;
