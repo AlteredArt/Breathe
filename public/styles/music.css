@@ -2,11 +2,12 @@
 
 
 .music-container {
-  background-color: #fff;
+  background-color: rebeccapurple;
+  border: 2px solid whitesmoke;
   border-radius: 15px;
   box-shadow: 0 20px 20px 0 black;
   display: flex;
-  padding: 20px 30px;
+  padding: 40px 30px;
   position: relative;
   margin: 100px 0;
   z-index: 10;
@@ -18,9 +19,11 @@
 }
 
 .img-container::after {
+  border: 2px solid black;
   content: '';
   background-color: #fff;
   border-radius: 50%;
+  opacity: 70%;
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -30,6 +33,7 @@
 }
 
 .img-container img {
+  border: 1px solid black;
   border-radius: 50%;
   object-fit: cover;
   height: 110px;
@@ -38,7 +42,6 @@
   bottom: 0;
   left: 0;
   animation: rotate 3s linear infinite;
-
   animation-play-state: paused;
 }
 

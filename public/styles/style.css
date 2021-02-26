@@ -1,46 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+/*--------------------------------
+ Meyer Reset
+ ------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------
+ Meyer Reset End
+ ------------------------------ */
 
-*{box-sizing: border-box;}
 
+
+
+
+/*--------------------------------
+ Globals
+------------------------------ */
+*{
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+/*--------------------------------
+ Global End
+------------------------------ */
+
+
+
+
+
+/*--------------------------------
+ Body
+------------------------------ */
 body {
   background: lightblue url('/images/main.jpg') no-repeat center center/cover;
-  color: #fff;
-  min-height: 100vh;
+  /* color: #fff; */
+  /* min-height: 100vh; */
   font-family: 'EB Garamond', serif;
   /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  justify-content: space-between;
 }
 
+html, body {height: 100%;}
+/*--------------------------------
+ Body End
+------------------------------ */
 
-h1 {
+.header {
+  text-align: center;
+  margin-top: 15%;
+  background-color: rebeccapurple;
+  padding: 4%;
+  border-radius: 20px;
+  border: 3px solid whitesmoke;
+}
+
+.header h1 {
   margin: 0;
-  padding: 5px;
-  font-size: 50px;
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
+  text-decoration-style: double;
   text-decoration: underline;
   text-shadow: 2px 2px black;
   justify-content: center;
 }
 
-h2 {
-  margin: 0;
-  padding: 3px;
-  font-size: 35px;
-  text-shadow: 2px 2px black;
-  justify-content: center;
-  text-align: center;
-}
 
+
+/*--------------------------------
+ Footer
+------------------------------ */
 .footer {
-  padding-top: 25px;
-    bottom: 0;
-    width: 100%;
+  padding:3%;
+  background-color: black;
+  display: flex;
+  justify-content:center;
+  width: 100%;
 }
 
-.footer p {
-  padding-left: 20px;
-  float: left;
-}
+.footer *{font-size: 2rem;}
+/*--------------------------------
+ Footer End
+------------------------------ */

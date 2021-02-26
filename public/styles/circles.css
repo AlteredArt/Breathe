@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 
 
-p {
-  /* color: blue; */
-  font-size: 25px;
-}
+p { font-size: 25px;}
+
 @media(min-width:420px) {
-.container {
+.circles-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +17,7 @@ p {
   /* padding-top: 180px; */
 }
 
-.circle {
+.black-circle {
   background-color: #010f1c;
   height: 100%;
   width: 100%;
@@ -31,6 +29,7 @@ p {
 }
 
 .gradient-circle {
+
   background: conic-gradient(
     #ccebff 0%,
     #1aa3ff 40%,
@@ -39,6 +38,7 @@ p {
     #0000ff 60%,
     #cccfff 100%
   );
+  
   height: 320px;
   width: 320px;
   z-index: -2;
