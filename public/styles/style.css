@@ -89,6 +89,8 @@ html, body {height: 100%;}
 }
 
 .header h1 {
+
+h1 {
   margin: 0;
   padding-bottom: 1.5rem;
   font-size: 3rem;
