@@ -1,30 +1,43 @@
-const container = document.getElementById('container');
-const text = document.getElementById("text");
+/*--------------------------------
+ Circles
+ ------------------------------ */
+const circlesContainer = document.getElementsByClassName("container");
+let circleText = document.getElementsByClassName("circle-text");
 
 const totalTime = 7500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 console.log(breatheTime, holdTime);
+console.log("hello")
 
 breathe();
 
 function breathe() {
-  text.innerText = "!BREATHE IN!";
-  container.className = "container grow";
+  circleText.innerHTML = "!BREATHE IN!";
+  circlesContainer.className = "container grow";
+  console.log('in')
 
   setTimeout(() => {
-    text.innerText = 'HOLD';
+    circleText.innerText = 'HOLD';
+    console.log('hold')
+
 
     setTimeout(() => {
-      text.innerText = '*breathe out*';
-      container.className = 'container shrink';
+      circleText.innerText = '*breathe out*';
+      console.log('out')
+
+      circlesContainer.className = 'container shrink';
     }, holdTime);
   }, breatheTime);
+  console.log('confimr');
 }
 
-setInterval(breathe, totalTime);
 
+setInterval(breatheTime, totalTime);
+/*--------------------------------
+ Circles END
+ ------------------------------ */
 
 
 const musicContainer = document.getElementById('music-container');

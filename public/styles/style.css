@@ -63,7 +63,8 @@ table {
  Body
 ------------------------------ */
 body {
-  background: lightblue url('/images/main.jpg') no-repeat center center/cover;
+  background-color: yellowgreen;
+  /* background: lightblue url('/images/main.jpg') no-repeat center center/cover; */
   /* color: #fff; */
   /* min-height: 100vh; */
   font-family: 'EB Garamond', serif;

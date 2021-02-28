@@ -3,8 +3,8 @@
 
 p { font-size: 25px;}
 
-@media(min-width:420px) {
-.circles-container {
+/* @media(min-width:420px) { */
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,41 +68,19 @@ p { font-size: 25px;}
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
 
-.container.grow {
-  animation: grow 3s linear forwards;
-}
-
-@keyframes grow {
-  from {
-    transform: scale(1);
+.container.grow {animation: grow 3s linear forwards;}
+  @keyframes grow {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
   }
 
-  to {
-    transform: scale(1.2);
+.container.shrink { animation: shrink 3s linear forwards;}
+  @keyframes shrink {
+    from {transform: scale(1.2);}
+    to {transform: scale(1);}
   }
-}
-
-.container.shrink {
-  animation: shrink 3s linear forwards;
-}
-
-@keyframes shrink {
-  from {
-    transform: scale(1.2);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-}
+/* } */
