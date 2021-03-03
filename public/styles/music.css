@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
-
+/*--------------------------------
+  Music Container
+ ------------------------------ */
 
 .music-container {
-  background-color: rebeccapurple;
-  border: 2px solid whitesmoke;
-  border-radius: 15px;
+  background: rgb(0,212,255);
+  background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%);
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
   box-shadow: 0 20px 20px 0 black;
   display: flex;
   padding: 40px 30px;
@@ -19,11 +22,13 @@
 }
 
 .img-container::after {
-  border: 2px solid black;
+  border: 2px solid whitesmoke;
   content: '';
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: rgba(1,100,139,1);
+  /* background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%); */
   border-radius: 50%;
-  opacity: 70%;
+  /* opacity: 70%; */
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -33,7 +38,7 @@
 }
 
 .img-container img {
-  border: 1px solid black;
+  border: 0.5px solid whitesmoke;
   border-radius: 50%;
   object-fit: cover;
   height: 110px;
@@ -60,8 +65,15 @@
   z-index: 1;
 }
 
+
+/*--------------------------------
+  Music Container
+ ------------------------------ */
+/*--------------------------------
+  Button
+ ------------------------------ */
 .action-btn {
-  background-color: #fff;
+  background: none;
   border: 0;
   color: #dfdbdf;
   font-size: 20px;
@@ -77,23 +89,49 @@
 
 .action-btn:focus {outline: 0;}
 
+
 .music-info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background: rgb(0,212,255);
+  background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%);
   border-radius: 15px 15px 0 0;
+  border-top: 3px solid whitesmoke;
+  border-left: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
   position: absolute;
   top: 0;
-  left: 20px;
-  width: calc(100% - 40px);
-  padding: 10px 10px 10px 150px;
-  opacity: 0;
+  left: -2.9px;
+  /* width: calc(100% - 40px); */
+  width: 101.6%;
+  padding: 10px 10px 0 160px;
+  opacity: 0%;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 0;
 }
 
+.music.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+
+.music-info h4 {
+  font-size: 2rem;
+  padding-top: 15px;
+}
+
+/*--------------------------------
+  Button END
+ ------------------------------ */
+
+
+ /*--------------------------------
+  Music info
+ ------------------------------ */
+
 .music-container.play .music-info {
   opacity: 1;
-  transform: translateY(-60%);
+  transform: translateY(-80%);
 }
 
 .music-info h4 {margin: 0;}
@@ -104,16 +142,17 @@
   cursor: pointer;
   margin: 10px 0;
   height: 4px;
-  width: 100%;
+  width: 83%;
 }
 
 .progress {
-  background-color: #fe8daa;
+  background-color: yellowgreen;
   border-radius: 5px;
   height: 100%;
   width: 0%;
   transition: width 0.1s linear;
 }
+
 
 .navigation {
   display: flex;
