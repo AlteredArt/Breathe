@@ -1,45 +1,40 @@
 /*--------------------------------
  Circles
  ------------------------------ */
-const circlesContainer = document.getElementsByClassName("container");
-let circleText = document.getElementsByClassName("circle-text");
-
-const totalTime = 7500;
-const breatheTime = (totalTime / 5) * 2;
-const holdTime = totalTime / 5;
-
-console.log(breatheTime, holdTime);
-console.log("hello")
-
-breathe();
-
-function breathe() {
-  circleText.innerHTML = "!BREATHE IN!";
-  circlesContainer.className = "container grow";
-  console.log('in')
-
-  setTimeout(() => {
-    circleText.innerText = 'HOLD';
-    console.log('hold')
-
-
-    setTimeout(() => {
-      circleText.innerText = '*breathe out*';
-      console.log('out')
-
-      circlesContainer.className = 'container shrink';
-    }, holdTime);
-  }, breatheTime);
-  console.log('confimr');
-}
+//const circlesContainer = document.getElementsByClassName('container');
+//let circleText = document.getElementsByClassName("circle-text");
+//
+//const totalTime = 7500;
+//const breatheTime = (totalTime / 5) * 2;
+//const holdTime = totalTime / 5;
+//
+//
+//breathe();
+//
+//function breathe() {
+//  circleText.innerHTML = "!BREATHE IN!";
+//  circlesContainer.className = "container grow";
+//
+//  setTimeout(() => {
+//    circleText.innerText = 'HOLD';
+//
+//    setTimeout(() => {
+//      circleText.innerText = '*breathe out*';
+//      circlesContainer.className = 'container shrink';
+//    }, holdTime);
+//  }, breatheTime);
+//
+//}
 
 
-setInterval(breatheTime, totalTime);
+//setInterval(breatheTime, totalTime);
 /*--------------------------------
  Circles END
  ------------------------------ */
 
-
+/*--------------------------------
+ Music
+ ------------------------------ */
 const musicContainer = document.getElementById('music-container');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
@@ -52,7 +47,7 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ['focus', 'relax', 'sleep'];
+const songs = ['focus', 'relax', 'sleep', 'minuet', 'machine'];
 
 // Keep track of song
 let songIndex = 2;
@@ -150,3 +145,6 @@ progressContainer.addEventListener('click', setProgress);
 
 // Song ends
 audio.addEventListener('ended', nextSong);
+/*--------------------------------
+ Music END
+ ------------------------------ */
