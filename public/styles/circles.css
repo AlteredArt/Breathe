@@ -3,8 +3,7 @@
 
 /*p { font-size: 25px;}*/
 
-/* @media(min-width:420px) { */
-/*
+
 .container {
   display: flex;
   align-items: center;
@@ -15,7 +14,6 @@
   width: 300px;
   position: relative;
   transform: scale(1);
-   padding-top: 180px; 
 }
 
 .black-circle {
@@ -74,18 +72,18 @@
 }
 
 .container.grow {animation: grow 3s linear forwards;}
+  
   @keyframes grow {
     from {transform: scale(1);}
     to {transform: scale(1.2);}
   }
 
 .container.shrink { animation: shrink 3s linear forwards;}
+  
   @keyframes shrink {
     from {transform: scale(1.2);}
     to {transform: scale(1);}
   }
-*/
-
 
 
 
@@ -238,5 +236,3 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(2,0,36,1) 100%);
 
 
 /*Resources1× 0.5× 0.25×Rerun*/
-
-   
