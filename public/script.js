@@ -28,6 +28,18 @@
 
 
 //setInterval(breatheTime, totalTime);
+//Replace Text function		 
+$(function () { 
+  let count = 0; 
+  let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"]; 
+  setInterval(function () { 
+    count++; 
+    $("#word").fadeOut(500, function () { 
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500); 
+    }); 
+  }, 3000, 100, 200); 
+}); 
+//End Replace Text function
 /*--------------------------------
  Circles END
  ------------------------------ */
