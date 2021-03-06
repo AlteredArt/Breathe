@@ -1,12 +1,9 @@
 /*--------------------------------
  Circles
  ------------------------------ */
-//const circlesContainer = document.getElementsByClassName('container');
-//let circleText = document.getElementsByClassName("circle-text");
-//
 //const totalTime = 7500;
 //const breatheTime = (totalTime / 5) * 2;
-//const holdTime = totalTime / 5;
+//const holdTime = totalTime / 4;
 //
 //
 //breathe();
@@ -25,10 +22,27 @@
 //  }, breatheTime);
 //
 //}
+//let word = document.getElementById('word');
+//
+//function breathe() {
+//  //	let c = 0;
+//  //	let phrases = ['help', 'me', 'please'];
+//  word.innerHTML = "BREATHE IN!";
+//  setTimeout(() => {
+//    word.innerHTML = '~Hold~';
+//
+//    setTimeout(() => {
+//      word.innerText = "breathe out";
+//    }, holdTime)
+//  }, breatheTime);
+//  //breathe();
+//	setInterval(breatheTime, totalTime);
+//}
+//
 
 
-//setInterval(breatheTime, totalTime);
-//Replace Text function		 
+
+//breathe();
 $(function () { 
   let count = 0; 
   let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"]; 
@@ -37,9 +51,10 @@ $(function () {
     $("#word").fadeOut(500, function () { 
       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500); 
     }); 
-  }, 3000, 100, 200); 
+  }, 2000, 100, 2000); 
 }); 
-//End Replace Text function
+
+
 /*--------------------------------
  Circles END
  ------------------------------ */
@@ -120,7 +135,10 @@ function nextSong() {
 
 // Update progress bar
 function updateProgress(e) {
-  const { duration, currentTime } = e.srcElement;
+  const {
+    duration,
+    currentTime
+  } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
 }
