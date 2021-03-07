@@ -51,10 +51,11 @@ $(function () {
     $("#word").fadeOut(500, function () { 
       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500); 
     }); 
-  }, 2000, 100, 2000); 
+  }, 3000, 2000, 1000); 
 }); 
 
 
+//2000, 100, 2000
 /*--------------------------------
  Circles END
  ------------------------------ */
