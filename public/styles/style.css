@@ -99,6 +99,10 @@ body {
   line-height: 60px;
   justify-content: center;
 }
+.header p {
+  font-size: 2rem;
+  line-height: 45px;
+}
 
 /*--------------------------------
  Word
