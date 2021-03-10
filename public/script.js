@@ -5,18 +5,12 @@ const totalTime = 7500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 4;
 
-
-
 // function breathe() {
 //   words.innerText = "!BREATHE IN!";
-
-
 //   setTimeout(() => {
 //     words.innerText = 'HOLD';
-
 //     setTimeout(() => {
 //       words.innerText = '*breathe out*';
-
 //     }, holdTime);
 //   }, breatheTime);
 
@@ -25,7 +19,6 @@ const holdTime = totalTime / 4;
 // }
 // breathe();
 // let word = document.getElementById('word');
-
 // function breathe() {
 //   //	let c = 0;
 //   //	let phrases = ['help', 'me', 'please'];
@@ -45,23 +38,20 @@ const holdTime = totalTime / 4;
 
 // $(function () {
 //   let words = document.getElementById('word');
-
 //   setInterval(function () {
 //     words.innerHTML = "win"
 //     setTimeout(function () {
 //       words.innerHTML = "cool"
 //       setTimeout(function () {
 //         words.innerHTML = "breathe out!"
-
 //       }, 3000);
 //     }, 3000);
 //   }, 6000);
-
 // });
-
-
-
 // breathe();
+
+
+
 $(function () {
   let count = 0;
   let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
