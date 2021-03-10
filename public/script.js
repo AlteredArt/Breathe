@@ -1,58 +1,67 @@
 /*--------------------------------
  Circles
  ------------------------------ */
-//const totalTime = 7500;
-//const breatheTime = (totalTime / 5) * 2;
-//const holdTime = totalTime / 4;
-//
-//
-//breathe();
-//
-//function breathe() {
-//  circleText.innerHTML = "!BREATHE IN!";
-//  circlesContainer.className = "container grow";
-//
-//  setTimeout(() => {
-//    circleText.innerText = 'HOLD';
-//
-//    setTimeout(() => {
-//      circleText.innerText = '*breathe out*';
-//      circlesContainer.className = 'container shrink';
-//    }, holdTime);
-//  }, breatheTime);
-//
-//}
-//let word = document.getElementById('word');
-//
-//function breathe() {
-//  //	let c = 0;
-//  //	let phrases = ['help', 'me', 'please'];
-//  word.innerHTML = "BREATHE IN!";
-//  setTimeout(() => {
-//    word.innerHTML = '~Hold~';
-//
-//    setTimeout(() => {
-//      word.innerText = "breathe out";
-//    }, holdTime)
-//  }, breatheTime);
-//  //breathe();
-//	setInterval(breatheTime, totalTime);
-//}
-//
+const totalTime = 7500;
+const breatheTime = (totalTime / 5) * 2;
+const holdTime = totalTime / 4;
+
+// function breathe() {
+//   words.innerText = "!BREATHE IN!";
+//   setTimeout(() => {
+//     words.innerText = 'HOLD';
+//     setTimeout(() => {
+//       words.innerText = '*breathe out*';
+//     }, holdTime);
+//   }, breatheTime);
+
+
+//   setInterval(breathe, totalTime);
+// }
+// breathe();
+// let word = document.getElementById('word');
+// function breathe() {
+//   //	let c = 0;
+//   //	let phrases = ['help', 'me', 'please'];
+//   word.innerHTML = "BREATHE IN!";
+//   setTimeout(() => {
+//     word.innerHTML = '~Hold~';
+
+//     setTimeout(() => {
+//       word.innerText = "breathe out";
+//     }, holdTime)
+//   }, breatheTime);
+//   breathe();
+//   setInterval(breathe, totalTime);
+// }
+// breathe();
+
+
+// $(function () {
+//   let words = document.getElementById('word');
+//   setInterval(function () {
+//     words.innerHTML = "win"
+//     setTimeout(function () {
+//       words.innerHTML = "cool"
+//       setTimeout(function () {
+//         words.innerHTML = "breathe out!"
+//       }, 3000);
+//     }, 3000);
+//   }, 6000);
+// });
+// breathe();
 
 
 
-//breathe();
-$(function () { 
-  let count = 0; 
-  let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"]; 
-  setInterval(function () { 
-    count++; 
-    $("#word").fadeOut(500, function () { 
-      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500); 
-    }); 
-  }, 3000, 2000, 1000); 
-}); 
+$(function () {
+  let count = 0;
+  let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(500, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
+    });
+  }, 3000, 2000, 1000);
+});
 
 
 //2000, 100, 2000
