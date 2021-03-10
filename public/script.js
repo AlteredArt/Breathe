@@ -43,35 +43,35 @@ const holdTime = totalTime / 4;
 // breathe();
 
 
-$(function () {
-  let words = document.getElementById('word');
-
-  setInterval(function () {
-    words.innerHTML = "win"
-    setTimeout(function () {
-      words.innerHTML = "cool"
-      setTimeout(function () {
-        words.innerHTML = "breathe out!"
-
-      }, 3000);
-    }, 3000);
-  }, 6000);
-
-});
-
-
-
-//breathe();
 // $(function () {
-//   let count = 0;
-//   let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
+//   let words = document.getElementById('word');
+
 //   setInterval(function () {
-//     count++;
-//     $("#word").fadeOut(500, function () {
-//       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
-//     });
-//   }, 3000, 2000, 1000);
+//     words.innerHTML = "win"
+//     setTimeout(function () {
+//       words.innerHTML = "cool"
+//       setTimeout(function () {
+//         words.innerHTML = "breathe out!"
+
+//       }, 3000);
+//     }, 3000);
+//   }, 6000);
+
 // });
+
+
+
+// breathe();
+$(function () {
+  let count = 0;
+  let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
+  setInterval(function () {
+    count++;
+    $("#word").fadeOut(500, function () {
+      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
+    });
+  }, 3000, 2000, 1000);
+});
 
 
 //2000, 100, 2000
