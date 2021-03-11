@@ -121,12 +121,9 @@ function pauseSong() {
 function prevSong() {
   songIndex--;
 
-  if (songIndex < 0) {
-    songIndex = songs.length - 1;
-  }
+  if (songIndex < 0) { songIndex = songs.length - 1; }
 
   loadSong(songs[songIndex]);
-
   playSong();
 }
 
@@ -139,7 +136,6 @@ function nextSong() {
   }
 
   loadSong(songs[songIndex]);
-
   playSong();
 }
 
