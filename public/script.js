@@ -1,9 +1,44 @@
 /*--------------------------------
  Circles
  ------------------------------ */
-const totalTime = 7500;
-const breatheTime = (totalTime / 5) * 2;
-const holdTime = totalTime / 4;
+// const totalTime = 7500;
+// const breatheTime = (totalTime / 5) * 2;
+// const holdTime = totalTime / 4;
+let words = document.getElementById('word');
+
+// $(document).ready(function () {
+//   setInterval(function () {
+//     words.innerHTML = "we";
+//   }, 1000);
+
+//   setTimeout(function () {
+//     setInterval(function () {
+//       words.innerHTML = "won";
+//     }, 2000);
+//     setTimeout(function () {
+//       setInterval(function () {
+//         words.innerHTML = "right";
+//       }, 2000);
+//     }, 500);
+//   }, 500);
+
+// });
+
+var a = 0;
+setInterval(function () {
+  if (a == 0) {
+    one();
+    a++;
+  }
+}, 2500);
+
+setInterval(function () {
+  two();
+  a = 0;
+}, 5000);
+
+function one() { console.log('hello'); }
+function two() { console.log('now'); }
 
 // function breathe() {
 //   words.innerText = "!BREATHE IN!";
@@ -52,16 +87,16 @@ const holdTime = totalTime / 4;
 
 
 
-$(function () {
-  let count = 0;
-  let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
-  setInterval(function () {
-    count++;
-    $("#word").fadeOut(500, function () {
-      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
-    });
-  }, 3000, 2000, 1000);
-});
+// $(function () {
+//   let count = 0;
+//   let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
+//   setInterval(function () {
+//     count++;
+//     $("#word").fadeOut(500, function () {
+//       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
+//     });
+//   }, 3000, 2000, 1000);
+// });
 
 
 //2000, 100, 2000
