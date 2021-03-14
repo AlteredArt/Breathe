@@ -1,12 +1,6 @@
 
 @media(max-width: 600px){
 
-    .header-container {
-        width: 320px;
-        display: flex;
-        justify-content: center;
-      }
-
       .music-container {
         flex-direction: column;
         padding: 30px 30px;
