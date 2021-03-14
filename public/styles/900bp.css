@@ -7,6 +7,7 @@
     padding-bottom: 1rem;
     line-height: 50px;
   }
+
   h2 {
     margin: 0 15px;
     padding: 3px;
@@ -14,5 +15,5 @@
     text-align: center;
   }
 
-
+  .header-container {width: 70%;}
 }
