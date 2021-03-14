@@ -5,8 +5,7 @@
   .header h1 {
     margin: 0;
     padding-bottom: 1rem;
-    font-size: 2rem;
-    line-height: 40px;
+    line-height: 50px;
   }
   h2 {
     margin: 0 15px;
@@ -14,4 +13,5 @@
     font-size: 30px;
     text-align: center;
   }
+
 }
