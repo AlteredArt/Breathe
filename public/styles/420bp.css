@@ -2,7 +2,8 @@
 
 @media(max-width: 420px){
 
-  .header h1 {line-height: 21px;}
+  .header-container {width: 90%;}
+  /* .header h1 {line-height: 21px;} */
   
   .header h1 {font-size: 1.2rem;}
  
