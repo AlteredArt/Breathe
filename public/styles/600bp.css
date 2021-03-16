@@ -18,6 +18,7 @@
         line-height: 30px;
       }
 
+      .header-container {width: 80%;}
       .word-container {
           max-width: 320px;
           margin-bottom: 160px;
