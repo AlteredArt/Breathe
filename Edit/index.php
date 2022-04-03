@@ -15,10 +15,13 @@ else {
 <html>
 <head>
 	<title>Welcome to BLANK!</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	BLANK!
+	<div id="nowPlayingBarContainer">
+
+	</div>
 </body>
 
 </html>
