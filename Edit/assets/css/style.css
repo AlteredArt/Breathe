@@ -4,5 +4,91 @@
     position: fixed;
     background-color: #202020;
     min-width: 620px;
-    height: 100px; //remove later
 }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#nowPlayingBar {
+    display: flex;
+    height: 90px;
+    padding: 16px;
+    box-sizing: border-box;
+   
+}
+
+#nowPlayingLeft, #nowPlayingRight {
+    width: 30%;
+    min-width: 180px;
+}
+
+
+#nowPlayingCenter {
+    width: 40%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nowPlayingBar .content {width: 100%;}
+
+.playerControls .buttons {
+    margin: 0 auto;
+    display: table;
+}
+
+.controlButton {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+}
+
+.controlButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.controlButton.play img, .controlButton.pause img {
+    width: 32px;
+    height: 32px;
+}
+
+.controlButton:hover{cursor: pointer;}
+
+.progressTime {
+    color: #808080;
+    font-size: 11px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.playBackBar {
+    display: flex;
+}
+
+.progressBar {
+    height: 12px;
+    display: inline-flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.progressBarBg{
+    background-color: #404040;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.progress {
+   background-color: #a0a0a0;
+   height: 4px;
+   width: 0;
+   border-radius: 2px;
+}
+
+.playBackBar .progressBar { margin-top: 3px;}
