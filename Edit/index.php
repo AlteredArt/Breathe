@@ -22,7 +22,7 @@ else {
 	<div id="nowPlayingBarContainer">
 		<div id="nowPlayingBar">
 			<div id="nowPlayingLeft">
-				<div class="content">
+				<div class="content albumArtwork">
 					<span class="albumLink">
 						<img src="./assets/images/icons/volume-mute.png" alt="">
 					</span>

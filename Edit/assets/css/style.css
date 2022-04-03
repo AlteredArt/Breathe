@@ -92,3 +92,11 @@ html, body {
 }
 
 .playBackBar .progressBar { margin-top: 3px;}
+
+#nowPlayingLeft .albumArtwork {
+    margin-right: 15px;
+    height: 100%;
+    float: left;
+    max-width: 57px;
+    background-color: aqua;
+}
