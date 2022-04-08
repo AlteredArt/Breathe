@@ -3,16 +3,17 @@ include("includes/includedFiles.php");
 ?>
 
 <div class="userDetails">
+<h1><?php echo "Welcome" . " " . $userLoggedIn->getFirstAndLastName(); ?></h1>
 
 	<div class="container borderBottom">
-		<h2>EMAIL</h2>
+		<h2>Update your Email</h2>
 		<input type="text" class="email" name="email" placeholder="Email address..." value="<?php echo $userLoggedIn->getEmail(); ?>">
 		<span class="message"></span>
 		<button class="button" onclick="updateEmail('email')">SAVE</button>
 	</div>
 
 	<div class="container">
-		<h2>PASSWORD</h2>
+		<h2>Update your password</h2>
 		<input type="password" class="oldPassword" name="oldPassword" placeholder="Current password">
 		<input type="password" class="newPassword1" name="newPassword1" placeholder="New password">
 		<input type="password" class="newPassword2" name="newPassword2" placeholder="Confirm password">

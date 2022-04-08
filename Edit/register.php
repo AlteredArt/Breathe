@@ -50,8 +50,14 @@
 	<div id="background">
 
 		<div id="loginContainer">
+		<div id="loginText">
+				<h1>Welcome to Breathe!</h1>
+				<h2>Relax, Rest, Or Focus</h2>
+			</div>
+		
 
 			<div id="inputContainer">
+		
 				<form id="loginForm" action="register.php" method="POST">
 					<h2>Login to your account</h2>
 					<p>
@@ -72,8 +78,7 @@
 					
 				</form>
 
-
-
+		
 				<form id="registerForm" action="register.php" method="POST">
 					<h2>Create your free account</h2>
 					<p>
@@ -132,15 +137,7 @@
 
 			</div>
 
-			<div id="loginText">
-				<h1>Get great music, right now</h1>
-				<h2>Listen to loads of songs for free</h2>
-				<ul>
-					<li>Discover music you'll fall in love with</li>
-					<li>Create your own playlists</li>
-					<li>Follow artists to keep up to date</li>
-				</ul>
-			</div>
+
 
 		</div>
 	</div>

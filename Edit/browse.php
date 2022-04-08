@@ -2,8 +2,8 @@
 include("includes/includedFiles.php"); 
 ?>
 
-<h1 class="pageHeadingBig">You Might Also Like</h1>
-
+<h1 class="pageHeadingBig">Welcome To Breathe!</h1>
+<hr/>
 <div class="gridViewContainer">
 
 	<?php
