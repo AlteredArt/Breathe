@@ -110,7 +110,7 @@ body {
     text-align: center;
 }
 
-.playbackBar {display: flex;
+.playbackBar {display: flex;}
 
 
 .progressBar {
