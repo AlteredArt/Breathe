@@ -101,9 +101,7 @@ body {
 	height: 32px;
 }
 
-.controlButton:hover {
-	cursor: pointer;
-}
+.controlButton:hover {cursor: pointer;}
 
 .progressTime {
 	color: #a0a0a0;
@@ -112,9 +110,8 @@ body {
     text-align: center;
 }
 
-.playbackBar {
-	display: flex;
-}
+.playbackBar {display: flex;
+
 
 .progressBar {
 	width: 100%;
@@ -137,9 +134,7 @@ body {
     border-radius: 2px;
 }
 
-.playbackBar .progressBar {
-	margin-top: 3px;
-}
+.playbackBar .progressBar {margin-top: 3px;}
 
 #nowPlayingLeft .albumArtwork {
 	height: 100%;
@@ -149,9 +144,7 @@ body {
     background-size: cover;
 }
 
-#nowPlayingLeft .trackInfo {
-	display: table;
-}
+#nowPlayingLeft .trackInfo {display: table;}
 
 #nowPlayingLeft .trackInfo .trackName {
 	margin: 6px 0;
@@ -170,9 +163,7 @@ body {
     right: 0;
 }
 
-.volumeBar .progressBar {
-	width: 125px;
-}
+.volumeBar .progressBar {width: 125px;}
 
 #topContainer {
 	min-height: 100%;
@@ -195,13 +186,8 @@ body {
     -ms-flex-direction: column;
 }
 
-.logo {
-    margin-bottom: 15px;
-}
-
-.logo img {
-    width: 82px;
-}
+.logo {margin-bottom: 15px;}
+.logo img {width: 82px;}
 
 .navBar .group {
     border-top: 1px solid #a0a0a0;
@@ -222,9 +208,7 @@ body {
     text-decoration: none;
 }
 
-.navItemLink:hover {
-    color: #ffffff;
-}
+.navItemLink:hover {color: #ffffff;}
 
 .navItemLink .icon {
     position: absolute;
@@ -239,9 +223,7 @@ body {
     width: calc(100% - 220px);
 }
 
-#mainContent {
-    padding: 0 20px;
-}
+#mainContent {padding: 0 20px;}
 
 .pageHeadingBig {
     padding: 20px;
@@ -257,9 +239,7 @@ body {
     margin-bottom: 20px;
 }
 
-.gridViewItem img {
-    width: 100%;
-}
+.gridViewItem img {width: 100%;}
 
 .gridViewInfo {
     font-weight: 300;
@@ -270,9 +250,7 @@ body {
     white-space: nowrap;
 }
 
-.gridViewItem a {
-    text-decoration: none;
-}
+.gridViewItem a {text-decoration: none;}
 
 .entityInfo {
     padding: 40px 0 10px 0;
@@ -286,9 +264,7 @@ body {
     max-width: 250px;
 }
 
-.entityInfo .leftSection img {
-    width: 100%;
-}
+.entityInfo .leftSection img {width: 100%;}
 
 .entityInfo .rightSection {
     width: 70%;
@@ -297,18 +273,14 @@ body {
     box-sizing: border-box;
 }
 
-.entityInfo .rightSection h2 {
-    margin-top: 0px;
-}
+.entityInfo .rightSection h2 {margin-top: 0px;}
 
 .entityInfo .rightSection p {
     color: #939393;
     font-weight: 200;
 }
 
-.tracklist {
-    padding: 0;
-}
+.tracklist {padding: 0;}
 
 .tracklistRow {
     height: 40px;
@@ -321,9 +293,7 @@ body {
     font-weight: 200;
 }
 
-.tracklistRow:hover {
-    background-color: #282828;
-}
+.tracklistRow:hover {background-color: #282828;}
 
 .tracklistRow .trackCount {
     width: 8%;
