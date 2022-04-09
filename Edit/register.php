@@ -19,7 +19,7 @@
 	<head>
 		<title>Welcome to Breathe!</title>
 
-		<link rel="stylesheet" type="text/css" href="./assets/css/Master/import.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/Master/masterCss.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="assets/js/register.js"></script>
@@ -47,10 +47,10 @@
 		?>
 		
 
-		<div id="background">
+		<div id="background" class="ta-center">
 
 			<div id="loginContainer">
-			<div id="loginText">
+			<div id="loginText" >
 					<h1>Welcome to Breathe!</h1>
 					<h2>Relax, Rest, Or Focus</h2>
 				</div>
