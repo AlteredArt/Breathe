@@ -4,12 +4,15 @@
 
 @import "./Master/1reset.css";
 @import "./Master/2text.css";
-@import "./Master/3style.css";
-@import "./Master/4mass.css";
-@import "./Master/5positioning.css";
-@import "./Master/6flex_grid.css";
-@import "./Master/7flex.css";
-@import "./Master/8grid.css";
+@import "./Master/3color.css";
+@import "./Master/4images.css";
+@import "./Master/5mass.css";
+@import "./Master/6positioning.css";
+@import "./Master/7flex_grid.css";
+@import "./Master/8flex.css";
+@import "./Master/9grid.css";
+@import "./Master/xmain.css";
+
 
 
 /* @import "/Css/MediaQuery/master576.css"; */

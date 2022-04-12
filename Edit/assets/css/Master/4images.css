@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+>>> IMAGES
+--------------------------------------------------------------*/
+.i-1 {
+    background-image: url("photographer.jpg") !important; /* The image used */
+    background-color: #cccccc !important; /* Used if the image is unavailable */
+    height: 500px !important; /* You must set a specified height */
+    background-position: center !important; /* Center the image */
+    background-repeat: no-repeat !important; /* Do not repeat the image */
+    background-size: cover !important; /* Resize the background image to cover the entire container */
+}
+
+/* OBJECT-FIT */
+.ofc {width: 200px !important; height: 300px !important; object-fit: contain !important;}
+.off {width: 200px !important; height: 300px !important; object-fit: fill !important;}
+.ofn {width: 200px !important; height: 300px !important; object-fit: none !important;}
+
+/* BACKGROUND-ATTACHMENT (PARALLAX) */
+.bgs {background-attachment: scroll !important;}
+.bgf {background-attachment: fixed !important;}
+.bgl {background-attachment: local !important;}
+

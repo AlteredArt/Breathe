@@ -2,13 +2,13 @@
 >>> GRID
 --------------------------------------------------------------*/
   
-  @mixin grid($count, $space) {
+  /* @mixin grid($count, $space) {
     display: grid;
     grid-template-columns: repeat($count, minmax(0, $space));
-  }
+  } */
 
   /* AUTO-FILL: FILLS THE ROW WITH AS MANY COLUMNS AS IT CAN FIT (repeat(auto-fill, minmax(auto, size)); */
-  /* REPEAT: REPEATS X AMOUNT OF TIME (repeat(Xtimes, size) */
+  /* REPEAT: REPEATS X AMOUNT OF TIME (repeat(X times, size) */
   /* AUTO-FIT: FITS CURRENTLY AVAILABLE COLUMNS INTO THE SPACE SO THEY EXPAND EVENLY (repeat(auto-fit, minmax(size, fr))*/
   /* MINMAX: TAKES THE SMALLEST OF TWO NUMBER (minmax( size1, size2)) */
   /* GRID-AREA (ROW-START / COLUMN-START / ROW-END / COLUMN-END) * */

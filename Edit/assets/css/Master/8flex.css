@@ -7,7 +7,6 @@
   .dif {display: inline-flex !important;}
 
   /* FLEX-DIRECTION */
-  /* If flex-direction is set to reverse swap flex-start & flex-end */
   .fdr {flex-direction: row !important;}
   .fdc {flex-direction: column !important;}
   .fdrr {flex-direction: row-reverse !important;}
@@ -19,7 +18,7 @@
   .fnw {flex-wrap: nowrap !important;}
   .fwr {flex-wrap: wrap-reverse !important;}
 
-  /* FLEX-FLOW - (Define flex-direction and flex-wrap in one line) */
+  /* FLEX-FLOW - (DIRECTION / WRAP) */
   .ffrw {flex-flow: row wrap !important;}
   .ffcw {flex-flow: column wrap !important;}
   .ffrnr {flex-flow: row nowrap !important;}
@@ -31,19 +30,13 @@
   .fg-2 {flex-grow: 2 !important;}
   .fg-3 {flex-grow: 3 !important;}
 
-  /* FLEX-SHRINK */
-  /* DEFAULT IS SET TO 1 / SHRINK 0 DOESNT ALLOW THEM TO SHRINK */
-  .fs-0 {flex-shrink: 0 !important;}
+  /* FLEX-SHRINK (DEFAULT IS SET TO 1)*/
+  .fs-0 {flex-shrink: 0 !important;} /* DOESNT ALLOW THEM TO SHRINK */
   .fs-1 {flex-shrink: 1 !important;}
   .fs-2 {flex-shrink: 2 !important;}
   .fs-3 {flex-shrink: 3 !important;}
 
-  /* FLEX-BASIS */
-  /* ESSENTIALLY THE WIDTH AND HEIGHT PROPERTY FOR FLEX (AUTO IS DEFAULT)*/
-  /* CONTAINER HAS A) SPACE LEFT TO OR B) IS OVERFULL - LOOK AT A) FLEX-GROW AND B) FLEX-SHRINK */
-  /* CALCULATE PORTIONS EACH ITEMS WILL GROW / SHRINK AND THAT TO THE BASE SIZE */
-  /* MARIN AND PADDING WILL AFFECT THE SIZE */
-  /* GROW / SHRINK / FLEX BASIS */
+  /* FLEX BASIS (GROW / SHRINK) */
   .fb-1 {flex-basis: 1 1 25% !important;}
   .fb-0 {flex-basis: 0px !important;}
   .fb-100 {flex-basis: 100px !important;}
@@ -53,6 +46,3 @@
   .fb-fifth {flex-basis: 20% !important;}
   .fb-sixth {flex-basis: 16.66666% !important;}
 
-/*--------------------------------------------------------------
->>> FLEX END
---------------------------------------------------------------*/

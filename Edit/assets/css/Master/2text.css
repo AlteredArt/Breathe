@@ -1,66 +1,54 @@
 /*--------------------------------------------------------------
 >>> TEXT
 --------------------------------------------------------------*/
+body { 
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  /* font-size: calc(1rem + 1vw); */
+}
 
-/* Figure this out */
-  /* H1: 2.5REM / 26PX */ h1 {font-size: calc(1.375rem + 1.5vw);}
-  @media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}}
-  /* H2: 2REM / 24PX */ h2 {font-size: calc(1.325rem + 0.9vw);}
-  @media (min-width: 1200px) {h2 {font-size: 2rem !important;}}
-  /* H3: 1.75REM /22PX */ h3 {font-size: calc(1.3rem + 0.6vw);}
-  @media (min-width: 1200px) {h3 {font-size: 1.75rem !important;}}
-  /* H4: 1.5REM / 20PX */ h4 {font-size: calc(1.275rem + 0.3vw);}
-  @media (min-width: 1200px) {h4 {font-size: 1.5rem !important;}}
-  /* H5: 1.25REM / 18PX */ h5 {font-size: 1.25rem !important;}
-  /* H6: 1REM / 16PX */ h6 {font-size: 1rem !important;}
-  /* P: 1REM / 16PX */
+/* H1: 2.5REM / 26PX */ h1 {font-size: calc(1.375rem + 1.5vw);}
+@media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}}
+/* H2: 2REM / 24PX */ h2 {font-size: calc(1.325rem + 0.9vw);}
+@media (min-width: 1200px) {h2 {font-size: 2rem !important;}}
+/* H3: 1.75REM /22PX */ h3 {font-size: calc(1.3rem + 0.6vw);}
+@media (min-width: 1200px) {h3 {font-size: 1.75rem !important;}}
+/* H4: 1.5REM / 20PX */ h4 {font-size: calc(1.275rem + 0.3vw);}
+@media (min-width: 1200px) {h4 {font-size: 1.5rem !important;}}
+/* H5: 1.25REM / 18PX */ h5 {font-size: 1.25rem !important;}
+/* H6: 1REM / 16PX */ h6 {font-size: 1rem !important;}
+/* P: 1REM / 16PX */
 
-  /* H1 - H6 & P */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    margin: 2rem 1rem;
-    font-weight: 500;
-    line-height: 1.2;
-  }
+/* H1 - H6 & P */
+h1, h2, h3, h4, h5, h6 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  margin: 2rem 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
 
-  /* LINKS */
-  a {color: #4e4e25 !important; text-decoration: underline !important;}
-  a:hover {color: #024dbc !important;} /* hover link*/
-  a:visited {color: red !important;}   /* visited link */
-  a:active {color: blue !important;}   /* selected link */
+/* Text-Align */
+.tal {text-align: left !important;}
+.tar {text-align: right !important;}
+.tac {text-align: center !important;}
+.wb {word-wrap: break-word !important; word-break: break-word !important;}
 
-    /* FONT-WEIGHT */
-    .fwb {font-weight: bolder !important;}
+/* TEXT-TRANSFORM */
+.ttl {text-transform: lowercase !important;}
+.ttu {text-transform: uppercase !important;}
+.ttc {text-transform: capitalize !important;}
+
+/* TEXT-DECORATION */
+.tdn {text-decoration: none !important;}
+.i {font-style: italic !important;}
+.b {font-weight: bolder !important;}
+.tdu {text-decoration: underline !important;}
+.tdlt {text-decoration: line-through !important;}
+.tdo {text-decoration: overline !important;}
+.tdul {text-decoration: underline overline !important;}
 
 
 
-    /* TEXT-TRANSFORM */
-    .tt-lowercase {text-transform: lowercase !important;}
-    .tt-uppercase {text-transform: uppercase !important;}
-    .tt-capitalize {text-transform: capitalize !important;}
-  
-    /* Text-Align */
-    .ta-left {text-align: left !important;}
-    .ta-right {text-align: right !important;}
-    .ta-center {text-align: center !important;}
-  
-    /* TEXT-DECORATION */
-    .td-none {text-decoration: none !important;}
-    .td-underline {text-decoration: underline !important;}
-    .td-line-through {text-decoration: line-through !important;}
-    .td-overline {text-decoration: overline !important;}
-    .td-under-over {text-decoration: underline overline !important;}
-   
-    /* FONT-STYLE */
-    .italic {font-style: italic !important;}
-  
-    /* TEXT-SHADOW */
-    .ts {text-shadow: 2px 2px red !important;}
-  
-    /* TEXT-BLUR */
-    .tb {color: transparent !important; text-shadow: 0 0 5px rgba(0,0,0,0.5) !important;}
-  
-    /* TEXT-WRAP */
-    .tx-wrap {white-space: normal !important;}
-    .tx-nowrap {white-space: nowrap !important;}
-    .tx-break {word-wrap: break-word !important; word-break: break-word !important;}
+
