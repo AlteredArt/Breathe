@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+>>> COLOR
+--------------------------------------------------------------*/
+
+/* PRIMARY COLOR SCHEME */
+/* color: #212529 !important; */
+
+
+
+
+
+
+/* SECONDARY COLOR SCHEME */
+
+
+
+/* insert primary color */
+/* BOX-SHADOW */
+.bs-0 {box-shadow: none !important;}
+.bs-1 {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;}
+.bs-2 {box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;}
+.bs-3 {box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;}
+
+/* BORDER */
+/* insert color scheme */
+.b {border: 1px solid #dee2e6 !important;}
+.bt {border-top: 1px solid #dee2e6 !important;}
+.br {border-right: 1px solid #dee2e6 !important;}
+.bb {border-bottom: 1px solid #dee2e6 !important;}
+.bl {border-left: 1px solid #dee2e6 !important;}
+
+/* TEXT */
+/* insert color scheme */
+.ts {text-shadow: 2px 2px red !important;}
+a {color: #4e4e25 !important; text-decoration: underline !important;}
+a:hover {color: #024dbc !important;} /* hover link*/
+a:visited {color: red !important;}   /* visited link */
+a:active {color: blue !important;}   /* selected link */
