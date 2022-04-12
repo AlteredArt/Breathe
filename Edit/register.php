@@ -47,12 +47,13 @@
 		?>
 		
 
-		<div id="background" class="ta-center">
+		<div id="background" class="ta-center d-flex jc-center ai-center">
 
 			<div id="loginContainer">
-			<div id="loginText" >
-					<h1>Welcome to Breathe!</h1>
-					<h2>Relax, Rest, Or Focus</h2>
+				<div id="loginText" >
+					<h1 class="mb-4">Welcome to Breathe!</h1>
+					<hr class="mb-4">
+					<h2 class="mb-3">Relax, Rest, Or Focus</h2>
 				</div>
 			
 

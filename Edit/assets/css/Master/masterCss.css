@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  /* background-size: 400% 400%; */
   animation: gradient 15s ease infinite;
 }
 
@@ -272,11 +272,11 @@ body {
   body {
     margin: 0 !important;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-    font-size: 1rem !important;
+    font-size: 16px !important;
     font-weight: 400 !important;
-    line-height: 1.5 !important;
-    color: #212529 !important;
-    background-color: #fff !important;
+    line-height: 1.6 !important;
+    /* color: #212529 !important; */
+    /* background-color: #fff !important; */
     -webkit-text-size-adjust: 100% !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
   }
