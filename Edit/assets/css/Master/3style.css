@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------
+>>> STYLE
+--------------------------------------------------------------*/
+/* BODY */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #212529 !important;
+  /* background-image: linear-gradient(red, yellow, green) !important; */
+  /* background-image: radial-gradient(red, yellow, green) !important; */
+  /* font-size: calc(1rem + 1vw); */
+}
+ 
+  .bgi {background-image: url("/Assets/1.jpg") !important; background-color: #cccccc !important;}
+  .bgi-hero {
+    background-image: url("photographer.jpg") !important; /* The image used */
+    background-color: #cccccc !important; /* Used if the image is unavailable */
+    height: 500px !important; /* You must set a specified height */
+    background-position: center !important; /* Center the image */
+    background-repeat: no-repeat !important; /* Do not repeat the image */
+    background-size: cover !important; /* Resize the background image to cover the entire container */
+  }
+
+  /* OBJECT-FIT */
+  .of-contain {width: 200px !important; height: 300px !important; object-fit: contain !important;}
+  .of-fill {width: 200px !important; height: 300px !important; object-fit: fill !important;}
+  .of-none {width: 200px !important; height: 300px !important; object-fit: none !important;}
+
+  /* BACKGROUND-ATTACHMENT (PARALLAX) */
+  .bga-scroll {background-attachment: scroll !important;}
+  .bga-fixed {background-attachment: fixed !important;}
+  .bga-local {background-attachment: local !important;}
+
+  /* BACKGROUND-BLEND */
+  .bg-bm-normal{ background-blend-mode: normal !important;}
+  .bg-bm-multiply{ background-blend-mode: multiply !important;}
+  .bg-bm-screen{ background-blend-mode: screen !important;}
+  .bg-bm-overlay{ background-blend-mode: overlay !important;}
+  .bg-bm-darken{ background-blend-mode: darken !important;}
+  .bg-bm-lighten{ background-blend-mode: lighten !important;}
+  .bg-bm-color-dodge{ background-blend-mode: color-dodge !important;}
+  .bg-bm-color{ background-blend-mode: color !important;}
+  .bg-bm-luminosity{ background-blend-mode: luminosity !important;}
+  .bg-bm-saturation{ background-blend-mode: saturation !important;}
+
+
+
+
+  /* VISIBILITY */
+  .visible {visibility: visible !important;}
+  .invisible {visibility: hidden !important;}
+
+  /* OVERFLOW */
+  .of-auto {overflow: auto !important;}
+  .of-hidden {overflow: hidden !important;}
+
+  /* OPACITY */
+  .o-0 {opacity: 0.5 !important;}
+  .o-1 {opacity: 0.2 !important;}
+
+  /* DISPLAY */
+  .dn {display: none !important;}
+  .di {display: inline !important;}
+  .dib {display: inline-block !important;}
+  .db {display: block !important;}
+  .dt {display: table !important;}
+  .dtr {display: table-row !important;}
+  .dtc {display: table-cell !important;}
+
+  /* BOX-SHADOW */
+  .bs-0 {box-shadow: none !important;}
+  .bs-1 {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;}
+  .bs-2 {box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;}
+  .bs-3 {box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;}
+
+  /* BORDER */
+  .b {border: 1px solid #dee2e6 !important;}
+  .b-t {border-top: 1px solid #dee2e6 !important;}
+  .b-r {border-right: 1px solid #dee2e6 !important;}
+  .b-b {border-bottom: 1px solid #dee2e6 !important;}
+  .b-l {border-left: 1px solid #dee2e6 !important;}
+  .b-0 {border: 0 !important;}
+  .b-l-0 {border-left: 0 !important;}
+  .b-b-0 {border-bottom: 0 !important;}
+  .b-r-0 {border-right: 0 !important;}
+  .b-t-0 {border-top: 0 !important;}
+
+  /* BORDER-RADIUS */
+  .br-0 {border-radius: 0 !important;}
+  .br-1 {border-radius: 0.25rem !important;}
+  .br-2 {border-radius: 0.2rem !important;}
+  .br-3 {border-radius: 0.3rem !important;}
+  .br-4 {border-radius: 50% !important;}
+  .br-5 {border-radius: 50rem !important;}
+
+
+
+  /* BACKGROUND-OPACITY */
+  .bgo-0 {background: rgb(255, 255, 255) !important;}
+  .bgo-1 {background: rgba(255, 255, 255, 0.1) !important;}
+  .bgo-2 {background: rgba(255, 255, 255, 0.3) !important;}
+  .bgo-3 {background: rgba(255, 255, 255, 0.6) !important;}

@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+>>> FLEX
+--------------------------------------------------------------*/
+
+  /* DISPLAY */
+  .df {display: flex !important;}
+  .dif {display: inline-flex !important;}
+
+  /* FLEX-DIRECTION */
+  /* If flex-direction is set to reverse swap flex-start & flex-end */
+  .fdr {flex-direction: row !important;}
+  .fdc {flex-direction: column !important;}
+  .fdrr {flex-direction: row-reverse !important;}
+  .fdcr {flex-direction: column-reverse !important;}
+  .ff {flex: 1 1 auto !important;}
+
+  /* FLEX-WRAP */
+  .fw {flex-wrap: wrap !important;}
+  .fnw {flex-wrap: nowrap !important;}
+  .fwr {flex-wrap: wrap-reverse !important;}
+
+  /* FLEX-FLOW - (Define flex-direction and flex-wrap in one line) */
+  .ffrw {flex-flow: row wrap !important;}
+  .ffcw {flex-flow: column wrap !important;}
+  .ffrnr {flex-flow: row nowrap !important;}
+  .ffcnr {flex-flow: column nowrap !important;}
+
+  /* FLEX-GROW */
+  .fg-0 {flex-grow: 0 !important;}
+  .fg-1 {flex-grow: 1 !important;}
+  .fg-2 {flex-grow: 2 !important;}
+  .fg-3 {flex-grow: 3 !important;}
+
+  /* FLEX-SHRINK */
+  /* DEFAULT IS SET TO 1 / SHRINK 0 DOESNT ALLOW THEM TO SHRINK */
+  .fs-0 {flex-shrink: 0 !important;}
+  .fs-1 {flex-shrink: 1 !important;}
+  .fs-2 {flex-shrink: 2 !important;}
+  .fs-3 {flex-shrink: 3 !important;}
+
+  /* FLEX-BASIS */
+  /* ESSENTIALLY THE WIDTH AND HEIGHT PROPERTY FOR FLEX (AUTO IS DEFAULT)*/
+  /* CONTAINER HAS A) SPACE LEFT TO OR B) IS OVERFULL - LOOK AT A) FLEX-GROW AND B) FLEX-SHRINK */
+  /* CALCULATE PORTIONS EACH ITEMS WILL GROW / SHRINK AND THAT TO THE BASE SIZE */
+  /* MARIN AND PADDING WILL AFFECT THE SIZE */
+  /* GROW / SHRINK / FLEX BASIS */
+  .fb-1 {flex-basis: 1 1 25% !important;}
+  .fb-0 {flex-basis: 0px !important;}
+  .fb-100 {flex-basis: 100px !important;}
+  .fb-half {flex-basis: 50% !important;}
+  .fb-third {flex-basis: 33.33333% !important;}
+  .fb-fourth {flex-basis: 25% !important;}
+  .fb-fifth {flex-basis: 20% !important;}
+  .fb-sixth {flex-basis: 16.66666% !important;}
+
+/*--------------------------------------------------------------
+>>> FLEX END
+--------------------------------------------------------------*/

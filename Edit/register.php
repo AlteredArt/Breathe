@@ -1,3 +1,17 @@
+<!-- 
+?
+hr:not
+flex basis
+flex flow
+flex grow
+flex shrink
+width clamp
+font sizing and spacing based of calculations
+mixins
+themes
+flex fill -->
+
+
 <?php
 	include("includes/config.php");
 	include("includes/classes/Account.php");
@@ -18,36 +32,16 @@
 <html>
 	<head>
 		<title>Welcome to Breathe!</title>
-
-		<link rel="stylesheet" type="text/css" href="./assets/css/Master/masterCss.css">
-
+		<link rel="stylesheet" href="./assets/css/index.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="assets/js/register.js"></script>
 	</head>
+
 	<body>
-		<?php
 
-		if(isset($_POST['registerButton'])) {
-			echo '<script>
-					$(document).ready(function() {
-						$("#loginForm").hide();
-						$("#registerForm").show();
-					});
-				</script>';
-		}
-		else {
-			echo '<script>
-					$(document).ready(function() {
-						$("#loginForm").show();
-						$("#registerForm").hide();
-					});
-				</script>';
-		}
-
-		?>
 		
 
-		<div id="background" class="ta-center d-flex jc-center ai-center">
+		<div id="background" class=" ">
 
 			<div id="loginContainer">
 				<div id="loginText" >
@@ -142,6 +136,24 @@
 
 			</div>
 		</div>
+		
+		<?php
+			if(isset($_POST['registerButton'])) {
+				echo '<script>
+						$(document).ready(function() {
+							$("#loginForm").hide();
+							$("#registerForm").show();
+						});
+					</script>';
+			} else {
+				echo '<script>
+						$(document).ready(function() {
+							$("#loginForm").show();
+							$("#registerForm").hide();
+						});
+					</script>';
+			}
+		?>
 
 	</body>
 </html>
