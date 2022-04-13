@@ -1,46 +1,30 @@
-html, 
-body {
-	padding: 0;
-	margin: 0;
-	height: 100%;
-}
-
-*:focus {
-    outline: none;
-}
+/*--------------------------------------------------------------
+>>> REGISTER
+--------------------------------------------------------------*/
 
 #background {
-	/* background-color: #000; */
-    /* background-image: url(../images/mbg.mp4); */
-    /* background-position: center; */
-    /* background-size: cover; */
-    /* display: table; */
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
+hr {
+    max-width: 50%;
+    height: 4px;
+    color: blueviolet;
+    background-color: brown;
+}
 
 #loginContainer * {
-	color: #fff;
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	/* color: #fff; */
+	/* font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
 	font-weight: normal;
 	line-height: 1em;
 	box-sizing: border-box;
@@ -77,7 +61,7 @@ body {
     margin: auto;
 }
 
-#inputContainer h2 {
+#inputContainer h3 {
 	text-align: center;
 }
 
@@ -87,8 +71,8 @@ body {
 	display: block;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #fff;
+    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
     border-radius: 250px;
     padding: 20px;
     height: 27px;
@@ -99,14 +83,14 @@ body {
 #inputContainer input[type="text"]:focus,
 #inputContainer input[type="email"]:focus,
 #inputContainer input[type="password"]:focus {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
 
 
 #inputContainer label {
-	color: white;
+	color: var(--primary);
     font-size: 18px;
     margin-top: 35px;
     display: block;
@@ -115,9 +99,9 @@ body {
 
 #inputContainer button {
 	background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--primary);
     border-radius: 250px;
-    color: #fff;
+    color: var(--primary);
     display: block;
     font-size: 14px;
     letter-spacing: 1px;
@@ -128,7 +112,8 @@ body {
 
 #inputContainer button:hover {
 	cursor: pointer;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -139,9 +124,9 @@ body {
     cursor: pointer;
 }
 
-.hasAccountText {
+/* .hasAccountText {
 	text-align: center;
-}
+} */
 
 #registerForm,
 #loginForm {
@@ -153,18 +138,17 @@ body {
     /* display: table-cell; */
 }
 
-#loginText h1 {
-    /* color: #07d159; */
+/* #loginText h1 {
     text-align: center;
     color: white;
     font-size: 60px;
     font-weight: bold;
-}
+} */
 
-#loginText h2 {
+#loginText h3 {
     text-align: center;
-
     margin: 35px 0;
+    color: var(--primary);
 }
 
 

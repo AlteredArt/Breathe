@@ -1,15 +1,3 @@
-<!-- 
-?
-hr:not
-flex basis
-flex flow
-flex grow
-flex shrink
-width clamp
-font sizing and spacing based of calculations
-mixins
-themes
-flex fill -->
 
 
 <?php
@@ -31,30 +19,40 @@ flex fill -->
 
 <html>
 	<head>
-		<title>Welcome to Breathe!</title>
+		<title>Breathe</title>
 		<link rel="stylesheet" href="./assets/css/index.css">
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="assets/js/register.js"></script>
 	</head>
 
 	<body>
 
-		
-
-		<div id="background" class=" ">
+		<div id="background" >
+			
+			<div class="header_switch">
+				<label class="theme_switch" for="checkbox">
+					<input type="checkbox" id="checkbox" />
+					<div class="slider round"></div>
+				</label>
+			</div>
+			<div id="toggle">
+				<i class="indicator"></i>
+			</div>
 
 			<div id="loginContainer">
-				<div id="loginText" >
-					<h1 class="mb-4">Welcome to Breathe!</h1>
-					<hr class="mb-4">
-					<h2 class="mb-3">Relax, Rest, Or Focus</h2>
+				<div id="loginText">
+					<h1>Welcome to Breathe!</h1>
+					<hr>
+					<p>Relax, Rest, Or Focus</p>
 				</div>
 			
 
 				<div id="inputContainer">
 			
 					<form id="loginForm" action="register.php" method="POST">
-						<h2 class="c-grey">Login to your account</h2>
+						<h5 class="c-grey">Login to your account</h5>
 						<p>
 							<?php echo $account->getError(Constants::$loginFailed); ?>
 							<label for="loginUsername">Username</label>
@@ -92,7 +90,7 @@ flex fill -->
 						<p>
 							<?php echo $account->getError(Constants::$lastNameCharacters); ?>
 							<label for="lastName">Last name</label>
-							<input id="lastName" name="lastName" type="text" placeholder="e.g. Simpson" value="<?php getInputValue('lastName') ?>" required>
+							<input id="lastName" name="lastName" type="text" placeholder="e.g. Simpson" value="<?php getInputValue('lastName') ?>" class="br" required>
 						</p>
 
 						<p>
@@ -100,7 +98,7 @@ flex fill -->
 							<?php echo $account->getError(Constants::$emailInvalid); ?>
 							<?php echo $account->getError(Constants::$emailTaken); ?>
 							<label for="email">Email</label>
-							<input id="email" name="email" type="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email') ?>" required>
+							<input class="br" id="email" name="email" type="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email') ?>" required>
 						</p>
 
 						<p>
@@ -121,7 +119,7 @@ flex fill -->
 							<input id="password2" name="password2" type="password" placeholder="Your password" required>
 						</p>
 
-						<button type="submit" name="registerButton">SIGN UP</button>
+						<button class="pb-5" type="submit" name="registerButton">SIGN UP</button>
 
 						<div class="hasAccountText">
 							<span id="hideRegister">Already have an account? Log in here.</span>
@@ -154,6 +152,10 @@ flex fill -->
 					</script>';
 			}
 		?>
+
+		<script src="./assets/js/theme.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 	</body>
 </html>
