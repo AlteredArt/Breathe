@@ -2,8 +2,9 @@
     display: inline-block;
     height: 34px;
     position: relative;
-    top: 60px;
-    left: 20px;
+    /* top: 60px; */
+    /* left: 20px; */
+    margin: 0 auto;
     width: 60px;
 }
     

@@ -2,9 +2,11 @@
 >>> COLOR
 --------------------------------------------------------------*/
 :root {
-  --primary: rgb(191, 42, 42);
+  --primary: white;
   --secondary: black;
   --shadow: rgba(0,0,0,0.44);
+  --other-primary: red;
+  --other-secondary: green;
   --bg1: #ee7752;
   --bg2: #e73c7e;
   --bg3: #23a6d5;
@@ -15,6 +17,8 @@
   --primary: black;
   --secondary: white;
   --shadow: rgba(228, 222, 222, 0.44);
+  --other-primary: green;
+  ---other-secondary: red;
   --bg1: #131111;
   --bg2: #711688;
   --bg3: #23a6d5;

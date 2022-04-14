@@ -3,30 +3,20 @@
 --------------------------------------------------------------*/
 /* H1 - H6 & P */
 h1, h2, h3, h4, h5, h6 {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-  margin: 2rem 1rem;
+  font-family: 'Square Peg', cursive !important;
+  /* margin: 1rem 1rem; */
   font-weight: 500;
-  line-height: 1.2;
-  color: var(--primary);
+  color: white;
+  text-align: center;
 }
 
-
-/* , input, form, button */
 p {
-
-  font-size: 5rem;
-  color: var(--primary);
+  text-align: center;
+  color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-* { 
-  /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; */
-  /* font-size: 16px !important; */
-  /* font-size: clamp(2em, 14vw, 23.2em); */
-  /* font-weight: 400 !important; */
-  /* line-height: 1.6 !important; */
-  /* font-size: calc(1rem + 1vw); */
-}
+
 
 /* H1: 2.5REM / 26PX h1 {font-size: calc(1.375rem + 1.5vw);} */
 /* @media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}} */
@@ -42,10 +32,10 @@ p {
 
 
 
-/* h1 {font-size: 2.6rem;}
+h1 {font-size: 4rem;}
 h2 {font-size: 2.2rem}
-h3 {font-size: 1.8rem;}
+h3 {font-size: 2.8rem;}
 h4 {font-size: 1.6rem;}
 h5 {font-size: 1.4rem;}
 h6 {font-size: 1rem;}
-a {font-size: 1.6rem; text-decoration: none;} */
+a {font-size: 1.6rem; text-decoration: none;}
