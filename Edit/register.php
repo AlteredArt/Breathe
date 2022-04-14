@@ -21,7 +21,10 @@
 	<head>
 		<title>Breathe</title>
 		<link rel="stylesheet" href="./assets/css/index.css">
-	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="assets/js/register.js"></script>
@@ -31,7 +34,16 @@
 
 		<div id="background" >
 			
-			<div class="header_switch">
+		
+
+			<div id="loginContainer">
+				<div id="loginText">
+					<h4>Welcome to</4>
+					<h1>Breathe!</h1>
+					<hr>
+					<h3>Relax, Rest, Or Focus</h3>
+				</div>
+				<div class="header_switch">
 				<label class="theme_switch" for="checkbox">
 					<input type="checkbox" id="checkbox" />
 					<div class="slider round"></div>
@@ -41,18 +53,10 @@
 				<i class="indicator"></i>
 			</div>
 
-			<div id="loginContainer">
-				<div id="loginText">
-					<h1>Welcome to Breathe!</h1>
-					<hr>
-					<p>Relax, Rest, Or Focus</p>
-				</div>
-			
-
 				<div id="inputContainer">
 			
 					<form id="loginForm" action="register.php" method="POST">
-						<h5 class="c-grey">Login to your account</h5>
+						<h2 class="c-grey">Login to your account</h2>
 						<p>
 							<?php echo $account->getError(Constants::$loginFailed); ?>
 							<label for="loginUsername">Username</label>

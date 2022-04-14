@@ -10,18 +10,10 @@
     margin: 0; 
     padding: 0; 
     border: 0; 
-    font-size: 100%; 
-    font: inherit; 
-    vertical-align: baseline;
+    /* vertical-align: baseline; */
   }
 
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block !important;}
-
-  input, button, select, optgroup, textarea {
-    font-family: inherit; 
-    font-size: inherit; 
-    line-height: inherit;
-  }
 
   blockquote:before, blockquote:after, q:before, q:after {
     content: '' !important; 
@@ -40,7 +32,6 @@
   a:visited {color: red}  
 
   .container {
-    /* padding: 2rem 6rem 2rem 6rem; */
     max-width: 100%;
   }
  
