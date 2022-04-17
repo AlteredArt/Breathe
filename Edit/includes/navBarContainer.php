@@ -4,6 +4,16 @@
 		<span role="link" tabindex="0" onclick="openPage('index.php')" class="logo">
 			<img src="assets/images/icons/circle.png">
 		</span>
+		
+		<div class="header_switch">
+			<label class="theme_switch" for="checkbox">
+				<input type="checkbox" id="checkbox" />
+				<div class="slider round"></div>
+			</label>
+		</div>
+		<div id="toggle">
+			<i class="indicator"></i>
+		</div>
 
 
 		<div class="group">
@@ -13,11 +23,13 @@
 				<span role="link" tabindex="0" onclick="openPage('settings.php')" class="navItemLink"><?php echo $userLoggedIn->getFirstAndLastName(); ?></span>
 			</div>
 
+			
+
 		</div>
 
 		<div class="group">
 			<div class="navItem">
-				<span role='link' tabindex='0' onclick='openPage("index.php")' class="navItemLink">
+				<span role='link' tabindex='0' onclick='openPage("background.php")' class="navItemLink">
 					Backgrounds
 					<!-- <img src="assets/images/icons/search.png" class="icon" alt="Search"> -->
 				</span>
