@@ -5,16 +5,6 @@
 			<img src="assets/images/icons/circle.png">
 		</span>
 		
-		<div class="header_switch">
-			<label class="theme_switch" for="checkbox">
-				<input type="checkbox" id="checkbox" />
-				<div class="slider round"></div>
-			</label>
-		</div>
-		<div id="toggle">
-			<i class="indicator"></i>
-		</div>
-
 
 		<div class="group">
 

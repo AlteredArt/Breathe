@@ -7,6 +7,7 @@ include("includes/includedFiles.php");
 	<div class="centerSection">
 		<div class="userInfo">
 			<h1><?php echo $userLoggedIn->getFirstAndLastName(); ?></h1>
+			<hr/>
 		</div>
 	</div>
 
