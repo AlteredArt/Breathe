@@ -4,7 +4,7 @@
 		<span role="link" tabindex="0" onclick="openPage('index.php')" class="logo">
 			<img src="assets/images/icons/circle.png">
 		</span>
-
+		
 
 		<div class="group">
 
@@ -13,11 +13,13 @@
 				<span role="link" tabindex="0" onclick="openPage('settings.php')" class="navItemLink"><?php echo $userLoggedIn->getFirstAndLastName(); ?></span>
 			</div>
 
+			
+
 		</div>
 
 		<div class="group">
 			<div class="navItem">
-				<span role='link' tabindex='0' onclick='openPage("index.php")' class="navItemLink">
+				<span role='link' tabindex='0' onclick='openPage("background.php")' class="navItemLink">
 					Backgrounds
 					<!-- <img src="assets/images/icons/search.png" class="icon" alt="Search"> -->
 				</span>
