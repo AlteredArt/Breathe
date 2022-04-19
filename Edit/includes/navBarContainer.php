@@ -19,10 +19,6 @@
 
 		<div class="group">
 			<div class="navItem">
-				<span role='link' tabindex='0' onclick='openPage("background.php")' class="navItemLink">
-					Backgrounds
-					<!-- <img src="assets/images/icons/search.png" class="icon" alt="Search"> -->
-				</span>
 			</div>
 			<div class="navItem">
 				<span role='link' tabindex='0' onclick='openPage("index.php")' class="navItemLink">
