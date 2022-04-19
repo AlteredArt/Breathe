@@ -8,6 +8,13 @@
     letter-spacing: 1px;
 }
 
+/* hr {
+    max-width: 50%;
+    height: 4px;
+    color: blueviolet;
+    background-color: brown;
+} */
+
 body {
     background-color: rgb(0, 221, 255);
     font-size: 14px;
@@ -466,9 +473,9 @@ input:focus {
 .userDetails .container h2, h1 {
     text-align: center;
 }
-.userDetails h2, h1 {
+/* .userDetails h2, h1 {
     padding: 0.3em 0;
-}
+} */
 .userDetails .container input[type="text"],
 .userDetails .container input[type="password"],
 .userDetails .container .button {
