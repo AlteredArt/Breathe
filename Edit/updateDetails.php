@@ -1,6 +1,8 @@
-<?php
-include("includes/includedFiles.php");
-?>
+<!------------------------------------------------------------------>
+<!-- UPDATE USER DETAILS -->
+<!------------------------------------------------------------------>
+
+<?php include("includes/includedFiles.php"); ?>
 
 <div class="userDetails">
 <h1><?php echo "Welcome" . " " . $userLoggedIn->getFirstAndLastName(); ?></h1>

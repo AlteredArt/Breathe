@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+>>> START
+--------------------------------------------------------------*/
+
+#mood_selection_text{
+    margin-top: 1rem;
+    animation: fontSizeChange 5s ease;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.mood-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.mood-container a {
+    border: 2px solid white;
+    border-radius: 250px;
+    display: block;
+    margin: 20px auto;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.mood-container a:first-child {
+   /* mixin */
+   background: red;
+  }
+
+.mood-container a:second-child {
+   /* mixin */
+   background: red;
+}
+
+.mood-container a:third-child {
+    /* mixin */
+    background: red;
+}
+
+
+

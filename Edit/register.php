@@ -1,10 +1,12 @@
-
+<!------------------------------------------------------------------>
+<!-- REGISTER -->
+<!------------------------------------------------------------------>
 
 <?php
 	include("includes/config.php");
 	include("includes/classes/Account.php");
 	include("includes/classes/Constants.php");
-
+	// NEW ACCOUNT INSTANCE IS NEW CONNECTION TO DATABASE
 	$account = new Account($con);
 
 	include("includes/handlers/register-handler.php");
@@ -20,21 +22,23 @@
 <html>
 	<head>
 		<title>Breathe</title>
+		<!-- CSS -->
 		<link rel="stylesheet" href="./assets/css/index.css">
+		<!-- FONTS -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
-
+		<!-- JQUERY -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- AJAX -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- REGISTER -->
 		<script src="assets/js/register.js"></script>
 	</head>
 
 	<body>
 
 		<div id="background" >
-			
-		
 
 			<div id="loginContainer">
 				<div id="loginText">

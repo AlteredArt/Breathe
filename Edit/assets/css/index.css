@@ -6,7 +6,7 @@
 @import "./Master/1reset.css";
 @import "./Master/2text.css";
 @import "./Master/3color.css";
-/* @import "./Master/4switch.css"; */
+@import "./Master/4main.css";
 
 /* MEDIA QUERY */
 @import "./MediaQuery/576.css";
@@ -17,7 +17,9 @@
 
 /* EXTRA */
 @import "./Master/register.css";
-@import "./Master/style.css";
+@import "./Master/playbar.css";
+@import "./Master/circles.css";
+@import "./Master/start.css"
 
 /*--------------------------------------------------------------
 >>> INDEX
