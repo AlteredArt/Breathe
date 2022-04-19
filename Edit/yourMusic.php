@@ -1,6 +1,8 @@
-<?php
-include("includes/includedFiles.php");
-?>
+<!------------------------------------------------------------------>
+<!-- SELECTED MUSIC FOR PLAYLISTS -->
+<!------------------------------------------------------------------>
+
+<?php include("includes/includedFiles.php"); ?>
 
 <div class="playlistsContainer">
 

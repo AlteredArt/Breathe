@@ -1,6 +1,8 @@
-<?php 
-include("includes/includedFiles.php"); 
-?>
+<!------------------------------------------------------------------>
+<!-- BROWSE -->
+<!------------------------------------------------------------------>
+
+<?php include("includes/includedFiles.php"); ?>
 
 <h1 class="pageHeadingBig">Welcome To Breathe!</h1>
 <hr/>
@@ -24,8 +26,5 @@ include("includes/includedFiles.php");
 	?>
 
 </div>
-
-
-
 
 

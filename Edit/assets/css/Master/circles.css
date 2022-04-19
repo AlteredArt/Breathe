@@ -1,0 +1,232 @@
+/*--------------------------------------------------------------
+>>> CIRCLES
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+
+.watch-face {
+  height: 125px;
+  width: 125px;
+  animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform: scale(1);
+}
+
+.black-circle {
+  background-color: #010f1c;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gradient-circle {
+
+  background: conic-gradient(
+    #ccebff 0%,
+    #1aa3ff 40%,
+    #fff 40%,
+    #fff 60%,
+    #0000ff 60%,
+    #cccfff 100%
+  );
+  
+  height: 320px;
+  width: 320px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.pointer {
+  background-color: blueviolet;
+  text-shadow: 22px 22px white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.container.grow {animation: grow 3s linear forwards;}
+  
+  @keyframes grow {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+  }
+
+.container.shrink { animation: shrink 3s linear forwards;}
+  
+  @keyframes shrink {
+    from {transform: scale(1.2);}
+    to {transform: scale(1);}
+  }
+
+.circle {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: screen;
+  transform: translate(0, 0);
+  animation: center 6s infinite;
+}
+
+/*blue top left*/
+.circle:nth-child(1) {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(0,0,0,100) 0%, rgba(0,212,255,1) 100%);
+}
+
+/*orange bottom right*/
+.circle:nth-child(2) {
+	background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,100) 43%, rgba(227,5,59,1) 100%);
+}
+
+/*green middleleft*/
+.circle:nth-child(3) {
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,255,0,1) 100%);
+}
+
+/*red middle right*/
+.circle:nth-child(4) {
+  background: rgb(139,3,249);
+background: linear-gradient(90deg, rgba(139,3,249,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/*orange bottom leftt*/
+.circle:nth-child(5) {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(233,152,11,1) 100%);
+}
+
+/*white top right*/
+.circle:nth-child(6) {
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(2,0,36,1) 100%);
+}
+
+
+.circle:nth-child(1) {
+  animation: circle-1 4s ease alternate infinite;
+}
+
+.circle:nth-child(2) {
+  animation: circle-2 4s ease alternate infinite;
+}
+
+.circle:nth-child(3) {
+  animation: circle-3 4s ease alternate infinite;
+}
+
+.circle:nth-child(4) {
+  animation: circle-4 4s ease alternate infinite;
+}
+
+.circle:nth-child(5) {
+  animation: circle-5 4s ease alternate infinite;
+}
+
+.circle:nth-child(6) {
+  animation: circle-6 4s ease alternate infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(.15) rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes circle-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-35px, -50px);
+  }
+}
+
+@keyframes circle-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(35px, 50px);
+  }
+}
+
+@keyframes circle-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-60px, 0);
+  }
+}
+
+@keyframes circle-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(60px, 0);
+  }
+}
+
+@keyframes circle-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-35px, 50px);
+  }
+}
+
+@keyframes circle-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(35px, -50px);
+  }
+}
+
+

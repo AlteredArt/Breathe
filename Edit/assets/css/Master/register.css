@@ -2,14 +2,6 @@
 >>> REGISTER
 --------------------------------------------------------------*/
 
-#background {
-    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    padding: 6rem 0 0 0;
-}
-
-
 hr {
     max-width: 70%;
     height: px;
@@ -27,11 +19,10 @@ hr {
 #inputContainer {
     width: 26vw;
     padding: 45px;
-    /* margin: 2rem; */
 }
 
 #inputContainer label {
-	color: white;
+	color: var(--primary);
     font-size: 18px;
     margin: 35px 0 15px 0;
     display: block;
@@ -42,7 +33,7 @@ hr {
 	background-color: transparent;
     border: 2px solid white;
     border-radius: 250px;
-    color: white;
+    color: var(--primary);
     display: block;
     font-size: 14px;
     letter-spacing: 1px;
@@ -54,7 +45,6 @@ hr {
 #inputContainer button {
 	cursor: pointer;
     background: linear-gradient(-45deg, var(--bg4), var(--bg3), var(--bg2), var(--bg1));
-    /* background-size: 400% 400%; */
     animation: gradient 15s ease infinite;
 }
 
@@ -62,40 +52,30 @@ hr {
 	font-weight: bold;
     font-size: 18px;
     cursor: pointer;
-    color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--primary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .hasAccountText {text-align: center;}
-
 #registerForm, #loginForm {display: none;}
-
-
 #loginText h3 {margin: 25px 0;}
 #loginText h4 {margin: 0;}
 #loginText h1 {margin-top: 0}
-
-
-#inputContainer .errorMessage {
-    color: white;
-    display: block;
-}
+#inputContainer .errorMessage {display: block;}
 
 #inputContainer input[type="text"],
 #inputContainer input[type="email"],
 #inputContainer input[type="password"] {
 	display: block;
-    /* background-color: transparent; */
     border: 0;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
+    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
     border-radius: 250px;
     padding: 20px;
     height: 27px;
     line-height: 27px;
     width: 100%;
     background: linear-gradient(-45deg, var(--bg4), var(--bg3), var(--bg2), var(--bg1));
-    /* background-size: 400% 400%; */
     animation: gradient 15s ease infinite;
 }
 
@@ -106,15 +86,3 @@ hr {
    background: rgb(71, 67, 67);
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */color:    #fff;}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color: #fff; opacity:  1;}
-::-moz-placeholder { /* Mozilla Firefox 19+ */color:    #fff; opacity:  1;}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */color:    #fff;}
-::-ms-input-placeholder { /* Microsoft Edge */color:    #fff;}
-
-
-@keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-}
