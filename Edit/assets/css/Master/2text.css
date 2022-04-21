@@ -8,11 +8,18 @@ h1 {font-size: 4rem;}
 h2 {font-size: 3.2rem}
 h3 {font-size: 2.8rem;}
 h4 {font-size: 2.4rem;}
-h5 {font-size: 1.4rem;}
-h6 {font-size: 1rem;}
+h5, label {font-size: 1.4rem;}
+h6, span {font-size: 1.2rem;}
 a {font-size: 1.6rem; text-decoration: none;}
 .page-title {font-size: 3rem; margin: 3rem 0; text-align: center;}
 .page-subtitle {font-size: 2rem; margin: 3rem 0; text-align: center;}
+
+span {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.tracklistContainer h2,
+.gridViewContainer h2,
+.artistsContainer h2 {
+    text-align: center;
+}
 
 /* H1: 2.5REM / 26PX h1 {font-size: calc(1.375rem + 1.5vw);} */
 /* @media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}} */

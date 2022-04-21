@@ -1,13 +1,13 @@
 <?php
-$songQuery = mysqli_query($con, "SELECT id FROM songs ORDER BY RAND() LIMIT 10");
+	$songQuery = mysqli_query($con, "SELECT id FROM songs ORDER BY RAND() LIMIT 10");
 
-$resultArray = array();
+	$resultArray = array();
 
-while($row = mysqli_fetch_array($songQuery)) {
-	array_push($resultArray, $row['id']);
-}
+	while($row = mysqli_fetch_array($songQuery)) {
+		array_push($resultArray, $row['id']);
+	}
 
-$jsonArray = json_encode($resultArray);
+	$jsonArray = json_encode($resultArray);
 ?>
 
 <script>

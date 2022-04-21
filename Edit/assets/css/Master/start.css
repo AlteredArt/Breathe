@@ -18,8 +18,9 @@
 .mood-container a {
     border: 2px solid white;
     border-radius: 250px;
-    display: block;
+    /* display: block; */
     margin: 20px auto;
+    padding: 2rem;
     height: 150px;
     width: 150px;
     cursor: pointer;
@@ -30,14 +31,14 @@
    background: red;
   }
 
-.mood-container a:second-child {
+.mood-container a:nth-child(2) {
    /* mixin */
-   background: red;
+   background: green;
 }
 
-.mood-container a:third-child {
+.mood-container a:nth-child(3) {
     /* mixin */
-    background: red;
+    background: blue;
 }
 
 
