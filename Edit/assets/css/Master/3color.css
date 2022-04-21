@@ -3,12 +3,13 @@
 --------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {color: var(--primary);}
-p, label, a {color: var(--secondary);}
+p, label, a, span {color: var(--primary);}
 
 #background, body {
-  background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  /* background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4)); */
+  /* background-size: 400% 400%; */
+  /* animation: gradient 15s ease infinite; */
+  background-color: rgb(77, 74, 74);
 }
 
 /* ROOT */
@@ -27,7 +28,7 @@ p, label, a {color: var(--secondary);}
 [data-theme="dark"] {
   --primary: black;
   --secondary: white;
-  --shadow: rgba(228, 222, 222, 0.44);
+  --shadow: rgba(59, 55, 55, 0.44);
   --other-primary: green;
   ---other-secondary: red;
   --bg1: #131111;
@@ -36,17 +37,20 @@ p, label, a {color: var(--secondary);}
   --bg4: #23a687;
 }
 
+
+input {
+  color: var(--primary);
+  background: linear-gradient(-45deg, var(--bg4), var(--bg3), var(--bg2), var(--bg1));
+  animation: gradient 15s ease infinite;
+}
+
+
+input:focus{ background: rgb(71, 67, 67 );}
+
+
 /* KEYFRAMES */
 @keyframes gradient {
   0% {background-position: 0% 50%;}
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
-
-/* WEBKIT */
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */color: var(--primary);}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color: var(--primary);}
-::-moz-placeholder { /* Mozilla Firefox 19+ */color: var(--primary);}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */color: var(--primary);}
-::-ms-input-placeholder { /* Microsoft Edge */color: var(--primary);}
-

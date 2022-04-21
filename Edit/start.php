@@ -16,7 +16,7 @@
 			<div class="page-header">
 				<h1 class="page-title">Welcome To Breathe!</h1>
 				<hr/>
-			<h2 id="mood_selection_text" class="page-subtitle">Select your mood</h2>
+				<h2 id="mood_selection_text" class="page-subtitle">Select your mood</h2>
 			</div>
 			<div class='mood-container'>
 				<a>Relax</a>

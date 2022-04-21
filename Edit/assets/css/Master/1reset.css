@@ -10,7 +10,6 @@
     margin: 0; 
     padding: 0; 
     border: 0; 
-    vertical-align: baseline;
   }
 
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block !important;}
@@ -34,5 +33,5 @@
 /*--------------------------------------------------------------
 >>> RESET
 ---------------------------------------------------------------*/
-
+[role="link"] {cursor: pointer;} /*?*/
 
