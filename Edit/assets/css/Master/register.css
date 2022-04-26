@@ -2,33 +2,37 @@
 >>> REGISTER
 --------------------------------------------------------------*/
 
-#login-container {
+.page-title {
+    margin: 0 0 2rem 0; 
+    text-align: center;
+}
+
+.page-subtitle {
+    margin: 2rem 0 0 0; 
+    text-align: center;
+}
+
+.page-header {margin: 3rem;}
+
+#login_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#form-container {
+#form_container {
     width: 26vw;
     padding: 45px;
     margin: 0 auto;
 }
 
-/* .form-container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-#form-container label {
+#form_container label {
     margin: 35px 0 5px 20px;
     display: block;
 }
 
-#form-container button {
+#form_container button {
 	background-color: transparent;
     border: 2px solid var(--primary);
     border-radius: 250px;
@@ -41,21 +45,22 @@
     width: 100%;
 }
 
-#form-container button {
+#form_container button {
 	cursor: pointer;
-    background: linear-gradient(-45deg, var(--bg4), var(--bg3), var(--bg2), var(--bg1));
+    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
     animation: gradient 15s ease infinite;
-}
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+} 
 
 .register-note {text-align: center;}
+#register_form, #login-form {display: none;}
+#form_container .error-message {display: block;}
 
-#register-form, #login-form {display: none;}
-
-#form-container .error-message {display: block;}
-
-/* #form-container input[type="text"],
-#form-container input[type="email"],
-#form-container input[type="password"] {
+#form_container input[type="text"],
+#form_container input[type="email"],
+#form_container input[type="password"] {
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
     border-top: 1px solid var(--primary);
@@ -64,13 +69,21 @@
     height: 27px;
     line-height: 27px;
     width: 100%;
-    background: linear-gradient(-45deg, var(--bg4), var(--bg3), var(--bg2), var(--bg1));
+    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
     animation: gradient 15s ease infinite;
 }
 
-#form-container input[type="text"]:focus,
-#form-container input[type="email"]:focus,
-#form-container input[type="password"]:focus {
-   background: rgb(71, 67, 67);
+#form_container input[type="text"]:focus,
+#form_container input[type="email"]:focus,
+#form_container input[type="password"]:focus {
+   background: black;
 }
- */
+
+
+
+/* KEYFRAMES */
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}

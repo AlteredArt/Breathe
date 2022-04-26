@@ -18,13 +18,12 @@
 .mood-container a {
     border: 2px solid white;
     border-radius: 250px;
-    /* display: block; */
     margin: 20px auto;
     padding: 2rem;
     height: 150px;
     width: 150px;
     cursor: pointer;
-}
+} 
 
 .mood-container a:first-child {
    /* mixin */
@@ -38,7 +37,7 @@
 
 .mood-container a:nth-child(3) {
     /* mixin */
-    background: blue;
+    /* background: blue; */
 }
 
 

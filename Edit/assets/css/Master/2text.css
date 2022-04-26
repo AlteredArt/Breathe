@@ -2,24 +2,21 @@
 >>> TEXT
 --------------------------------------------------------------*/
 
+/* FONTS */
 h1, h2, h3, h4, h5, h6 {text-align:center; font-family: 'Square Peg', cursive !important;}
 p, button {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+span {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+/* FONT SIZE */
 h1 {font-size: 4rem;}
 h2 {font-size: 3.2rem}
 h3 {font-size: 2.8rem;}
-h4 {font-size: 2.4rem;}
+h4 {font-size: 2rem;}
 h5, label {font-size: 1.4rem;}
 h6, span {font-size: 1.2rem;}
-a {font-size: 1.6rem; text-decoration: none;}
-.page-title {font-size: 3rem; margin: 3rem 0; text-align: center;}
-.page-subtitle {font-size: 2rem; margin: 3rem 0; text-align: center;}
+a {font-size: 1.6rem;}
+p {font-size: 1.4rem;}
 
-span {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-.tracklistContainer h2,
-.gridViewContainer h2,
-.artistsContainer h2 {
-    text-align: center;
-}
 
 /* H1: 2.5REM / 26PX h1 {font-size: calc(1.375rem + 1.5vw);} */
 /* @media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}} */
@@ -33,7 +30,4 @@ span {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-se
 /* H6: 1REM / 16PX h6 {font-size: 1rem !important;} */
 /* P: 1REM / 16PX */
 
-@keyframes fontSizeChange {
-  0% {font-size: 6rem;}
-  100% {font-size: 2rem;}
-}
+@keyframes fontSizeChange {0% {font-size: 6rem;} 100% {font-size: 2rem;}}
