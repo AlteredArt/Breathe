@@ -7,7 +7,6 @@ p, label, a, span {color: var(--primary);}
 
 #background, body {
   /* background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4)); */
-  /* background-size: 400% 400%; */
   /* animation: gradient 15s ease infinite; */
   background-color: rgb(77, 74, 74);
 }
@@ -35,22 +34,4 @@ p, label, a, span {color: var(--primary);}
   --bg2: #711688;
   --bg3: #23a6d5;
   --bg4: #23a687;
-}
-
-
-input {
-  color: var(--primary);
-  background: linear-gradient(-45deg, var(--bg4), var(--bg3), var(--bg2), var(--bg1));
-  animation: gradient 15s ease infinite;
-}
-
-
-input:focus{ background: rgb(71, 67, 67 );}
-
-
-/* KEYFRAMES */
-@keyframes gradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
 }

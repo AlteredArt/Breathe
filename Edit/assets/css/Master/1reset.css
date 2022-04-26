@@ -29,9 +29,3 @@
   a {color: #4e4e25; text-decoration: underline;}
   a:hover {color: #24a131;} 
   a:visited {color: red;}  
-
-/*--------------------------------------------------------------
->>> RESET
----------------------------------------------------------------*/
-[role="link"] {cursor: pointer;} /*?*/
-

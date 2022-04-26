@@ -8,20 +8,22 @@
 @import "./Master/3color.css";
 @import "./Master/4main.css";
 
+/* EXTRA */
+@import "./Master/circles.css";
+@import "./Master/navbar.css";
+@import "./Master/playbar.css";
+@import "./Master/register.css";
+@import "./Master/start.css";
+@import "./Master/userDetails.css";
+@import "./Master/yourMusic.css";
+
+/*--------------------------------------------------------------
+>>> INDEX
+--------------------------------------------------------------*/
+
 /* MEDIA QUERY */
 @import "./MediaQuery/576.css";
 @import "./MediaQuery/768.css";
 @import "./MediaQuery/992.css";
 @import "./MediaQuery/1200.css";
 @import "./MediaQuery/1400.css";
-
-/* EXTRA */
-@import "./Master/register.css";
-@import "./Master/playbar.css";
-@import "./Master/circles.css";
-@import "./Master/start.css";
-@import "./Master/yourMusic.css";
-
-/*--------------------------------------------------------------
->>> INDEX
---------------------------------------------------------------*/

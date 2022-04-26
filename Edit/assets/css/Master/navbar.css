@@ -1,5 +1,19 @@
+/*--------------------------------------------------------------
+>>> NAVBAR
+--------------------------------------------------------------*/
+.navItemLink {
+    color: #a0a0a0;
+    text-decoration: none;
+}
 
+.navItemLink:hover {color: var(--primary);}
 
+.navItemLink .icon {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 25px;
+}
 
 #navBarContainer {
 	background-color: #000;
