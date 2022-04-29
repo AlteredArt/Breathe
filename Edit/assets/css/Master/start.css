@@ -8,34 +8,41 @@
     height: 100px;
     min-height: 100px;
     max-height: 100px;
+    font-size: 2rem;
 }
 
 .mood-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .mood-container a {
     border: 2px solid white;
-    border-radius: 250px;
-    margin: 20px auto;
-    padding: 2rem;
-    height: 150px;
-    width: 150px;
+    border-radius: 150%;
+    padding: 5rem;
     cursor: pointer;
 } 
 
 .mood-container a:first-child {
-   background: red;
+    background: linear-gradient(-45deg, var(--relax1), var(--relax2), var(--relax3), var(--relax4));
+    animation: gradient 15s ease infinite;
   }
 
 .mood-container a:nth-child(2) {
-   background: green;
+    background: linear-gradient(-45deg, var(--focus1), var(--focus2), var(--focus3), var(--focus4));
+  animation: gradient 15s ease infinite;
 }
 
 .mood-container a:nth-child(3) {
-   background-color: aqua;
+    background: linear-gradient(-45deg, var(--rest1), var(--rest2), var(--rest3), var(--rest4));
+  animation: gradient 5s ease infinite;
 }
 
 
 
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
