@@ -25,7 +25,3 @@
   }
 
   *, *::before, *::after {box-sizing: border-box;}
-
-  a {color: #4e4e25; text-decoration: underline;}
-  a:hover {color: rgb(139, 134, 134);} 
-  a:visited {color: rgb(185, 139, 139);}  

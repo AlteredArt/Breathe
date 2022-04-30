@@ -17,6 +17,8 @@ h6, span {font-size: 1.2rem;}
 a {font-size: 1.6rem;}
 p {font-size: 1.4rem;}
 
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 /* H1: 2.5REM / 26PX h1 {font-size: calc(1.375rem + 1.5vw);} */
 /* @media (min-width: 1200px) {h1 {font-size: 2.5rem !important;}} */
