@@ -14,7 +14,7 @@
 	<body>
 		<div id="start">
 			<div class="page-header">
-				<h3 class="page-title">Welcome To Breathe!</h3>
+				<h4 class="page-title">Welcome To Breathe!</h4>
 				<hr/>
 				<p id="mood_selection_text" class="page-subtitle">Select your mood</p>
 				<p style="text-align: center;">Each mood has its own color theme, music, and flower. <br/>Once you have selected a mood, focus on breathing in rhythm with the flower. </br>Concentrate on breathing for at least two minuets to achieve minimum results. 
