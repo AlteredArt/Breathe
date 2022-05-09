@@ -21,8 +21,8 @@
 			<div class="navItem">
 			</div>
 			<div class="navItem">
-				<span role='link' tabindex='0' onclick='openPage("index.php")' class="navItemLink">
-					Music
+				<span role='link' tabindex='0' onclick='openPage("start.php")' class="navItemLink">
+					Start
 					<!-- <img src="assets/images/icons/search.png" class="icon" alt="Search"> -->
 				</span>
 			</div>
