@@ -15,11 +15,11 @@
 	<body>
 		<div id="start">
 			<div class="page-header">
-				<h4 class="page-title">Relax, Breathe!</h4>
+				<h4 class="page-title">Relax</h4>
 				<hr/>
 			</div>
 			<div class='breathe-container'>
-                <?php include("./includes/circles.php"); ?>
+                <?php include("./includes/breathe.php"); ?>
 			</div>
 		</div>
 	</body>
