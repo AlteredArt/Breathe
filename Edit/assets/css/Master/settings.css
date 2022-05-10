@@ -2,12 +2,12 @@
 >>> USER DETAILS
 --------------------------------------------------------------*/
 
-.userDetails .container input[type="text"],
+/* .userDetails .container input[type="text"],
 .userDetails .container input[type="password"],
 .userDetails .container .button {
     display: block;
     margin: 16px auto;
-}
+} */
 
 .userDetails .container input[type="text"],
 .userDetails .container input[type="password"] {
@@ -25,10 +25,5 @@
     font-weight: 300;
 } 
 
-
-.borderBottom {
-    border-bottom: 1px solid #939393;
-    margin-bottom: 20px;
-}
 
 

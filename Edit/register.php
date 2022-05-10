@@ -20,6 +20,7 @@
 ?>
 
 <html>
+
 	<head>
 		<title>Breathe</title>
 		<!-- CSS -->
@@ -35,6 +36,7 @@
 		<!-- REGISTER -->
 		<script src="assets/js/register.js"></script>
 	</head>
+
 	<body>
 		<div id="background container" >
 
@@ -45,7 +47,7 @@
 				<h4 class="page-subtitle">Relax, Rest, Or Focus</h4>
 			</div>
 
-			<div id="form_container">
+			<div class="form-container">
 		
 				<form id="login_form" action="register.php" method="POST">
 
@@ -121,7 +123,6 @@
 					</p>
 
 					<button type="submit" name="registerButton">SIGN UP</button>
-					<!-- class="pb-5"  -->
 
 					<div class="register-note">
 						<span id="hide_register">Already have an account? Log in here.</span>
@@ -167,6 +168,6 @@
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+		
 	</body>
 </html>

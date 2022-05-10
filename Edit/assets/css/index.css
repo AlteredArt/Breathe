@@ -8,17 +8,19 @@
 @import "./Master/3color.css";
 @import "./Master/4main.css";
 
-/* EXTRA */
+/* SITEMAP */
+@import "./Master/home.css";
 @import "./Master/breathe.css";
 @import "./Master/navbar.css";
 @import "./Master/playbar.css";
 @import "./Master/register.css";
-@import "./Master/start.css";
-@import "./Master/userDetails.css";
+
+/* SETTINGS */
+@import "./Master/settings.css";
 @import "./Master/yourMusic.css";
 
 /*--------------------------------------------------------------
->>> INDEX
+>>> MEDIA QUERY
 --------------------------------------------------------------*/
 
 /* MEDIA QUERY */

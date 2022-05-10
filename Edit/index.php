@@ -4,5 +4,5 @@
 
 <?php include("includes/includedFiles.php"); ?>
 
-<script>openPage("start.php")</script>
+<script>openPage("home.php")</script>
 

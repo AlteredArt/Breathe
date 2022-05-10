@@ -1,5 +1,5 @@
 <!------------------------------------------------------------------>
-<!-- START -->
+<!-- HOME -->
 <!------------------------------------------------------------------>
 
 <!DOCTYPE html>
@@ -22,8 +22,8 @@
 			</div>
 			<div class='mood-container'>
 				<a href="relax.php">Relax</a>
-				<a>Focus</a>
-				<a>Sleep</a>
+				<a href="relax.php">Focus</a>
+				<a href="relax.php">Sleep</a>
 			</div>
 		</div>
 	</body>

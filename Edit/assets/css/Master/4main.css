@@ -1,41 +1,31 @@
 /*--------------------------------------------------------------
 >>> MAIN
 --------------------------------------------------------------*/
-  
+
+.page-header {margin: 3rem;}
+
+.page-title {
+    margin: 0 0 2rem 0; 
+    text-align: center;
+}
+
+.page-subtitle {
+    margin: 2rem 0 0 0; 
+    text-align: center;
+}
+
 hr {
     max-width: 300px;
     height: 4px;
     color: var(--primary);
     background-color: var(--primary);
 }
-
   
 
 /*--------------------------------------------------------------
 >>> Completed END
 --------------------------------------------------------------*/
 
-
-#topContainer {
-	min-height: 100%;
-	width: 100%;
-}
-
-
-
-#mainViewContainer {
-    margin-left: 220px;
-    padding-bottom: 90px;
-    width: calc(100% - 220px);
-}
-
-#mainContent {padding: 0 20px;}
-
-.entityInfo {
-    padding: 40px 0 10px 0;
-    display: inline-block;
-    width: 100%;
-}
 
 .entityInfo .leftSection {
     width: 30%;
