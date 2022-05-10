@@ -16,6 +16,8 @@
 
 hr {
     max-width: 300px;
+    min-width: 300px;
+
     height: 4px;
     color: var(--primary);
     background-color: var(--primary);
