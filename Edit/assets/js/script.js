@@ -75,15 +75,11 @@ function logout() {
 	});
 }
 
+
 function openPage(url) {
 
-	if(timer != null) {
-		clearTimeout(timer);
-	}
-
-	if(url.indexOf("?") == -1) {
-		url = url + "?";
-	}
+	if(timer != null) {clearTimeout(timer);}
+	if(url.indexOf("?") == -1) {url = url + "?";}
 
 	var encodedUrl = encodeURI(url + "&userLoggedIn=" + userLoggedIn);
 	$("#mainContent").load(encodedUrl);

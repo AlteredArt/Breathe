@@ -25,3 +25,15 @@
   }
 
   *, *::before, *::after {box-sizing: border-box;}
+
+  .fr {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .fc {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .ta {text-align: center;}

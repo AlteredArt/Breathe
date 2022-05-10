@@ -6,6 +6,20 @@
     text-decoration: none;
 }
 
+
+#mainContent {padding: 0 20px;}
+
+#topContainer {
+	min-height: 100%;
+	width: 100%;
+}
+
+#mainViewContainer {
+    margin-left: 220px;
+    padding-bottom: 90px;
+    width: calc(100% - 220px);
+}
+
 .navItemLink:hover {color: var(--primary);}
 
 .navItemLink .icon {
