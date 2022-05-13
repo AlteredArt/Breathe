@@ -32,9 +32,9 @@
     padding: 5px 10px;
 }
 
-#section_container * not(input) {
+/* #section_container * not(input) {
     text-align: center;
-}
+} */
 
 #section_container input {
     max-width: 30%;
