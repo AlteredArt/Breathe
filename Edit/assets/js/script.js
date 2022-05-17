@@ -1,3 +1,6 @@
+
+
+
 var currentPlaylist = [];
 var shufflePlaylist = [];
 var tempPlaylist = [];
@@ -39,7 +42,7 @@ $(document).on("change", "select.playlist", function() {
 	});
 });
 
-
+// UPDATE EMAIL
 function updateEmail(emailClass) {
 	var emailValue = $("." + emailClass).val();
 
@@ -51,6 +54,7 @@ function updateEmail(emailClass) {
 
 }
 
+//UPDATE PASSWORD
 function updatePassword(oldPasswordClass, newPasswordClass1, newPasswordClass2) {
 	var oldPassword = $("." + oldPasswordClass).val();
 	var newPassword1 = $("." + newPasswordClass1).val();
@@ -69,6 +73,8 @@ function updatePassword(oldPasswordClass, newPasswordClass1, newPasswordClass2) 
 
 }
 
+
+// LOGOUT
 function logout() {
 	$.post("includes/handlers/ajax/logout.php", function() {
 		location.reload();
@@ -76,6 +82,7 @@ function logout() {
 }
 
 
+// OPEN PAGE
 function openPage(url) {
 
 	if(timer != null) {clearTimeout(timer);}
@@ -87,6 +94,8 @@ function openPage(url) {
 	history.pushState(null, null, url);
 }
 
+
+// REMOVE FROM PLAYLIST
 function removeFromPlaylist(button, playlistId) {
 	var songId = $(button).prevAll(".songId").val();
 
@@ -103,6 +112,8 @@ function removeFromPlaylist(button, playlistId) {
 	});
 }
 
+
+// CREATE PLAYLIST
 function createPlaylist() {
 
 	var popup = prompt("Please enter the name of your playlist");
@@ -125,6 +136,8 @@ function createPlaylist() {
 
 }
 
+
+// DELETE PLAYLIST
 function deletePlaylist(playlistId) {
 	var prompt = confirm("Are you sure you want to delete this playlist?");
 
@@ -146,6 +159,8 @@ function deletePlaylist(playlistId) {
 	}
 }
 
+
+// HIDE OPTIONS MENU
 function hideOptionsMenu() {
 	var menu = $(".optionsMenu");
 	if(menu.css("display") != "none") {
@@ -153,6 +168,8 @@ function hideOptionsMenu() {
 	}
 }
 
+
+// SHOW OPTIONS MENU
 function showOptionsMenu(button) {
 	var songId = $(button).prevAll(".songId").val();
 	var menu = $(".optionsMenu");
@@ -169,7 +186,7 @@ function showOptionsMenu(button) {
 
 }
 
-
+// FORMAT TIME
 function formatTime(seconds) {
 	var time = Math.round(seconds);
 	var minutes = Math.floor(time / 60); //Rounds down
@@ -180,6 +197,8 @@ function formatTime(seconds) {
 	return minutes + ":" + extraZero + seconds;
 }
 
+
+// UPDATE PROGRESS BAR
 function updateTimeProgressBar(audio) {
 	$(".progressTime.current").text(formatTime(audio.currentTime));
 	$(".progressTime.remaining").text(formatTime(audio.duration - audio.currentTime));
@@ -188,15 +207,20 @@ function updateTimeProgressBar(audio) {
 	$(".playbackBar .progress").css("width", progress + "%");
 }
 
+
+// UPDATE VOLUME BAR
 function updateVolumeProgressBar(audio) {
 	var volume = audio.volume * 100;
 	$(".volumeBar .progress").css("width", volume + "%");
 }
 
+
+// PLAY FIRST SONG
 function playFirstSong() {
 	setTrack(tempPlaylist[0], tempPlaylist, true);
 }
 
+// AUDIO
 function Audio() {
 
 	this.currentlyPlaying;

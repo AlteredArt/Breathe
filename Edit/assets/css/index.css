@@ -9,8 +9,8 @@
 @import "./Master/4main.css";
 
 /* SITEMAP */
-@import "./Master/home.css";
 @import "./Master/breathe.css";
+@import "./Master/home.css";
 @import "./Master/navbar.css";
 @import "./Master/playbar.css";
 @import "./Master/register.css";
