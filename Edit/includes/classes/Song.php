@@ -29,7 +29,7 @@
 		public function getId() {return $this->id;}
 		public function getArtist() {return new Artist($this->con, $this->artistId);}
 		public function getAlbum() {return new Album($this->con, $this->albumId);}
-		public function getPath() {return $this->path;
+		public function getPath() {return $this->path;}
 		public function getDuration() {return $this->duration;}
 		public function getMysqliData() {return $this->mysqliData;}
 		public function getGenre() {return $this->genre;}

@@ -133,19 +133,20 @@
 			</div>
 		</div>
 		
+		<!-- PHP :  -->
 		<?php
-			if(isset($_POST['register-button'])) {
+			if(isset($_POST['registerButton'])) {
 				echo '<script>
 						$(document).ready(function() {
-							$("#login-form").hide();
-							$("#register-form").show();
+							$("#login_form").hide();
+							$("#register_form").show();
 						});
 					</script>';
 			} else {
 				echo '<script>
 						$(document).ready(function() {
-							$("#login-form").show();
-							$("#register-form").hide();
+							$("#login_form").show();
+							$("#register_form").hide();
 						});
 					</script>';
 			}
@@ -155,14 +156,14 @@
 		<script>
 			$(document).ready(function() {
 
-				$("#hide-login").click(function() {
-					$("#login-form").hide();
-					$("#register-form").show();
+				$("#hide_login").click(function() {
+					$("#login_form").hide();
+					$("#register_form").show();
 				});
 
-				$("#hide-register").click(function() {
-					$("#login-form").show();
-					$("#register-form").hide();
+				$("#hide_register").click(function() {
+					$("#login_form").show();
+					$("#register_form").hide();
 				});
 			});
 		</script>
