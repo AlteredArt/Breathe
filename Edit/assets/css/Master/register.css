@@ -21,55 +21,6 @@
     display: block;
 }
 
-.form-container button {
-	background-color: transparent;
-    border: 2px solid var(--primary);
-    border-radius: 250px;
-    color: var(--primary);
-    display: block;
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin: 50px auto;
-    height: 41px;
-    width: 100%;
-}
-
-.form-container button {
-	cursor: pointer;
-    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
-    animation: gradient 15s ease infinite;
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-    border-top: 1px solid var(--primary);
-} 
-
 .register-note {text-align: center;}
 .register-form, #login-form {display: none;}
 .form-container .error-message {display: block;}
-
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="password"] {
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-    border-top: 1px solid var(--primary);
-    border-radius: 250px;
-    padding: 20px;
-    height: 27px;
-    line-height: 27px;
-    width: 100%;
-    background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
-    animation: gradient 15s ease infinite;
-}
-
-.form-container input[type="text"]:focus,
-.form-container input[type="email"]:focus,
-.form-container input[type="password"]:focus {
-   background: black;
-}
-
-@keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-}
