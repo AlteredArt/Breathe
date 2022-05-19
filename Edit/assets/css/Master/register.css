@@ -11,8 +11,8 @@
 }
 
 .form-container {
-    width: 26vw;
-    padding: 45px;
+    width: 100vw;
+    /* padding: 45px; */
     margin: 0 auto;
 }
 
