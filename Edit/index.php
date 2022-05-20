@@ -2,7 +2,7 @@
 <!-- INDEX -->
 <!------------------------------------------------------------------>
 
-<?php include("includes/includedFiles.php"); ?>
+<!-- <?php include("includes/includedFiles.php"); ?>
 
-<script>openPage("home.php")</script>
+<script>openPage("home.php")</script> -->
 

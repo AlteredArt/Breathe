@@ -38,7 +38,7 @@
 	</head>
 
 	<body>
-		<div id="background container" >
+		<div id="container" >
 
 			<div class="page-header">
 				<h4 class="page-subtitle">Welcome to</h4>

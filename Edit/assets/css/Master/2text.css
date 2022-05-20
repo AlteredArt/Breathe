@@ -32,4 +32,3 @@ a:hover {text-decoration: underline;}
 /* H6: 1REM / 16PX h6 {font-size: 1rem !important;} */
 /* P: 1REM / 16PX */
 
-@keyframes fontSizeChange {0% {font-size: 4.5rem;} 100% {font-size: 2rem;}}
