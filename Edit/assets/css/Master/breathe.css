@@ -2,7 +2,6 @@
 >>> BREATHE
 --------------------------------------------------------------*/
 
-@keyframes breathe {0% {font-size: 4.5rem;} 50% {font-size: 2rem;} 100% {font-size: 4.5rem;}}
 
 .breathe-container {
   display: flex;
@@ -78,56 +77,7 @@
 .circle:nth-child(5) {animation: circle-5 4s ease alternate infinite;}
 .circle:nth-child(6) {animation: circle-6 4s ease alternate infinite;}
 
-/* PULSE */
-@keyframes pulse {
-  0% {transform: scale(.15) rotate(180deg);}
-  100% {transform: scale(1);}
-}
-
-/* INDIVIDUAL CIRCLE */
-@keyframes circle-1 {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(-35px, -50px);}
-}
-
-@keyframes circle-2 {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(35px, 50px);}
-}
-
-@keyframes circle-3 {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(-60px, 0);}
-}
-
-@keyframes circle-4 {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(60px, 0);}
-}
-
-@keyframes circle-5 {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(-35px, 50px);}
-}
-
-@keyframes circle-6 {
-  0% {transform: translate(0, 0);}
-  100% {transform: translate(35px, -50px);}
-}
-
-
 
 /* WORD GROW */
 .word-container .grow {animation: grow 3s linear forwards;}
 .word-container.shrink { animation: shrink 3s linear forwards;}
-
-@keyframes grow {
-  from {transform: scale(1);}
-  to {transform: scale(1.2);}
-}
-
-  
-@keyframes shrink {
-  from {transform: scale(1.2);}
-  to {transform: scale(1);}
-}

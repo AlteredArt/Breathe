@@ -2,23 +2,24 @@
 >>> REGISTER
 --------------------------------------------------------------*/
 
-
+/* 
 .login-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .form-container {
-    width: 100vw;
+    /* width: 100vw; */
     /* padding: 45px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .form-container label {
-    margin: 35px 0 5px 20px;
+    margin: 35px 0 10px 0;
     display: block;
+    text-align: center;
 }
 
 .register-note {text-align: center;}

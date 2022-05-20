@@ -4,7 +4,7 @@
 
 <?php include("includes/includedFiles.php"); ?>
 
-<section class="container">
+<div class="container">
 
 	<div class="page-header">
 		<h3 class="page-title"><?php echo "Welcome" . " " . $userLoggedIn->getFirstAndLastName(); ?></h3>
@@ -38,7 +38,7 @@
 		
 	</div>
 
-</section>
+</div>
 	
 <script>
 	// LOGOUT
