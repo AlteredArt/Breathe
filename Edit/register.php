@@ -152,7 +152,7 @@
 			}
 		?>
 
-	
+		<!-- hide login or register form: JS -->
 		<script>
 			$(document).ready(function() {
 
