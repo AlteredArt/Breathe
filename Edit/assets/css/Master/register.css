@@ -2,22 +2,13 @@
 >>> REGISTER
 --------------------------------------------------------------*/
 
-/* 
-.login-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* fix this as well */
 
 .form-container {
-    /* width: 100vw; */
-    /* padding: 45px; */
+    width: 100vw; 
+    padding: 45px; 
 
 
-    /* margin: 0 auto; */
+     margin: 0 auto;
 }
 
 .form-container label {
