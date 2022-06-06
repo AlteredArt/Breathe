@@ -36,12 +36,10 @@ hr {
 button {
 	cursor: pointer;
     background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
-    /* background: darkblue; */
     animation: gradient 15s ease infinite;
     color: var(--primary);
     border-bottom: 1px solid var(--primary);
     border-top: 1px solid var(--primary);
-    /* background-color: transparent; */
     border-radius: 250px;
     color: var(--primary);
     display: block;
@@ -62,7 +60,7 @@ input {
     margin: 12px auto;
     height: 27px;
     line-height: 27px;
-    /* width: 25%; */
+    width: 25%;
     background: linear-gradient(-45deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
     animation: gradient 15s ease infinite;
 }
