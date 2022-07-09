@@ -6,9 +6,7 @@
 .form-container {
     width: 100vw; 
     padding: 45px; 
-
-
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 .form-container label {
@@ -20,3 +18,4 @@
 .register-note {text-align: center;}
 .register-form, #login-form {display: none;}
 .form-container .error-message {display: block;}
+

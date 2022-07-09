@@ -41,17 +41,17 @@
 					<hr>
 					<h3>Relax, Rest, Or Focus</h3>
 				</div>
-				<div class="header_switch">
+			<!-- <div class="header_switch">
 				<label class="theme_switch" for="checkbox">
 					<input type="checkbox" id="checkbox" />
-					<div class="slider round"></div>
-				</label>
-			</div>
+				<div class="slider round"></div>
+			</label>
+			</div> -->
 			<div id="toggle">
 				<i class="indicator"></i>
 			</div>
 
-				<div id="inputContainer">
+				<div id="inputContainer" class='form-container>
 			
 					<form id="loginForm" action="register.php" method="POST">
 						<h2 class="c-grey">Login to your account</h2>
