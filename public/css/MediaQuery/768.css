@@ -3,6 +3,29 @@
 ----------------------------------------------------------------*/
 
 @media only screen and (max-width: 768px) {
+    /* .music-container {
+        flex-direction: column;
+        padding: 30px 30px;
+        margin: 100px 0 80px 0;
+        z-index: 10;
+      }
 
+      .img-container::after {
+        bottom: 51px;
+        left: 55px;
+      }
+      
+      .header h1 {
+        font-size: 2rem;
+        line-height: 30px;
+      }
+
+      .header-container {width: 80%;}
+      .word-container {
+          max-width: 320px;
+          margin-bottom: 160px;
+      }
+
+      .word {font-size: 1.5rem;} */
     
 }

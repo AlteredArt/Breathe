@@ -107,7 +107,7 @@ function two() { console.log('now'); }
 /*--------------------------------
  Music
  ------------------------------ */
-const musicContainer = document.getElementById('music-container');
+const musicContainer = document.getElementById('music');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
