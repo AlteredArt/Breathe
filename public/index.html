@@ -5,32 +5,26 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
 	<link rel="stylesheet" href="./css/index.css">
-	<!-- <link rel="stylesheet" href="styles/style.css" />
-	<link rel="stylesheet" href="styles/music.css" />
-	<link rel="stylesheet" href="styles/900bp.css" />
-	<link rel="stylesheet" href="styles/600bp.css" />
-	<link rel="stylesheet" href="styles/420bp.css" />
-	<link rel="stylesheet" href="styles/circles.css" /> -->
-
-
-	<title>Meditation App</title>
+	<title>Breathe</title>
 </head>
 
-<body style="background-image: url('images/main.jpg');">
-	<section class="header-container">
-		<div class="header">
-			<h1> Welcome<br> & <br>Relax</h1>
-			<hr>
-			<p>Everything around us is constantly changing, this includes you.<br />There is no need to hold onto
-				yourself, it
-				can't be done.<br />So just relax and focus on your breathing.</p>
-		</div>
-	</section>
+<body>
 
-	<section class="music-container" id="music-container">
+	<header id="header">
+		<div class="title-container">
+			<h1> Welcome & Relax</h1>
+			<hr>
+		</div>
+		<div class="quote-container">
+			<h4 class="quote-text">To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.</h4>
+			<p class="quote-author">~Alan Watts~</p>
+		</div>
+	</header>
+
+	<section id="music">
+		<div class="music-container">
 		<div class="music-info">
 			<h4 id="title"></h4>
 			<div class="progress-container" id="progress-container">
@@ -52,28 +46,33 @@
 				<i class="fas fa-forward"></i>
 			</button>
 		</div>
+		</div>
 	</section>
 
+	<section id="words">
 	<div class="word-container">
 		<h2 class="word" id="word"><span>BREATHE IN!</span></h2>
 	</div>
+	</section>
 
-	<div class="watch-face">
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-	</div>
+	<section id="circles">
+		<div class="circle-container">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>	
+	</section>
 
-	<footer class="footer">
+	<footer id="footer">
 		<p>
-			<script>document.write(new Date().getFullYear());</script> @ <a href=""> Altered Art</a>
+			<script>document.write(new Date().getFullYear());</script> @ <a href="https://jared-matta.web.app/"> Altered Art</a>
 		</p>
 	</footer>
 
