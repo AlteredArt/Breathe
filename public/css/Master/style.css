@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   color: var(--primary);
   text-align: center; 
-  background-image: url("../../images/main.jpg");
+  background-image: url("../../assets/images/main.jpg");
   }
 
 hr {
