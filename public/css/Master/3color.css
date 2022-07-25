@@ -6,7 +6,7 @@
 h1, h2, h3, h4, h5, h6 {color: var(--primary);}
 
 /* PARAGRAPHS, LABELS, INPUT, FORM, BUTTON */
-p, label {color: (--secondary);}
+p, label {color: var(--primary);}
 
 /* BODY BACKGROUND COLOR */
 body {background-color: var(--secondary)}
