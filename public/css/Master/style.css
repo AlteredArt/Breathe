@@ -15,7 +15,8 @@ body {
   color: var(--primary);
   text-align: center; 
   background-image: url("../../images/main.jpg");
-  }
+  color: aliceblue;
+}
 
 hr {
   width: 80%;
@@ -48,11 +49,8 @@ hr {
 }
 
 footer {
-margin-top: 12rem;
-width: 100%;
-background-color: black;
-padding: 1rem;
+  margin-top: 12rem;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
 }
-
-
-
