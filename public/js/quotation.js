@@ -12,7 +12,6 @@
 // }
 
 
-
 const QUOTES = [
     {
         id: 1,

@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+>>> NAVIGATION MENU
+--------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 1rem 2rem 1rem 1rem;
+    max-height: 95px;
+    border-bottom: 5px solid var(--gold);
+}
+
+/* CHANGE LOGO SIZE */
+.header_logo {
+width: 60px;
+height: 60px;
+}
+
+/* SOCIAL LINKS */
+.header_social a:first-child{margin-right: 1.5rem;}
+.header_social a:last-child{margin-left: 1.5rem;}
+.plane {margin-right:1.5rem;}
+
+/* EDIT THE LINKS */
+.nav_link:hover {color: #DFC164;}
+.navbar_links {
+    display: flex;
+    color: var(--primary);
+    justify-content: space-between;
+    align-items: center;
+    width: 57vw;
+}
+
+/* MOBILE MENU */
+.hamburger {display: none;}
+.mobile_social_nav {display:none;}
+
+/* TOOLTIP */
+.tooltip:hover .tooltiptext {visibility: visible;}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* font-size: 1rem; */
+    background-color: var(--primary);
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    padding: 0.50rem 1rem;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 280 !important;
+}
+
+/*--------------------------------------------------------------
+>>> NAVIGATION MENU - END
+--------------------------------------------------------------*/

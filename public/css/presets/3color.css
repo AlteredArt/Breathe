@@ -2,21 +2,13 @@
 >>> COLOR
 --------------------------------------------------------------*/
 
-/* HEADINGS */
 h1, h2, h3, h4, h5, h6 {color: var(--primary);}
-
-/* PARAGRAPHS, LABELS, INPUT, FORM, BUTTON */
 p, label {color: var(--primary);}
-
-/* BODY BACKGROUND COLOR */
 body {background-color: var(--secondary)}
-
-/* A TAGS (LINKS) */
-a {color: var(--primary); text-decoration: underline;}
-a:hover {color: red;} 
+a {color: var(--primary);}
+a:hover {color: var(--primary);} 
 a:visited {color: var(--primary);}
 
-/* COLOR THEME - SET YOUR COLOR CHOICES HERE */
 /* ROOT THEME */
 :root {
   --primary: white;
@@ -28,6 +20,7 @@ a:visited {color: var(--primary);}
   --bg2: #e73c7e;
   --bg3: #23a6d5;
   --bg4: #23d5ab;
+  --gold: #DFC164;
 }
 
 /* DARK THEME */
@@ -41,5 +34,9 @@ a:visited {color: var(--primary);}
   --bg2: #711688;
   --bg3: #23a6d5;
   --bg4: #23a687;
+  --gold: #DFC164;
 }
 
+/*--------------------------------------------------------------
+>>> COLOR - END
+--------------------------------------------------------------*/
