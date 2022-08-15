@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+>>> BACK TO TOP
+--------------------------------------------------------------*/
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    z-index: 99;
+    font-size: 2rem;
+    color: var(--gold);
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--primary);
+    border-radius: 10px;
+  }
+  
+  #backToTop:hover {font-size: 2.6rem;}
+  
+  /*--------------------------------------------------------------
+  >>> BACK TO TOP - END
+  --------------------------------------------------------------*/

@@ -1,7 +1,7 @@
 /*--------------------------------
   CIRCLES
  ------------------------------ */
-#circles {
+ #circles {
 }
 
 .circle-container {
@@ -123,4 +123,3 @@
   0% {transform: translate(0, 0);}
   100% {transform: translate(35px, -50px);}
 }
-
