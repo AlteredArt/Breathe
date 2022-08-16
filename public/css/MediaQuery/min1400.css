@@ -5,19 +5,14 @@
 @media only screen and (min-width: 1400px) {
 
 /*--------------------------------------------------------------
->>> HERO
+>>> STYLE
 --------------------------------------------------------------*/
 
-.hero {padding-top: 4rem;}
-
-.hero_image {
-    width:100% !important;
-    min-width:100% !important;
-    /* z-index: 101; */
-    padding-top: 1rem;
-    height: 100vh;
-}
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+/*--------------------------------------------------------------
+>>> LAYOUT
+--------------------------------------------------------------*/
 
 body {
   background-repeat: no-repeat;
@@ -30,17 +25,24 @@ body {
   justify-content: space-between;
   color: var(--primary);
   text-align: center; 
-  background-image: url("../../images/main.jpg");
   color: aliceblue;
 }
 
-hr {
-  width: 80%;
-  margin-bottom: 20px;
-  background-color: aliceblue;
-  color: aliceblue;
+#background {
+  background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shiftt.jpg");
+
 }
 
+
+/*--------------------------------------------------------------
+>>> HEADER
+--------------------------------------------------------------*/
+.background-section {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+}
 
 #header {
   max-width: 70%;
@@ -52,8 +54,20 @@ hr {
   border: 3px solid whitesmoke;
 } 
 
+
+hr {
+  width: 50%;
+  height: 6px;
+  margin: 40px auto;
+  background-color: aliceblue;
+}
+
+
 .quote-author { padding-top: 1rem; }
 
+/*--------------------------------------------------------------
+>>> WORD CONTAINER
+--------------------------------------------------------------*/
 .word-container {
   margin: 4rem 0;
   background: rgb(0,212,255);
@@ -64,18 +78,27 @@ hr {
   animation: shrink 4s ease alternate infinite;
 }
 
+/*--------------------------------------------------------------
+>>> FOOTER
+--------------------------------------------------------------*/
+
 footer {
   margin-top: 12rem;
   width: 100%;
   background-color: black;
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+
 /*--------------------------------------------------------------
->>> HERO - END
+>>> STYLE END
 --------------------------------------------------------------*/
 
 }
 
 /*--------------------------------------------------------------
->>> 1400
+>>> 1400 END
 ----------------------------------------------------------------*/

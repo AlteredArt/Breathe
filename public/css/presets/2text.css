@@ -1,6 +1,5 @@
-fiX CALC
 /*--------------------------------------------------------------
->>> TEXT - Fix calc
+>>> TEXT 
 --------------------------------------------------------------*/
 
 h1 {font-size: calc(1.375rem + 1.5vw) !important;}
@@ -15,5 +14,9 @@ p {font-size: calc(1.075rem + 0.3vw) !important;}
 /* TEXT STYLE( BOLD / UNDERLINE / FONT / ETC.) */
 /* h1, h2, h3, h4, h5, h6 {}
 p {} */
-a {text-decoration: none !important;}
+/* a {text-decoration: none !important;} */
 li {list-style: none !important;}
+
+/*--------------------------------------------------------------
+>>> TEXT - END
+--------------------------------------------------------------*/
