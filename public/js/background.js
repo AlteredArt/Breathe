@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 function changeImage() {
-    var image = document.getElementById('background-selection');
+    var image = document.getElementById('background');
     image.src("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/mountain-top.jpg");
 
 //     if (image.src.match("colorbottel")) {

@@ -8,6 +8,7 @@ body {background-color: var(--secondary)}
 a {color: var(--primary);}
 a:hover {color: var(--primary);} 
 a:visited {color: var(--primary);}
+input {color: var(--primary);}
 
 /* ROOT THEME */
 :root {
