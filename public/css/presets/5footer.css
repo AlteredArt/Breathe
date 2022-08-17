@@ -2,15 +2,19 @@
 >>> FOOTER
 --------------------------------------------------------------*/
 
-.footer {
-    margin-top: 4rem;
-    background-color: var(--gold);
+#footer {
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer h4{
-    color: black;
-    text-align: center;
-    padding: 1rem;
+.footer_logo {
+    width: 40px;
+    height: 40px;
 }
 
 /*--------------------------------------------------------------

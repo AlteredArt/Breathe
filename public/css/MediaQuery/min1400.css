@@ -8,52 +8,51 @@
 >>> STYLE
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap'); */
 
 /*--------------------------------------------------------------
 >>> LAYOUT
 --------------------------------------------------------------*/
 
-body {
+#background {
+  /* padding: 6rem 3rem 12rem 3rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'EB Garamond', serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--primary);
-  text-align: center; 
-  color: aliceblue;
-}
-
-#background {
   background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shiftt.jpg");
-
 }
 
-
-/*--------------------------------------------------------------
->>> HEADER
---------------------------------------------------------------*/
-.background-section {
+.control-panel {
+  margin: 3rem 0 0 0;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: black;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-#header {
-  max-width: 70%;
-  margin: 5rem 0 ;
-  padding: 3rem;
+.right-side {
+ /* margin: 6rem 0; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.welcome-container {
+  max-width: 30%;
+  padding: 2rem;
   background: rgb(0,212,255);
   background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%);
   border-radius: 20px;
   border: 3px solid whitesmoke;
-} 
-
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}  
 
 hr {
   width: 50%;
@@ -69,28 +68,31 @@ hr {
 >>> WORD CONTAINER
 --------------------------------------------------------------*/
 .word-container {
-  margin: 4rem 0;
-  background: rgb(0,212,255);
-  background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%);
-  padding: 2% 4%;
-  border: 3px solid whitesmoke;
-  border-radius: 10px;
-  animation: shrink 4s ease alternate infinite;
-}
+  height: 100%;
+  margin: 0rem 0 0 0;
+  /* background: rgb(0,212,255); */
+  /* background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%); */
+  background: linear-gradient(235deg, #39b998, #394db9, #b95239, #b939a4);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 
-/*--------------------------------------------------------------
->>> FOOTER
---------------------------------------------------------------*/
+  padding: 2rem 4rem;
+  border-right: 3px solid whitesmoke;
+  border-left: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  border-radius: 0 0 10px 10px;
 
-footer {
-  margin-top: 12rem;
-  width: 100%;
-  background-color: black;
-  padding: 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 20px 0 black;
+  
+  /* animation: shrink 4s ease alternate infinite; */
 }
+
 
 
 /*--------------------------------------------------------------
@@ -102,3 +104,26 @@ footer {
 /*--------------------------------------------------------------
 >>> 1400 END
 ----------------------------------------------------------------*/
+
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}

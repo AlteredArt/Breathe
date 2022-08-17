@@ -8,8 +8,10 @@
 @import "./presets/3color.css";
 @import "./presets/4navMenu.css";
 @import "./presets/5footer.css";
-@IMPORT "./presets/6themeSwitch.css";
-@import "./presets/7backToTop.css";
+/* EXTRA */
+@import "./presets/circles.css"; 
+@import "./presets/music.css";
+
 
 /* MEDIA QUERY */
 @import "./MediaQuery/576.css";
@@ -20,9 +22,7 @@
 @import "./MediaQuery/min1400.css";
 
 
-/* EXTRA */
-@import "./presets/circles.css"; 
-@import "./presets/music.css";
+
 
 /*--------------------------------------------------------------
 >>> INDEX

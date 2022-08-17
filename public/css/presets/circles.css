@@ -1,18 +1,14 @@
 /*--------------------------------
   CIRCLES
  ------------------------------ */
- #circles {
-}
 
 .circle-container {
+  margin: 1rem auto 8rem auto;
   padding: 6rem 0;
-
   height: 125px;
   width: 125px;
   animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
 }
-
-
 
 .circle {
   height: 125px;
