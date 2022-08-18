@@ -2,16 +2,17 @@
 >>> TEXT 
 --------------------------------------------------------------*/
 
-h1 {font-size: calc(1.175rem + 1.5vw) !important;}
-h2 {font-size: calc(1.225rem + 0.9vw) !important;}
+h1 {font-size: calc(1.15rem + 1.5vw) !important;}
+h2 {font-size: calc(0.15rem + 0.9vw) !important;}
 h3 {font-size: calc(1.13rem + 0.6vw) !important;} 
 h4 {font-size: calc(1.03rem + 0.3vw) !important;} 
 h5 {font-size: calc(1rem + 0.3vw) !important;} 
 h6 {font-size: calc(0.8rem + 0.3vw) !important;} 
-a {font-size: calc(1.075rem + 0.3vw) !important;} 
-p {font-size: calc(1.075rem + 0.3vw) !important;} 
+a {font-size: calc(.75rem + 0.3vw) !important;} 
+p {font-size: calc(.75rem + 0.3vw) !important;} 
 
 /* TEXT STYLE( BOLD / UNDERLINE / FONT / ETC.) */
+
 /* h1, h2, h3, h4, h5, h6 {}
 p {} */
 /* a {text-decoration: none !important;} */

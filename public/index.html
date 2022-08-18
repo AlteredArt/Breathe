@@ -21,17 +21,11 @@
 			
 				<nav class="header_navbar">
 					<ul class='navbar_links nav_menu'>
-					<li class='nav_item secondary'><a href="#websites" class='nav_link'>Frequency</a></li>
-					<li class='nav_item secondary'><a href="#blogs" class='nav_link'>Temple Tree</a></li>
-					<li class='nav_item secondary'><a href="#graphics" class='nav_link'>Red Shift</a></li>
-					<li class='nav_item secondary'><a href="#achievements" class='nav_link'>Wormhole</a></li>
-						<div class="mobile_social_nav">
-						<li class='mobile_social_item'><a href="https://github.com/AlteredArt"><i class="fa-brands fa-github-alt  tooltip"><span class="tooltiptext">GitHub</span></i></a></li>
-						<li class='mobile_social_item'><a href="mailto:cherokeedreemer@gmail.com"><i class="fa-solid fa-paper-plane  tooltip"><span class="tooltiptext">Mail</span></i></a></li>
-						<li class='mobile_social_item'><a href="https://www.linkedin.com/in/jared-matta-33629a19a/"><i class="fa-brands fa-linkedin tooltip"><span class="tooltiptext">Linked In</span></i></a></li>
-						<li class='mobile_social_item'><a href="https://jared-mattas-portfolio.s3.us-west-1.amazonaws.com/Personal/Jared_Mattas_Resume.pdf"><i class="fa fa-file fa-bounce bounce tooltip"> <span class="tooltiptext">Resume</span></i></a></li>
-						</div>  
-					</ul>
+					<li class='nav_item secondary'><button class='nav_link' onclick="document.body.style.backgroundColor = 'orange';">Frequency</button></li>
+					<li class='nav_item secondary'><button class='nav_link' onclick="document.body.style.backgroundColor = 'blue';">Temple Tree</button></li>
+					<li class='nav_item secondary'><button class='nav_link' onclick="document.body.style.backgroundColor = 'red';">Red Shift</button></li>
+					<li class='nav_item secondary'><button class='nav_link' onclick="document.body.style.backgroundColor = 'green';">Wormhole</button></li>
+		</ul>
 					<div class="hamburger">
 					<span class="bar"></span>
 					<span class="bar"></span>
@@ -48,8 +42,8 @@
 				<h1> Welcome & Relax</h1>
 				<hr>
 				<div id="changeText" class="quote-container">
-					<h4 class="quote-text">To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.</h4>
-					<p class="quote-author">~Alan Watts~</p>
+					<h4 id="quote-text">To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.</h4>
+					<p id="quote-author">~Alan Watts~</p>
 				</div>
 			</div>
 
@@ -87,11 +81,6 @@
 
 		</div>
 
-	
-
-
-
-		
 		<div id="circles">
 			<div class="circle-container">
 				<div class="circle"></div>
@@ -110,7 +99,7 @@
 
 		<footer id="footer">
 			<a href="https:jaredmatta.com"><img src="https://jared-mattas-portfolio.s3.us-west-1.amazonaws.com/Main/fMAIN_logo_small.jpg" alt="logo" class='footer_logo'></a>
-			<p><script>document.write(new Date().getFullYear());</script> @ <a href="https://jared-matta.web.app/"> Altered Art</a></p>
+			<p><script>document.write(new Date().getFullYear());</script> @ <a href="https:jaredmatta.com"> Altered Art</a></p>
 			<a href="">Learn More</a>
 		</footer>
 
@@ -118,7 +107,7 @@
 </body>
 <!-- <script src="./js/background.js"></script> -->
 <script src="./js/music.js"></script>
-<!-- <script src="./js/quotation.js"></script> -->
+<script src="./js/quotation.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </html>
