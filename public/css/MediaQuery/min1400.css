@@ -3,6 +3,7 @@
 ----------------------------------------------------------------*/
 
 @media only screen and (min-width: 1400px) {
+  /* -webkit-font-smoothing: antialiased; */
 
 /*--------------------------------------------------------------
 >>> STYLE
@@ -15,15 +16,15 @@
 --------------------------------------------------------------*/
 
 #background {
-  /* padding: 6rem 3rem 12rem 3rem; */
   display: flex;
   flex-direction: column;
   justify-content: center; 
-
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shiftt.jpg");
+  background-position: left center;
+  /* margin-bottom: 22rem; */
 }
 
 .control-panel {
@@ -32,10 +33,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
 }
 
 .right-side {
- /* margin: 6rem 0; */
   display: flex;
   flex-direction: column;
 }
@@ -44,20 +45,21 @@
 .welcome-container {
   max-width: 30%;
   padding: 2rem;
-  background: rgb(0,212,255);
-  background: radial-gradient(circle, rgba(0,212,255,1) -100%, rgba(1,100,139,1) 3%, rgba(2,0,36,1) 100%);
+  background-color: black;
   border-radius: 20px;
   border: 3px solid whitesmoke;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-self: center;
+  min-height: 260px;
+  max-height: 260px;
 }  
 
 hr {
   width: 50%;
   height: 6px;
-  margin: 40px auto;
+  margin: 20px auto;
   background-color: aliceblue;
 }
 
@@ -78,17 +80,14 @@ hr {
   -moz-animation: AnimationName 30s ease infinite;
   -o-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
-
-  padding: 2rem 4rem;
+  padding: 0.3rem 2rem;
   border-right: 3px solid whitesmoke;
   border-left: 3px solid whitesmoke;
   border-bottom: 3px solid whitesmoke;
   border-radius: 0 0 10px 10px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 20px 0 black;
   
   /* animation: shrink 4s ease alternate infinite; */
 }

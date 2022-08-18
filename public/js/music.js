@@ -13,10 +13,10 @@ const title = document.getElementById('music-title');
 const cover = document.getElementById('music-cover');
 
 // Song titles
-const songs = ['focus', 'relax', 'sleep', 'minuet', 'machine'];
+const songs = ['Ambient Piano', 'Emotional Piano', 'Far From Home', 'First Focus', 'Just Relax', 'Relax', 'Relaxing Light', 'Reorder', 'Show Reel', 'Sleep', 'Spirit Blossom', 'Summer Sun'];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);

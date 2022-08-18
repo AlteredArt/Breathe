@@ -4,90 +4,87 @@ console.log("This has loaded.");
 const QUOTES = [
     {
         id: 1,
-        quote: "Breathing is only the begging!",
-        author: "Test" 
+        quote: "To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.",
+        author: "~Alan Watts~" 
     },
     {
         id: 2,
-        quote: "Breatcxvxvhing is only the begging!",
-        author: "Test2" 
+        quote: "Tension is who you think you should be. Relaxation is who you are.",
+        author: "~Ude Ibiam Ufiem~" 
     },
     {
         id: 3,
-        quote: "Breathing is onsdvly the begging!",
-        author: "Test" 
+        quote: "Your mind will answer most questions if you learn to relax and wait for the answer.",
+        author: "~William Burroughs~" 
     },
     {
         id: 4,
-        quote: "Breathing is only the ddcdscsbegging!",
-        author: "Test" 
+        quote: "Almost everything will work again if you unplug it for a few minutes...Including you.",
+        author: "~Anne Lamott~" 
     },
     {
         id: 5,
-        quote: "Breathing is only the begging!",
-        author: "Test" 
+        quote: "When someone tells me to 'just relax,' I wonder why they don’t hand me a book?",
+        author: "~Richelle E. Goodrich~" 
     },
     {
         id: 6,
-        quote: "Breathing is only the begging!",
-        author: "Test" 
+        quote: "Relax and take a deep breath. No one else knows what they’re doing either.",
+        author: "~Ricky Gervais~" 
     },
     {
         id: 7,
-        quote: "Breathing is only the begging!",
-        author: "Test" 
+        quote: "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves",
+        author: "~Buddah~" 
     }
 ]
 
-document.getElementById("quote-author").innerHTML= QUOTES[2].author;
 
-document.getElementById("quote-text").innerHTML= QUOTES[2].quote;
+
+var counter = 0;
+var word = document.getElementById("quote-text");
+var maker = document.getElementById("quote-author");
+var inst = setInterval(revolvingQuotes, 8000);
+
 
 function revolvingQuotes () {
- 
+    word.innerHTML = QUOTES[counter].quote;
+    maker.innerHTML = QUOTES[counter].author;
+    counter++;
+    if (counter >= QUOTES.length) {
+      counter = 0;
+      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    }
 }
 
 revolvingQuotes();
 
 
+
 /*--------------------------------
- Words
- ------------------------------ */
+Words
+------------------------------ */
 
- // const totalTime = 7500;
-// const breatheTime = (totalTime / 5) * 2;
-// const holdTime = totalTime / 4;
-// let words = document.getElementById('word');
+var biboText = ["BREATHE IN", "breathe out"];
+var biboCounter = 0;
+var biboWord = document.getElementById("word");
+var biboColor = document.getElementsByClassName("word-container");
+var biboInst = setInterval(change, 4500);
 
+function change() {
+  biboWord.style.fontSize = '2.75rem';
+    // biboColor.style = 'red';
+  biboWord.innerHTML = biboText[biboCounter];
 
-
-// $(function () {
-//   let count = 0;
-//   let wordsArray = ["BREATHE IN!", "-Hold-", "breathe out"];
-//   setInterval(function () {
-//     count++;
-//     $("#word").fadeOut(500, function () {
-//       $(this).text(wordsArray[count % wordsArray.length]).fadeIn(500);
-//     });
-//   }, 3000, 2000, 1000);
-// });
-
-
-//2000, 100, 2000
+  biboCounter++;
+  if (biboCounter >= biboText.length) {
+    biboCounter = 0;
+    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}
+change();
 
 
-// var text = ["Welcome", "Hi", "Sup dude"];
-// var counter = 0;
-// var elem = document.getElementById("changeText");
-// var inst = setInterval(change, 3000);
-
-// function change() {
-//   elem.innerHTML = text[counter];
-//   counter++;
-//   if (counter >= text.length) {
-//     counter = 0;
-//   }
-// }
 
 /*--------------------------------
  Words END
