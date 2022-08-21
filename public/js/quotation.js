@@ -69,7 +69,7 @@ var biboText = ["BREATHE IN", "breathe out"];
 var biboCounter = 0;
 var biboWord = document.getElementById("word");
 var biboColor = document.getElementsByClassName("word-container");
-var biboInst = setInterval(change, 4500);
+var biboInst = setInterval(change, 4000);
 
 function change() {
   biboWord.style.fontSize = '2.75rem';

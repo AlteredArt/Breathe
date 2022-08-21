@@ -9,13 +9,17 @@
     background-color: var(--secondary);
     z-index: 100;
     width: 100%;
+    min-width: 100%;
     padding: 1rem 2rem 1rem 1rem;
     max-height: 95px;
     border-bottom: 5px solid var(--primary);
 }
 
 /* EDIT THE LINKS */
-.nav_link:hover {font-size: 1rem;}
+.nav_link:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
 .navbar_links {
     display: flex;
     color: var(--primary);
@@ -30,8 +34,6 @@
 .mobile_social_nav {display:none;}
 
 .header_navbar button {
-    color: var(--secondary);
-    background-color: red;
     padding: 0.7rem 1rem;
     border-radius: 10px;;
 }
