@@ -15,7 +15,7 @@ function mountaintop() {
 }
 
 function redshift() {
-    document.getElementById("background").style.backgroundImage = "url(https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg)";
+    document.getElementById("background").style.backgroundImage = "url(https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/xred-shift.jpg)";
 }
 
 function templetree() {

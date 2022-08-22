@@ -2,10 +2,9 @@
 >>> NAVIGATION MENU
 --------------------------------------------------------------*/
 
+.nav_menu {min-width: 100%;}
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--secondary);
     z-index: 100;
     width: 100%;
