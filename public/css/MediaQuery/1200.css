@@ -4,5 +4,135 @@
 
 @media only screen and (max-width: 1200px) {
 
+      /*--------------------------------------------------------------
+  >>> LAYOUT
+  --------------------------------------------------------------*/
+
+  #background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg");
+    background-position: left center;
+    /* margin-bottom: 22rem; */
+  }
+  
+  .control-panel {
+    margin: 3rem 0 0 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+  }
+  
+  .right-side {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .welcome-container {
+    max-width: 30%;
+    padding: 2rem;
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 260px;
+    max-height: 260px;
+  }  
+  
+  hr {
+    width: 50%;
+    height: 6px;
+    margin: 20px auto;
+    background-color: aliceblue;
+  }
+  
+  
+  .quote-author { padding-top: 1rem; }
+  
+  /*--------------------------------------------------------------
+  >>> WORD CONTAINER
+  --------------------------------------------------------------*/
+  .word-container {
+    height: 100%;
+    margin: 0rem 0 0 0;
+    background-size: 800% 800%;
+    padding: 0.3rem 2rem;
+    border-right: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
     
+  }
+
+    
+  @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+  }
+
+  .word {
+    animation: mymove 8s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @keyframes mymove {50% {font-size: 2rem;}}
+
+
+
+  #blueflower {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/blue-flower.jpg") no-repeat scroll 0 0 transparent;
+    color: white;
+  }
+
+  #frequency {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/frequency.jpg") no-repeat scroll 0 0 transparent;
+    color: white;
+  }
+
+  #mountaintop {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/mountain-top.jpg") no-repeat scroll 0 0 transparent;
+    color: black;
+  }
+
+  #redshift {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg") no-repeat scroll 0 0 transparent;
+    color: white;
+  }
+
+  #templetree {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/temple-tree.jpg") no-repeat scroll 0 0 transparent;
+    color: white;
+  }
+
+  #temple {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/temple.jpg") no-repeat scroll 0 0 transparent;
+    color: white;
+  }
+
+  #wormhole {
+    background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/wormhole.jpg") no-repeat scroll 0 0 transparent;
+    color: white;
+  }
+
+  /*--------------------------------------------------------------
+  >>> STYLE END
+  --------------------------------------------------------------*/
+
 }

@@ -3,19 +3,6 @@
 ----------------------------------------------------------------*/
 
 @media only screen and (max-width: 992px) {
-    .header h1 {
-        margin: 0;
-        padding-bottom: 1rem;
-        line-height: 50px;
-      }
-    
-      h2 {
-        margin: 0 15px;
-        padding: 3px;
-        font-size: 30px;
-        text-align: center;
-      }
-    
-      .header-container {width: 70%;}    
+
     
 }

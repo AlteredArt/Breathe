@@ -65,16 +65,19 @@ revolvingQuotes();
 Words
 ------------------------------ */
 
-var biboText = ["BREATHE IN", "breathe out"];
+var biboText = ["breathe IN", "breathe out"];
 var biboCounter = 0;
 var biboWord = document.getElementById("word");
+// var wc = document.getElementById('word-container');
 var biboColor = document.getElementsByClassName("word-container");
 var biboInst = setInterval(change, 4000);
 
 function change() {
-  biboWord.style.fontSize = '2.75rem';
     // biboColor.style = 'red';
   biboWord.innerHTML = biboText[biboCounter];
+//   wc.style.background = '#122788';
+
+
 
   biboCounter++;
   if (biboCounter >= biboText.length) {
