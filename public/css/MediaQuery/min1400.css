@@ -65,6 +65,9 @@ hr {
 
 
 .quote-author { padding-top: 1rem; }
+.quote-text {
+  line-height: 12px !important;
+ }
 
 /*--------------------------------------------------------------
 >>> WORD CONTAINER
