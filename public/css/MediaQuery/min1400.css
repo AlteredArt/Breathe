@@ -12,6 +12,30 @@
 /* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap'); */
 
 /*--------------------------------------------------------------
+>>> TEXT 
+--------------------------------------------------------------*/
+
+h1 {font-size: calc(1.15rem + 1.1vw) !important;}
+/* h2 {font-size: calc(0.15rem + 0.9vw) !important;} */
+h3 {font-size: calc(1.13rem + 0.6vw) !important;} 
+h4 {font-size: calc(1.01rem + 0.3vw) !important;} 
+h5 {font-size: calc(1rem + 0.3vw) !important;} 
+h6 {font-size: calc(0.8rem + 0.3vw) !important;} 
+a {font-size: calc(.75rem + 0.3vw) !important;} 
+p {font-size: calc(.75rem + 0.3vw) !important;} 
+
+/* TEXT STYLE( BOLD / UNDERLINE / FONT / ETC.) */
+
+/* h1, h2, h3, h4, h5, h6 {}
+p {} */
+/* a {text-decoration: none !important;} */
+li {list-style: none !important;}
+
+/*--------------------------------------------------------------
+>>> TEXT - END
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 >>> LAYOUT
 --------------------------------------------------------------*/
 
@@ -64,10 +88,11 @@ hr {
 }
 
 
-.quote-author { padding-top: 1rem; }
-.quote-text {
-  line-height: 12px !important;
- }
+/* #quote-author { padding-top: 12rem !important; } */
+#quote-text {
+  line-height: 25px !important;
+  padding: 0 0 2rem 0 !important;
+}
 
 /*--------------------------------------------------------------
 >>> WORD CONTAINER
@@ -87,10 +112,7 @@ hr {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
-  
 }
-
-
 
 @keyframes gradient {
   0% {background-position: 0% 50%;}
@@ -107,7 +129,7 @@ hr {
 
 
 
-#blueflower {
+/* #blueflower {
   background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/blue-flower.jpg") no-repeat scroll 0 0 transparent;
   color: white;
 }
@@ -140,7 +162,7 @@ hr {
 #wormhole {
   background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/wormhole.jpg") no-repeat scroll 0 0 transparent;
   color: white;
-}
+} */
 
 /*--------------------------------------------------------------
 >>> STYLE END
