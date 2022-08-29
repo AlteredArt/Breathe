@@ -24,16 +24,11 @@ const QUOTES = [
     },
     {
         id: 5,
-        quote: "When someone tells me to 'just relax,' I wonder why they don’t hand me a book?",
-        author: "~Richelle E. Goodrich~" 
-    },
-    {
-        id: 6,
         quote: "Relax and take a deep breath. No one else knows what they’re doing either.",
         author: "~Ricky Gervais~" 
     },
     {
-        id: 7,
+        id: 6,
         quote: "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves",
         author: "~Buddah~" 
     }

@@ -23,12 +23,6 @@ h5 {font-size: calc(1rem + 0.3vw) !important;}
 h6 {font-size: calc(0.8rem + 0.3vw) !important;} 
 a {font-size: calc(.75rem + 0.3vw) !important;} 
 p {font-size: calc(.75rem + 0.3vw) !important;} 
-
-/* TEXT STYLE( BOLD / UNDERLINE / FONT / ETC.) */
-
-/* h1, h2, h3, h4, h5, h6 {}
-p {} */
-/* a {text-decoration: none !important;} */
 li {list-style: none !important;}
 
 /*--------------------------------------------------------------
@@ -38,6 +32,13 @@ li {list-style: none !important;}
 /*--------------------------------------------------------------
 >>> LAYOUT
 --------------------------------------------------------------*/
+
+.nav_link {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  color: var(--primary);
+}
 
 #background {
   display: flex;
@@ -57,14 +58,12 @@ li {list-style: none !important;}
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
 }
-
 
 .welcome-container {
   max-width: 30%;
@@ -87,16 +86,15 @@ hr {
   background-color: aliceblue;
 }
 
-
-/* #quote-author { padding-top: 12rem !important; } */
 #quote-text {
   line-height: 25px !important;
-  padding: 0 0 2rem 0 !important;
+  padding: 0 0 0.8rem 0 !important;
 }
 
 /*--------------------------------------------------------------
 >>> WORD CONTAINER
 --------------------------------------------------------------*/
+
 .word-container {
   height: 100%;
   margin: 0rem 0 0 0;
@@ -125,44 +123,11 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
-@keyframes mymove {50% {font-size: 2rem;}}
-
-
-
-/* #blueflower {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/blue-flower.jpg") no-repeat scroll 0 0 transparent;
-  color: white;
+@keyframes mymove {50% {font-size: 2rem;}}.nav-link {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
 }
-
-#frequency {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/frequency.jpg") no-repeat scroll 0 0 transparent;
-  color: white;
-}
-
-#mountaintop {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/mountain-top.jpg") no-repeat scroll 0 0 transparent;
-  color: black;
-}
-
-#redshift {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg") no-repeat scroll 0 0 transparent;
-  color: white;
-}
-
-#templetree {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/temple-tree.jpg") no-repeat scroll 0 0 transparent;
-  color: white;
-}
-
-#temple {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/temple.jpg") no-repeat scroll 0 0 transparent;
-  color: white;
-}
-
-#wormhole {
-  background: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/wormhole.jpg") no-repeat scroll 0 0 transparent;
-  color: white;
-} */
 
 /*--------------------------------------------------------------
 >>> STYLE END
