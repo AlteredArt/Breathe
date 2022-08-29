@@ -2,7 +2,7 @@
 >>> NAVIGATION MENU
 --------------------------------------------------------------*/
 
-.nav_menu {min-width: 100%;}
+.nav-menu {min-width: 100%;}
 
 .header {
     background-color: var(--secondary);
@@ -15,11 +15,20 @@
 }
 
 /* EDIT THE LINKS */
-.nav_link:hover {
+.nav-link {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    color: var(--primary);
+    padding: 0.8rem 1rem;
+    border-radius: 10px;;
+}
+
+.nav-link:hover {
     background-color: var(--primary);
     color: var(--secondary);
 }
-.navbar_links {
+.navbar-links {
     display: flex;
     color: var(--primary);
     justify-content: space-between;
@@ -30,12 +39,7 @@
 
 /* MOBILE MENU */
 .hamburger {display: none;}
-.mobile_social_nav {display:none;}
 
-.header_navbar button {
-    padding: 0.7rem 1rem;
-    border-radius: 10px;;
-}
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU - END
 --------------------------------------------------------------*/

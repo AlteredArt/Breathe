@@ -4,126 +4,155 @@
 
 @media only screen and (max-width: 1400px) {
 
-/*--------------------------------------------------------------
->>> TEXT 
---------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  >>> TEXT 
+  --------------------------------------------------------------*/
 
-/* h1 {font-size: calc(1.15rem + 1.1vw) !important;} */
-/* h2 {font-size: calc(0.15rem + 0.9vw) !important;} */
-h3 {font-size: calc(1.13rem + 0.6vw) !important;} 
-h4 {font-size: calc(1.01rem + 0.3vw) !important;} 
-h5 {font-size: calc(1rem + 0.3vw) !important;} 
-h6 {font-size: calc(0.8rem + 0.3vw) !important;} 
-a {font-size: calc(.75rem + 0.3vw) !important;} 
-p {font-size: calc(.75rem + 0.3vw) !important;} 
-li {list-style: none !important;}
+  h1 {font-size: calc(1.15rem + 1.1vw);}
+  h2 {font-size: calc(0.15rem + 0.9vw);}
+  h4 {font-size: calc(1.01rem + 0.3vw);} 
+  h6 {font-size: calc(1.01rem + 0.1vw);} 
+  a {font-size: calc(.75rem + 0.3vw);} 
+  p {font-size: calc(.75rem + 0.3vw);} 
+  li {list-style: none;}
 
-/*--------------------------------------------------------------
->>> TEXT - END
---------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  >>> TEXT - END
+  --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
->>> LAYOUT
---------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  >>> MAIN CONTAINER
+  --------------------------------------------------------------*/
 
-.nav_link {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  color: var(--primary);
-}
+  .main-container {
+    max-width: 100%;
+    /* margin: 0 auto; */
+  }
 
-#background {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg");
-  background-position: left center;
-  /* margin-bottom: 22rem; */
-}
+  /*--------------------------------------------------------------
+  >>> MAIN CONTAINER - END
+  --------------------------------------------------------------*/
 
-.control-panel {
-  margin: 3rem 0 0 0;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  /*--------------------------------------------------------------
+  >>> LAYOUT
+  --------------------------------------------------------------*/
 
-.right-side {
-  display: flex;
-  flex-direction: column;
-}
+  #background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg");
+    /* background-position: left center; */
+  }
 
-.welcome-container {
-  max-width: 30%;
-  padding: 2rem;
-  background-color: black;
-  border-radius: 20px;
-  border: 3px solid whitesmoke;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  min-height: 260px;
-  max-height: 260px;
-}  
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
 
-hr {
-  width: 50%;
-  height: 6px;
-  margin: 20px auto;
-  background-color: aliceblue;
-}
+  /*--------------------------------------------------------------
+  >>> LAYOUT - END
+  --------------------------------------------------------------*/
 
-#quote-text {
-  line-height: 25px !important;
-  padding: 0 0 0.8rem 0 !important;
-}
+  /*--------------------------------------------------------------
+  >>> CONTROL PANEL
+  --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
->>> WORD CONTAINER
---------------------------------------------------------------*/
+  .control-panel {
+    margin: 3rem 0 0 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-.word-container {
-  height: 100%;
-  margin: 0rem 0 0 0;
-  background-size: 800% 800%;
-  padding: 0.3rem 2rem;
-  border-right: 3px solid whitesmoke;
-  border-left: 3px solid whitesmoke;
-  border-bottom: 3px solid whitesmoke;
-  border-radius: 0 0 10px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-}
+  .music-side {
+    display: flex;
+    flex-direction: column;
+  }
 
-@keyframes gradient {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
+  .welcome-container {
+    max-width: 30%;
+    padding: 1.8rem;
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 260px;
+    max-height: 260px;
+  }  
 
-.word {
-  animation: mymove 8s infinite;
-  transition: all 0.3s ease-in-out;
-}
+  .welcome-container h1 {
+    font-family: 'Sacramento', cursive;
+    padding: 0;
+  }
 
-@keyframes mymove {50% {font-size: 2rem;}}.nav-link {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-}
+  hr {
+    width: 60%;
+    height: 3px;
+    margin: 10px auto 17px auto;
+    background: var(--primary);
+  }
 
-/*--------------------------------------------------------------
->>> STYLE END
---------------------------------------------------------------*/
+  #quote-text {
+    line-height: 23px;
+    padding: 0 0 0.7rem 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #quote-author {
+    font-style: italic;
+  }
+
+  /*--------------------------------------------------------------
+  >>> CONTROL PANEL - END
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  >>> WORD CONTAINER
+  --------------------------------------------------------------*/
+
+  .word-container {
+    height: 100%;
+    margin: 0rem 0 0 0;
+    background-size: 800% 800%;
+    padding: 0.3rem 2rem;
+    border-right: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  .word {
+    animation: mymove 8s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  @keyframes mymove {50% {font-size: 2rem;}}.nav-link {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  /*--------------------------------------------------------------
+  >>> WORD CONTAINER END
+  --------------------------------------------------------------*/
+  
   
 }

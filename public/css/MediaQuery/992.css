@@ -4,76 +4,47 @@
 
 @media only screen and (max-width: 992px) {
 
-/*--------------------------------------------------------------
-  >>> LAYOUT
+  /*--------------------------------------------------------------
+  >>> TEXT 
   --------------------------------------------------------------*/
 
-  #background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg");
-    background-position: left center;
-  }
-  
-  .control-panel {
-    margin: 1.5rem 0 0 0;
-    max-width: 100%;
-  }
-  
-  .right-side {
-    display: flex;
-    flex-direction: column;
-  }
-  
+  h1 {font-size: calc(0.95rem + 0.3vw);}
+  h2 {font-size: calc(0.15rem + 0.9vw);}
+  h4 {font-size: calc(1.01rem + 0.3vw);} 
+  h6 {font-size: calc(1.01rem + 0.1vw);} 
+  a {font-size: calc(.75rem + 0.3vw);} 
+  p {font-size: calc(.75rem + 0.3vw);} 
+  li {list-style: none;}
+
+  /*--------------------------------------------------------------
+  >>> TEXT - END
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  >>> CONTROL PANEL
+  --------------------------------------------------------------*/
+
   .welcome-container {
     max-width: 30%;
-    padding: 2rem;
-    background-color: black;
-    border-radius: 20px;
-    border: 3px solid whitesmoke;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+    padding: 1.8rem 1.2rem !important;
     min-height: 260px;
     max-height: 260px;
   }  
-  
-  hr {margin: 10px auto;}
-  
-  /* .quote-author { padding-top: 1rem; } */
-  
-  /*--------------------------------------------------------------
-  >>> WORD CONTAINER
-  --------------------------------------------------------------*/
 
-  .word-container {
-    margin: 0rem 0 0 0;
-    background-size: 800% 800%;
-    padding: 0.3rem 2rem;
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
+
+  hr {
+    width: 60%;
+    height: 3px;
+    margin: 10px auto 17px auto;
   }
 
-  @keyframes gradient {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+  #quote-text {
+    line-height: 19px !important;
+    padding: 0 0 0.7rem 0;
   }
-
-  .word {
-    animation: mymove 8s infinite;
-    transition: all 0.3s ease-in-out;
-  }
-
-  @keyframes mymove {50% {font-size: 2rem;}}
 
   /*--------------------------------------------------------------
-  >>> STYLE END
+  >>> CONTROL PANEL - END
   --------------------------------------------------------------*/
-
+ 
 }

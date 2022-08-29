@@ -4,8 +4,8 @@ console.log("This has loaded.");
 const QUOTES = [
     {
         id: 1,
-        quote: "To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.",
-        author: "~Alan Watts~" 
+        quote: "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves",
+        author: "~Buddah~" 
     },
     {
         id: 2,
@@ -14,23 +14,18 @@ const QUOTES = [
     },
     {
         id: 3,
-        quote: "Your mind will answer most questions if you learn to relax and wait for the answer.",
-        author: "~William Burroughs~" 
+        quote: "To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.",
+        author: "~Alan Watts~" 
     },
     {
         id: 4,
-        quote: "Almost everything will work again if you unplug it for a few minutes...Including you.",
-        author: "~Anne Lamott~" 
-    },
-    {
-        id: 5,
         quote: "Relax and take a deep breath. No one else knows what they’re doing either.",
         author: "~Ricky Gervais~" 
     },
     {
-        id: 6,
-        quote: "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves",
-        author: "~Buddah~" 
+        id: 5,
+        quote: "Your mind will answer most questions if you learn to relax and wait for the answer.",
+        author: "~William Burroughs~" 
     }
 ]
 
@@ -39,7 +34,7 @@ const QUOTES = [
 var counter = 0;
 var word = document.getElementById("quote-text");
 var maker = document.getElementById("quote-author");
-var inst = setInterval(revolvingQuotes, 8000);
+var inst = setInterval(revolvingQuotes, 12000);
 
 
 function revolvingQuotes () {
