@@ -10,10 +10,9 @@
   justify-content: center;
   padding: 40px 30px;
   position: relative;
-  margin: 3.7rem 0 0px 0;
+  margin: 3.7rem auto 0px auto !important;
   z-index: 10;
-  max-width: 100%;
-
+  max-width: 60%;
 }
 
 .music-img-container {
@@ -81,7 +80,6 @@
 
 .music-info {
   background-color: black;
-
   border-radius: 15px 15px 0 0;
   border-top: 3px solid whitesmoke;
   border-left: 3px solid whitesmoke;
@@ -104,7 +102,6 @@
 }
 
 .music-info h4 {
-  font-size: 1.7rem;
   padding-top: 15px;
   margin: 0;
   text-align: left;
