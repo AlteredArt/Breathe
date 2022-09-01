@@ -56,6 +56,7 @@
   .music-side {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
   }
 
   .welcome-container {
@@ -101,6 +102,19 @@
   /*--------------------------------------------------------------
   >>> CONTROL PANEL - END
   --------------------------------------------------------------*/
+
+  .music-container {
+    background-color: black;
+    border: 3px solid whitesmoke;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px;
+    position: relative;
+    margin: 3.7rem auto 0px auto !important;
+    z-index: 10;
+    max-width: 60%;
+  }
 
 
     

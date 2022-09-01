@@ -12,7 +12,7 @@
   position: relative;
   margin: 3.7rem auto 0px auto !important;
   z-index: 10;
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .music-img-container {
