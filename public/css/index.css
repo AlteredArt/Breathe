@@ -14,13 +14,12 @@
 
 
 /* MEDIA QUERY */
-@import "./MediaQuery/576.css";
-@import "./MediaQuery/768.css";
-@import "./MediaQuery/992.css";
-@import "./MediaQuery/1200.css";
-@import "./MediaQuery/1400.css";
 @import "./MediaQuery/min1400.css";
-
+@import "./MediaQuery/1400.css";
+@import "./MediaQuery/1200.css";
+@import "./MediaQuery/992.css";
+@import "./MediaQuery/768.css";
+@import "./MediaQuery/576.css";
 
 
 
