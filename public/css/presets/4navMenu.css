@@ -2,43 +2,57 @@
 >>> NAVIGATION MENU
 --------------------------------------------------------------*/
 
-.nav-menu {min-width: 100%;}
-
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary);
+    position: fixed;
     z-index: 100;
     width: 100%;
-    min-width: 100%;
     padding: 1rem 2rem 1rem 1rem;
     max-height: 95px;
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 5px solid var(--gold);
 }
+
+/* CHANGE LOGO SIZE */
+.header_logo {
+width: 60px;
+height: 60px;
+}
+
+/* SOCIAL LINKS */
+.header_social a:first-child{margin-right: 1.5rem;}
+.header_social a:last-child{margin-left: 1.5rem;}
+.plane {margin-right:1.5rem;}
 
 /* EDIT THE LINKS */
-.nav-link {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    color: var(--primary);
-    padding: 0.8rem 1rem;
-    border-radius: 10px;;
-}
-
-.nav-link:hover {
-    background-color: var(--primary);
-    color: var(--secondary);
-}
-.navbar-links {
+.nav_link:hover {color: #DFC164;}
+.navbar_links {
     display: flex;
     color: var(--primary);
     justify-content: space-between;
     align-items: center;
     width: 57vw;
-
 }
 
 /* MOBILE MENU */
 .hamburger {display: none;}
+.mobile_social_nav {display:none;}
+
+/* TOOLTIP */
+.tooltip:hover .tooltiptext {visibility: visible;}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* font-size: 1rem; */
+    background-color: var(--primary);
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    padding: 0.50rem 1rem;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 280 !important;
+}
 
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU - END

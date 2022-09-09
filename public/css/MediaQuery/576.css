@@ -4,7 +4,40 @@
 
 @media only screen and (max-width: 576px) {
 
-    
+  /*--------------------------------------------------------------
+  >>> NAVIGATION
+  --------------------------------------------------------------*/
+
+  .header_social {display: none !important;}
+  .header_switch {margin-left: 3rem !important;}
+  .nav_item { margin: 1.5rem 0  1.5rem 0;}
+  .tooltiptext {display: none;}
+  .nav_item {margin: 1rem 0;}
+
+
+  .special_container {
+      display: flex;
+      justify-content: space-around !important;
+      width: 100%;
+  }
+
+  .nav_item_secondary :hover {
+      background-color: var(--primary); 
+      padding: 1rem 7rem 1rem 7rem;
+  }
+
+  .mobile_social_nav {
+    display:flex;
+    align-content: space-around;
+    padding: 2rem;
+  }
+
+  .mobile_social_nav a:first-child{margin-right: 1.5rem;}
+  .mobile_social_nav a:last-child{margin-left: 1.5rem;}
+
+  /*--------------------------------------------------------------
+  >>> NAVIGATION - END
+  --------------------------------------------------------------*/
 }
 
 
