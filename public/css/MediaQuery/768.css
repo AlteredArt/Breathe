@@ -60,7 +60,8 @@
   }
 
   .welcome-container {
-    max-width: 60% !important;
+    max-width: 74% !important;
+    min-width: 74% !important;
     padding: 1.8rem;
     background-color: black;
     border-radius: 20px;
@@ -94,8 +95,8 @@
     /* height: 100%; */
     margin: 0 auto 0 auto !important;
     padding: 0.3rem 2rem;
-    min-width: 60% !important;
-    max-width: 60% !important;
+    min-width: 74% !important;
+    max-width: 74% !important;
     min-height: 55px !important;
   }
 
@@ -113,8 +114,19 @@
     position: relative;
     margin: 3.7rem auto 0px auto !important;
     z-index: 10;
-    max-width: 60%;
+    max-width: 74%;
   }
+
+      /*--------------------------------------------------------------
+    >>> NAVIGATION
+    --------------------------------------------------------------*/
+
+    .header_switch {margin-left: 4rem;}
+    .header_social {margin-left: 3rem;}
+
+    /*--------------------------------------------------------------
+    >>> NAVIGATION - END
+    --------------------------------------------------------------*/
 
 
     
