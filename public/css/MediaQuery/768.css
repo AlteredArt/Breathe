@@ -19,27 +19,6 @@
   >>> TEXT - END
   --------------------------------------------------------------*/
 
-  /*--------------------------------------------------------------
-  >>> LAYOUT
-  --------------------------------------------------------------*/
-
-  #background {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("https://ogbreathe.s3.us-west-1.amazonaws.com/Backgrounds/red-shift.jpg");
-    /* background-position: left center; */
-  }
-
-  /* .main-layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-  } */
-
-  /*--------------------------------------------------------------
-  >>> LAYOUT - END
-  --------------------------------------------------------------*/
 
   /*--------------------------------------------------------------
   >>> CONTROL PANEL
@@ -117,6 +96,12 @@
     max-width: 74%;
   }
 
+  .music-info {
+    padding: 10px 10px 0 43%;
+    left: -1.9px;
+    width: 101.07%;
+    padding: 10px 10px 0 160px;
+  }
       /*--------------------------------------------------------------
     >>> NAVIGATION
     --------------------------------------------------------------*/

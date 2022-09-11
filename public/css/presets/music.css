@@ -137,7 +137,7 @@
 }
 
 .progress {
-  background-color: yellowgreen;
+  background-color: rgb(50, 73, 205);
   border-radius: 5px;
   height: 100%;
   width: 0%;
