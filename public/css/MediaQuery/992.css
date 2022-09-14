@@ -60,7 +60,7 @@
     text-align: center;
     transition: 0.3s;
     box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
-    border-bottom: 3px solid var(--gold);
+    border-bottom: 3px solid var(--primary);
   }
 
   .bar {
@@ -70,15 +70,15 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--gold);
+    background-color: var(--primary);
   }
 
   .header_switch {margin-left: 7rem;}
   .nav_menu.active {left: 0;}
-  .nav_item :hover {color: #DFC164;}
+  .nav_item :hover {font-size: 1.1rem;}
   .nav_item {margin: 2rem 0;}
-  .nav_link :hover {color: #DFC164; }
-  .hamburger {display: block; cursor: pointer; }
+  .nav_link :hover {font-size: 1.1rem;}
+  .hamburger {display: block; cursor: pointer; padding-top: 0.5rem;}
   .hamburger.active .bar:nth-child(1) {transform: translateY(8px) rotate(45deg);}
   .hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg);} 
 
