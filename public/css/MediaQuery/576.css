@@ -14,6 +14,13 @@
   .tooltiptext {display: none;}
   .nav_item {margin: 1rem 0;}
 
+  #background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center !important;
+  }
+
 
   .special_container {
       display: flex;
@@ -26,14 +33,23 @@
       padding: 1rem 7rem 1rem 7rem;
   }
 
-  .mobile_social_nav {
-    display:flex;
-    align-content: space-around;
-    padding: 2rem;
+  .music-img-container img {
+    bottom:63px;
   }
 
-  .mobile_social_nav a:first-child{margin-right: 1.5rem;}
-  .mobile_social_nav a:last-child{margin-left: 1.5rem;}
+  .music-info {
+    padding: 10px 10px 0 43%;
+    left: -1.9px;
+    width: 101.6%;
+    padding: 10px 10px 0 160px;
+  }
+
+  .music-img-container::after {
+    position: absolute;
+    bottom: 209%;
+    left: 56px;
+    transform: translate(-50%, 50%);
+}
 
   /*--------------------------------------------------------------
   >>> NAVIGATION - END
