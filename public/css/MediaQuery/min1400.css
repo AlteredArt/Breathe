@@ -147,13 +147,19 @@
     background-size: 400% 400%;
   }
 
-  .learn-more {
-    padding: 3rem;
-    margin-bottom: 6rem;
-  }
+  
 
   /*--------------------------------------------------------------
   >>> WORD CONTAINER END
   --------------------------------------------------------------*/
+  .learn-more {
+    max-width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  .learn-more h1 {padding: 6rem 0 3rem 0;}
 
+  .learn-more div {max-width: 60%;}
+  .about {padding-top: 6rem;}
+  .links {padding: 1rem 0 0 2rem; display: table;}
 }
