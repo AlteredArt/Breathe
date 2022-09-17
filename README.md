@@ -6,3 +6,4 @@ What is it:
 finish learn more page
 mobileize it
 remove active button
+change background image size for mobile

@@ -1,4 +1,3 @@
-console.log("This has loaded.");
 
 
 const QUOTES = [
