@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<meta property="og:image" content="./images/aa_logo.jpg" />
+	<link rel="shortcut icon" type="image/jpg" href="./images/aa_logo.jpg"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
 			<header class="header" id="Header">
 				<nav class="header_navbar">
 					<ul class='navbar_links nav_menu'>
-						<li class='nav_item secondary'><a onclick="redshift()" id="redshift" class='nav_link active'>Red Shift</a></li>
+						<li class='nav_item secondary'><a onclick="redshift()" id="redshift" class='nav_link'>Red Shift</a></li>
 						<li class='nav_item secondary'><a onclick="mountaintop()" id="mountaintop" class='nav_link'>Mountain Top</a></li>
 						<li class='nav_item secondary'><a onclick="templetree()" id="templetree" class='nav_link'>Temple Tree</a></li>
 						<li class='nav_item secondary'><a onclick="temple()" id="temple" class='nav_link'>Temple</a></li>
@@ -124,23 +124,6 @@
 	function templetree() {document.getElementById("background").style.backgroundImage = "url('./images/temple-tree.jpg')";}
 	function temple() {document.getElementById("background").style.backgroundImage = "url('./images/temple.jpg')";}
 	function wormhole() {document.getElementById("background").style.backgroundImage = "url('./images/wormhole.jpg')";}
-</script>
-
-<script>
-	let navlinks = document.querySelectorAll('.nav_link');
-	// let save = ;
-	
-	
-	navlinks.forEach(a =>{
-
-		a.addEventListener('click', function(){
-
-			// navlinks.forEach(a => classList.remove('active'));
-			document.getElementsByClassName('active').classList.remove('active');
-			console.log('help');
-			this.classList.add('active');
-		})
-	})
 </script>
 
 </html>

@@ -157,9 +157,19 @@
     min-height: 100vh;
     margin: 0 auto;
   }
-  .learn-more h1 {padding: 6rem 0 3rem 0;}
+  .learn-more h1 {padding: 4rem 0 3rem 0;}
 
   .learn-more div {max-width: 60%;}
-  .about {padding-top: 6rem;}
+  .about {padding-top: 3rem;}
   .links {padding: 1rem 0 0 2rem; display: table;}
+  .links h2 {margin-left: -1rem;}
+  .links li {line-height: 30px;}
+  .back a {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+  }
+  .back { margin-top: 2rem;}
 }
