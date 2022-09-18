@@ -11,7 +11,7 @@ a:visited {color: var(--primary);}
 input {color: var(--primary);}
 
 /* ROOT THEME */
-/* :root {
+:root {
   --primary: white;
   --secondary: black;
   --shadow: rgba(0,0,0,0.44);
@@ -22,10 +22,10 @@ input {color: var(--primary);}
   --bg3: #23a6d5;
   --bg4: #23d5ab;
   --gold: #DFC164;
-} */
+}
 
 /* DARK THEME */
-/* [data-theme="dark"] {
+[data-theme="dark"] {
   --primary: black;
   --secondary: white;
   --shadow: rgba(228, 222, 222, 0.44);
@@ -36,7 +36,7 @@ input {color: var(--primary);}
   --bg3: #23a6d5;
   --bg4: #23a687;
   --gold: #DFC164;
-} */
+}
 
 /*--------------------------------------------------------------
 >>> COLOR - END

@@ -12,7 +12,7 @@
   h4 {font-size: calc(1.01rem + 0.3vw);} 
   h6 {font-size: calc(1.01rem + 0.1vw);} 
   a {font-size: calc(.75rem + 0.3vw);} 
-  p {font-size: calc(.80rem + 0.3vw);} 
+  p {font-size: calc(.75rem + 0.3vw);} 
   li {list-style: none;}
 
   /*--------------------------------------------------------------
@@ -54,7 +54,7 @@
   .welcome-container {
     max-width: 74% !important;
     min-width: 74% !important;
-    padding: 1.5rem;
+    padding: 1.2rem;
     background-color: black;
     border-radius: 20px;
     border: 3px solid whitesmoke;
@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    min-height: 20px !important;
+    min-height: 220px !important;
     max-height: 220px !important;
   }  
 
