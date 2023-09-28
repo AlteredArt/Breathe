@@ -39,8 +39,10 @@
 
   .music-info {
     padding: 10px 10px 0 43%;
-    left: -1.9px;
-    width: 101.6%;
+    left: -3px;
+    /* left: -1.9px; */
+    /* width: 101.6%; */
+    width: 102%;
     padding: 10px 10px 0 160px;
   }
 
