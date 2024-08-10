@@ -2,7 +2,6 @@
 **Breathe**
 
   **CURRENT_STATUS = LIVE**
-  Live Link: https://alteredart.dev/breatheapp/
   
   ## Short Description
   This is a simple breathing control and relaxation app.
@@ -18,7 +17,7 @@
   If you have any suggestions on adding to the app, please message me and let me know. Thank you and enjoy
   
   ## Demonstration
-  This project is live @ [https://alteredart.dev/invoices](https://alteredart.dev/Admindash/)
+  This project is live @ [https://alteredart.dev/breatheapp/](https://alteredart.dev/breatheapp/)
 
 
 
@@ -38,23 +37,8 @@
   
   ## Setup
   **How to download all needed libraries and set up this project.**
-
-   ### `npm start`
-  
-  Runs the app in the development mode.\
-  Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-  
-  The page will reload when you make changes.\
-  You may also see any lint errors in the console.
-  This is a demonstration of the project
-  
-  
-  ## Development
-  **Starting a live server for this project.**
-  This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-
-  
+  Being an HTML-based project, simply download the files here.
+  No set up is needed besides starting a server to view it in.
 
 # Future Development
 **This is a breakdown of all future development including issues, bugs, and even new features.**
