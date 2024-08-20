@@ -1,0 +1,560 @@
+/*--------------------------------------------------------------
+>>> COLOR / FONT TYPE & SIZE
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p, a {color: white;}
+body {background-color: black;}
+h1 {font-size: calc(1.15rem + 1.1vw);}
+
+/*--------------------------------------------------------------
+>>> COLOR / FONT TYPE & SIZE - END
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> NAVIGATION MENU
+--------------------------------------------------------------*/
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid white;
+}
+
+.nav_links {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.nav_links:hover {font-size: 1.1rem;}
+
+/* MOBILE MENU */
+/* .hamburger {display: none;} */
+/* .mobile_social_nav {display:none;} */
+/* .nav_menu {z-index: 22;} */
+
+.nav_links a {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* @media only screen and (min-width: 1400px) {
+
+} */
+
+/*--------------------------------------------------------------
+>>> NAVIGATION MENU - END
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> MAIN CONTAINER
+--------------------------------------------------------------*/
+
+.main-container {
+    max-width: 75vw;
+    margin: 0 auto;
+}
+  
+/*--------------------------------------------------------------
+>>> MAIN CONTAINER - END
+--------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  >>> LAYOUT
+  --------------------------------------------------------------*/
+
+  #background {
+    background-position: right center;
+    background-image: url(../assets/images/xred-shift.webp);
+
+  }
+
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  /*--------------------------------------------------------------
+  >>> LAYOUT - END
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  >>> CONTROL PANEL
+  --------------------------------------------------------------*/
+
+  .control-panel {
+    margin: 3rem 0 0 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .music-side {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-container {
+    max-width: 30%;
+    padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-height: 260px;
+    max-height: 260px;
+  }  
+
+  .welcome-container h1 {
+    font-family: 'Sacramento', cursive;
+    padding: 0;
+  }
+
+  hr {
+    width: 60%;
+    height: 3px;
+    margin: 10px auto 17px auto;
+    background: var(--primary);
+  }
+
+  #quote-text {
+    line-height: 23px;
+    padding: 0 0 0.7rem 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  #quote-author {
+    font-style: italic;
+  }
+
+  /*--------------------------------------------------------------
+  >>> CONTROL PANEL - END
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  >>> WORD CONTAINER
+  --------------------------------------------------------------*/
+
+  .word-container {
+    height: 100%;
+    margin: 0rem 0 0 0;
+    padding: 0.3rem 2rem;
+    border-right: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  .word {
+    animation: mymove 8s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  @keyframes mymove {50% {font-size: 2rem;}}.nav_link {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+  }
+
+  
+
+  /*--------------------------------------------------------------
+  >>> WORD CONTAINER END
+  --------------------------------------------------------------*/
+  .learn-more {
+    max-width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  .learn-more h1 {padding: 4rem 0 3rem 0;}
+
+  .learn-more div {max-width: 60%;}
+  .about {padding-top: 3rem;}
+  .links {padding: 1rem 0 0 2rem; display: table;}
+  .links h2 {margin-left: -1rem;}
+  .links li {line-height: 30px;}
+  .back a {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+  }
+  .back { margin-top: 2rem;}
+
+
+/*--------------------------------
+MUSIC CONTAINER
+------------------------------ */
+.music-container {
+    background-color: black;
+    border: 3px solid whitesmoke;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 30px;
+    position: relative;
+    margin: 3.7rem auto 0px auto !important;
+    z-index: 10;
+    max-width: 100%;
+}
+
+.music-img-container {
+    position: relative;
+    width: 110px;
+}
+
+.music-img-container::after {
+    border: 2px solid whitesmoke;
+    content: '';
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
+}
+
+.music-img-container img {
+    border: 0.5px solid whitesmoke;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 23s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .music-img-container img {animation-play-state: running;}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.music-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background: none;
+    border: 0;
+    color: #dfdbdf;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+    color: #cdc2d0;
+    font-size: 30px;
+}
+
+.action-btn:focus {outline: 0;}
+
+
+.music-info {
+    background-color: black;
+    border-radius: 15px 15px 0 0;
+    border-top: 3px solid whitesmoke;
+    border-left: 3px solid whitesmoke;
+    border-right: 3px solid whitesmoke;
+    position: absolute;
+    top: 0;
+    left: -2.9px;
+    width: 101.37%;
+    padding: 10px 10px 0 160px;
+    opacity: 0%;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+
+.music.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+    min-width: 100%;
+}
+
+.music-info h4 {
+    padding-top: 15px;
+    margin: 0;
+    text-align: left;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-80%);
+}
+
+#play {
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+}
+.action-button {
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.action-btn-big {
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 83%;
+}
+
+.progress {
+    background-color: yellowgreen;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+
+/*--------------------------------------------------------------
+>>> BUTTON
+--------------------------------------------------------------*/
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+    
+@keyframes breathing {
+    0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    }
+    
+    25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    }
+    
+    60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    }
+    
+    100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    }
+}
+/*--------------------------------------------------------------
+>>> BUTTON END
+--------------------------------------------------------------*/
+/*--------------------------------
+MUSIC CONTAINER END
+------------------------------ */
+
+
+
+
+
+
+
+
+
+/*--------------------------------
+CIRCLES
+------------------------------ */
+
+.circle-container {
+    margin: 1rem auto 8rem auto;
+    padding: 6rem 0;
+    height: 125px;
+    width: 125px;
+    animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+}
+
+.circle {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: screen;
+    transform: translate(0, 0);
+    animation: center 6s infinite;
+}
+
+/*blue top left*/
+.circle:nth-child(1) {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,0,0,100) 0%, rgba(0,212,255,1) 100%);
+}
+
+/*orange bottom right*/
+.circle:nth-child(2) {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,100) 43%, rgba(227,5,59,1) 100%);
+}
+
+/*green middle left*/
+.circle:nth-child(3) {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,255,0,1) 100%);
+}
+
+/*red middle right*/
+.circle:nth-child(4) {
+    background: rgb(139,3,249);
+    background: linear-gradient(90deg, rgba(139,3,249,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+/*bottom left*/
+.circle:nth-child(5) {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(233,152,11,1) 100%);
+}
+
+/*white top right*/
+.circle:nth-child(6) {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(2,0,36,1) 100%);
+}
+
+
+/*--------------------------------
+ANIMATION
+------------------------------ */
+.circle:nth-child(1) {animation: circle-1 4s ease alternate infinite;}
+.circle:nth-child(2) {animation: circle-2 4s ease alternate infinite;}
+.circle:nth-child(3) {animation: circle-3 4s ease alternate infinite;}
+.circle:nth-child(4) {animation: circle-4 4s ease alternate infinite;}
+.circle:nth-child(5) {animation: circle-5 4s ease alternate infinite;}
+.circle:nth-child(6) {animation: circle-6 4s ease alternate infinite;}
+
+/*--------------------------------
+KEYFRAMES
+------------------------------ */
+@keyframes pulse {
+    0% {transform: scale(.15) rotate(180deg);}
+    100% {transform: scale(1);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes grow {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+@keyframes shrink {
+    from {transform: scale(1.2);}
+    to {transform: scale(1);}
+}
+
+@keyframes circle-1 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(-35px, -50px);}
+}
+
+@keyframes circle-2 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(35px, 50px);}
+}
+
+@keyframes circle-3 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(-60px, 0);}
+}
+
+@keyframes circle-4 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(60px, 0);}
+}
+
+@keyframes circle-5 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(-35px, 50px);}
+}
+
+@keyframes circle-6 {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(35px, -50px);}
+}
+/*--------------------------------
+CIRCLES END
+------------------------------ */
+
+/*--------------------------------------------------------------
+>>> FOOTER
+--------------------------------------------------------------*/
+
+#footer {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+}
+
+#footer img {
+    width: 60px;
+    height: 60px;
+}
+
+/*--------------------------------------------------------------
+>>> FOOTER END
+--------------------------------------------------------------*/
