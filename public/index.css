@@ -35,6 +35,7 @@ header {
     /* width: 100%; */
     padding: 2rem 1rem;
     border-bottom: 2px solid white;
+    background-color: black;
 }
 
 .nav_links {
@@ -43,8 +44,6 @@ header {
     justify-content: space-between;
     list-style-type: none;
 }
-
-.nav_links a:hover {font-size: 1.1rem;}
 
 /* MOBILE MENU */
 /* .hamburger {display: none;} */
@@ -58,6 +57,11 @@ header {
     cursor: pointer;
     background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
+
+.nav_links a:hover {
+    background: black;
+}
+
 /*--------------------------------------------------------------
 >>> NAVIGATION MENU - END
 --------------------------------------------------------------*/
@@ -88,7 +92,7 @@ header {
     display: flex;
     flex-direction: column;
     align-self: center;
-   
+    height: 250px;
     /* max-width: 800px; */
   
 }  
@@ -102,13 +106,15 @@ hr {
     background: white;
 }
     
-#quote-text {
-    line-height: 23px;
-    max-width: 500px;
+.quote-container p {
+    /* line-height: 23px; */
+    max-width: 400px;
 }
 
-#quote-author {
+.quote-container h6 {
     font-style: italic;
+    font-size: 1.2rem;
+    margin: 0;
 }
 /*--------------------------------------------------------------
 >>> CONTROL PANEL
