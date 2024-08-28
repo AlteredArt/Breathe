@@ -1,9 +1,10 @@
 /*--------------------------------------------------------------
 >>> COLOR / FONT TYPE & SIZE
 --------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, p, a {color: white;}
+h1, h2, h3, h4, h5, h6, p, a {color: white; margin: 0;}
 body {background-color: black;}
 h1 {font-size: calc(1.15rem + 1.1vw);}
+
 
 /*--------------------------------------------------------------
 >>> COLOR / FONT TYPE & SIZE - END
@@ -19,7 +20,7 @@ body {
     max-width: 100vw !important;
     background-position: right center;
     background-image: url(./assets/images/bgRedShift.webp);
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
 }
 /*--------------------------------------------------------------
 >>> BODY - END
@@ -68,8 +69,15 @@ header {
 --------------------------------------------------------------*/
 .main-container {
     display: flex;
-    padding: 2rem;
+    height: 330px;
     justify-content: space-between;
+    padding: 3rem;
+    flex-wrap: nowrap;
+}
+.section { 
+    flex: 0 0 33.3%;
+    height: 100%;
+
 }
 /*--------------------------------------------------------------
 >>> MAIN CONTAINER - END
@@ -80,6 +88,8 @@ header {
 --------------------------------------------------------------*/
 
 .quote-container {
+    /* flex: 0 1 33.3%; */
+
     padding: 2rem;
     background-color: black;
     border-radius: 20px;
@@ -88,14 +98,12 @@ header {
     display: flex;
     flex-direction: column;
     align-self: center;
-    height: 250px;
-    width: 500px;
+    box-sizing: border-box;
+    /* max-height: 100%; */
+    /* width: 500px; */
 }  
     
-.quote-container h1 {
-    font-family: 'Sacramento', cursive;
-    margin: 0;
-}
+/* .quote-container h1 {font-family: 'Sacramento', cursive;} */
     
 hr {
     width: 70%;
@@ -105,13 +113,14 @@ hr {
     
 .quote-container p {
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 3rem 0;
+    font-size: 1.3rem;
 }
 
 .quote-container h6 {
     font-style: italic;
     font-size: 1.2rem;
-    margin: 0;
 }
 /*--------------------------------------------------------------
 >>> QUOTE CONTAINER END
@@ -125,8 +134,9 @@ hr {
 .media-container {
     display: flex;
     flex-direction: column;
-    width: 500px;
 }
+
+
 
 /*--------------------------------------------------------------
 >>> MUSIC CONTAINER
@@ -138,15 +148,16 @@ hr {
     border-radius: 10px 10px 0 0;
     display: flex;
     justify-content: center;
-    padding: 40px 30px;
+    padding: 29px 30px;
     position: relative;
-    margin: 3.7rem auto 0px auto !important;
+    margin: 7.7rem auto 0px auto !important;
     z-index: 10;
+    
 }
 
 .music-img-container {
     position: relative;
-    width: 110px;
+    /* width: 110px; */
 }
 
 .music-img-container::after {
@@ -215,14 +226,14 @@ hr {
     border-right: 1px solid whitesmoke;
     position: absolute;
     top: 0;
-    left: -2.9px;
-    /* width: 101.37%; */
-    width: 500px;
-    padding: 10px 10px 0 160px;
+    left: -1.2px;
+    /* width: 288px; */
+    padding: 10px 10px 0 200px;
     opacity: 0%;
     transform: translateY(0%);
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
     z-index: 0;
+    /* height: 125px; */
 }
 
 .music.play .music-info {
@@ -232,7 +243,7 @@ hr {
 }
 
 .music-info h4 {
-    padding-top: 15px;
+    padding-top: 40px;
     margin: 0;
     text-align: left;
 }
@@ -262,7 +273,7 @@ hr {
     cursor: pointer;
     margin: 10px 0;
     height: 4px;
-    width: 83%;
+    width: 73%;
 }
 
 .progress {
@@ -278,20 +289,18 @@ hr {
 --------------------------------------------------------------*/
 
 .word-container {
-    /* height: 100%; */
-    margin: 0rem 0 0 0;
-    padding: 0.3rem 2rem;
-    border-right: 3px solid whitesmoke;
-    border-left: 3px solid whitesmoke;
-    border-bottom: 3px solid whitesmoke;
+    /* height: 100px; */
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    max-width: 500px;
+    height: 100%;
+
 }
 
 .word {
@@ -430,21 +439,21 @@ hr {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(2,0,36,1) 100%);
 }
-
-
-/*--------------------------------
-ANIMATION
------------------------------- */
+/*--------------------------------------------------------------
+>>> ANIMATION
+--------------------------------------------------------------*/
 .circle:nth-child(1) {animation: circle-1 4s ease alternate infinite;}
 .circle:nth-child(2) {animation: circle-2 4s ease alternate infinite;}
 .circle:nth-child(3) {animation: circle-3 4s ease alternate infinite;}
 .circle:nth-child(4) {animation: circle-4 4s ease alternate infinite;}
 .circle:nth-child(5) {animation: circle-5 4s ease alternate infinite;}
 .circle:nth-child(6) {animation: circle-6 4s ease alternate infinite;}
-
-/*--------------------------------
-KEYFRAMES
------------------------------- */
+/*--------------------------------------------------------------
+>>> ANIMATION END
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> KEYFRAMES
+--------------------------------------------------------------*/
 @keyframes pulse {
     0% {transform: scale(.15) rotate(180deg);}
     100% {transform: scale(1);}
@@ -495,15 +504,11 @@ KEYFRAMES
     100% {transform: translate(35px, -50px);}
 }
 /*--------------------------------------------------------------
->>> ANIMATION END
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 >>> KEYFRAMES END
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 >>> CIRCLES CONTAINER END
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 >>> FOOTER
 --------------------------------------------------------------*/

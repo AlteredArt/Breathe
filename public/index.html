@@ -11,7 +11,7 @@
 		<link rel="shortcut icon" type="image/webp" href="./assets/images/aa_logo.webp"/>
 		<!-- ICON END -->
 		<!-- STYLESHEET -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
 		<link rel="stylesheet" href="./index.css">
 		<!-- STYLESHEET END -->
 		<!-- TITLE -->
@@ -41,18 +41,21 @@
 
 		<!-- MAIN CONTAINER -->
 		<div class="main-container">
-			<!-- INTRO -->
-			<div class="quote-container">
+
+			<!-- QUOTE CONTAINER -->
+			<div class="quote-container section">
 				<h1>Welcome & Relax</h1>
 				<hr/>
 				<p id="quote-text">To resist change, to try to cling to life, is therefore like holding your breath, if you persist you kill yourself.</p>
 				<h6 id="quote-author">~Alan Watts~</h6>
 			</div>
-			<!-- INTRO END -->
+			<!-- QUOTE CONTAINER END -->
+			<div class="mid-container section">
 
-			<!-- MUSIC END -->
-			 <!-- IS EXTRA CLASS & DIV NEEDED -->
-			<div class="media-container">
+			</div>
+			<!-- MEDIA CONTAINER -->
+			<div class="media-container section">
+				<!-- MUSIC CONTAINER -->
 				<div id="music">
 					<div class="music-container" id="music-container">
 						<div class="music-info">
@@ -61,9 +64,9 @@
 								<div class="progress" id="progress"></div>
 							</div>
 						</div>
-						<audio src="./assets/music/ambientPiano.mp3" id="audio"></audio>
+						<audio src="../public/assets/music/ambientPiano.mp3" id="audio"></audio>
 						<div class="music-img-container">
-							<img src="./assets/images/ambientPiano.webp" alt="music-cover" id="music-cover" />
+							<img src="./ambientPiano.webp" alt="music-cover" id="music-cover" />
 						</div>
 						<div class="music-navigation">
 							<button id="prev" class="action-btn">
@@ -78,11 +81,15 @@
 						</div>
 					</div> 
 				</div> 
+				<!-- MUSIC CONTAINER END -->
+
+				<!-- WORD CONTAINER -->
 				<div class="word-container" id="word-container">
 					<h2 class="word" id="word"><span>breathe IN!</span></h2>
 				</div>
+				<!-- WORD CONTAINER END-->
 			</div>
-			<!-- MUSIC END-->
+			<!-- MUSIC CONTAINER END-->
 		</div>
 		<!-- MAIN CONTAINER END -->
 
